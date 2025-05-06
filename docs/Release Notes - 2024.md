@@ -419,8 +419,8 @@ Bug Fixes
 
 New features & improvements
 
-- [Carousel]()* *component - The carousel is an interactive component that lets you swipe through a set of items, making content navigation engaging and dynamic. For example, images, products, or content can be browsed by swiping left or right. In addition to swipe gestures, navigation identifiers are included in dots or a counter. The dots/counter indicate the current position within the carousel.
-- [info-modal]() action - The info modal is a pop-up window that provides additional information or context without navigating away from the current screen. It displays additional information and offers guidance or instructions.;
+- [Carousel]() component - The carousel is an interactive component that lets you swipe through a set of items, making content navigation engaging and dynamic. For example, images, products, or content can be browsed by swiping left or right. In addition to swipe gestures, navigation identifiers are included in dots or a counter. The dots/counter indicate the current position within the carousel.
+- [info-modal]() action - The info modal is a pop-up window that provides additional information or context without navigating away from the current screen. It displays additional information and offers guidance or instructions.
 - [media-field]() - now includes uploading files, images, videos, or a combination. The number of images allowed to be selected in the `component.media-picker` has been increased.
 - [Convert HEIC to JPEG]() in `conversions`—Files are uploaded as HEIC files on iOS, which can cause issues, and viewing HEIC files on a non-iOS device is difficult. A new property has been added in the `ConversionDefinition: convertHeicToJpg`. Set the flag to `true`, and the files are converted from HEIC to JPG.
 - [card]() component - The card is a versatile and visually appealing UI element that encapsulates and presents information or interactive content in a structured, consistent, and user-friendly manner. Each card can include a mix of text, images, and interactive elements, creating a self-contained content unit.
@@ -477,7 +477,7 @@ Bug Fixes
 - Added [widgets]() `onPress` example
 - Added [card]() component examples
 - Added additional examples to [media-field]() |
-| jigx-widget  | * Added [onPress]() to widgets examples                                                                                                                                                                    |
+| jigx-widget  | Added [onPress]() to widgets examples                                                                                                                                                                    |
 
 ## Release 2024.4
 
@@ -511,7 +511,7 @@ Bug Fixes
 | **Android version**      | 1.27.7               |
 | **Jigx Builder version** | 1.28.0               |
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 New features & improvements
 
@@ -531,11 +531,12 @@ New features & improvements
 
 - [Code Navigation]() - navigate through code with the Go to Definition (F12) and Go to References (+F12) functionality. Quickly go to data sources, components, jigs, and function definitions, or see where these are referenced across your solution.
   <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/f7-gwdrARF6E6cymYcY4-_f12-go-to.gif" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/f7-gwdrARF6E6cymYcY4-_f12-go-to.gif" size="88" width="658" height="484" position="center" caption} -->
-  <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/f7-gwdrARF6E6cymYcY4-_f12-go-to.gif" size="88" width="658" height="484" position="center" />
+
+<img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/f7-gwdrARF6E6cymYcY4-_f12-go-to.gif" size="88" width="658" height="484" position="center" />
 
 - *Authorization* - Jigx Builder remembers your login credentials after a successful login, this means the next time you open Jigx Builder and want to publish a project, your credentials do not need to be re-entered. You can re-login at any time by using the login again icon at the top of the Jigx Explorer pane, as shown below.
   <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YfpU8yYmDr17Tt5U0ePQL_autologin.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YfpU8yYmDr17Tt5U0ePQL_autologin.png" size="70" width="630" height="214" position="center" caption} -->
-  <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YfpU8yYmDr17Tt5U0ePQL_autologin.png" size="70" width="630" height="214" position="center" />
+<img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YfpU8yYmDr17Tt5U0ePQL_autologin.png" size="70" width="630" height="214" position="center" />
 
 Bug fixes
 
@@ -621,7 +622,7 @@ Bug Fixes
 | **Android version**      | 1.23.2               |
 | **Jigx Builder version** | 1.26.0               |
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 New features & improvements
 
@@ -661,7 +662,7 @@ New features & improvements
 - Added a visible *Edit groups* link to the solutions permissions tab making it easier to edit group access to the solution.
   ![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YQEv_s2grP81KrkXfkqFX_jm-editgroups.png)
 - Changed help icons to open in a new tab rather than in a widget.
-- Added an indication of the solution count per organization on the [User > Profile - Organizations]() section. This is useful for people belonging to multi-organizations. On the user's profile, all organizations assigned to the user are visible with an active solution count. Clicking on an organization will easily switch you to that organization where solutions are assigned; go to the Solutions tab, and manipulate access as required.&#x20;
+- Added an indication of the solution count per organization on the [User > Profile - Organizations]() section. This is useful for people belonging to multi-organizations. On the user's profile, all organizations assigned to the user are visible with an active solution count. Clicking on an organization will easily switch you to that organization where solutions are assigned; go to the Solutions tab, and manipulate access as required.
   ![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/MrXjDx_SvJuwQya4LlhP0_jm-solutioncount.png)
 - Added an *Idle logout minutes* option for Jigx Management. This is an optional security setting that, once applied, will display a prompt and then log the person out of  Jigx Management after being idle for the configured period. Enabling the checkbox has a default of 120 minutes but is configurable to your requirements. See [Advanced Setting]() for more information.
   ![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/BE55NVlooXC3mS4deTVSR_jm-idletimeout.png)
@@ -683,8 +684,8 @@ New features & improvements
 
 - Added the ability to delete your account from the personal information section under your Profile screen in the mobile app. Once deleted, you are logged out of the Jigx App, and your account is deleted from Jigx Management.
   <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" size="30" width="1245" height="2500" position="center" caption="Delete Jigx account" alt="Delete Jigx account"} -->
-  <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" size="30" width="1245" height="2500" position="center" caption="Delete Jigx account" alt="Delete Jigx account" />
-- Added a new jig type for components such as [location]() to occupy the entire screen with no other elements. See [jig.fullscreen]() for more details.&#x20;
+  <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" size="30" width="1245" height="2500" position="center" caption="Delete Jigx account" alt="Delete Jigx account"
+- Added a new jig type for components such as [location]() to occupy the entire screen with no other elements. See [jig.fullscreen]() for more details.
 
 <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" size="30" width="1240" height="2500" position="center" caption="Full screen jig" alt="Full screen jig"} -->
 <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" size="30" width="1240" height="2500" position="center" caption="Full screen jig" alt="Full screen jig" />
@@ -718,7 +719,7 @@ New features & improvements
 
 - Added a dropdown to Solution Settings allowing you to choose which data to copy.  You can decide whether restricted data can be copied when a solution is copied.
   <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/mQPw9a0oTRQTZfAnaRb42_jm-ssettingdata.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/mQPw9a0oTRQTZfAnaRb42_jm-ssettingdata.png" size="76" width="1430" height="940" position="center" caption="Restrict data copying" alt="Restrict data copying"} -->
-  <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/mQPw9a0oTRQTZfAnaRb42_jm-ssettingdata.png" size="76" width="1430" height="940" position="center" caption="Restrict data copying" alt="Restrict data copying" />
+  <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/mQPw9a0oTRQTZfAnaRb42_jm-ssettingdata.png" caption="Restrict data copying" alt="Restrict data copying" />
 - Removed the Disable user button from the User screen in Management, use permissions to deny users access.
 - Performance improvements and security enhancements.
 
@@ -734,7 +735,7 @@ Bug Fixes
 
 | **Solution** | **Update or addition**                                                                                                                                                                                                                                                                                                                                   |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| jigx-samples | - *location-fullscreen.jigx* and *location-fullscreen-dynamic.jigx* updated to use the new `jig.fullscreen` instead of `jig.default` with `isScrollable: false` property that has been depreciated.&#x20;
+| jigx-samples | - *location-fullscreen.jigx* and *location-fullscreen-dynamic.jigx* updated to use the new `jig.fullscreen` instead of `jig.default` with `isScrollable: false` property that has been depreciated.
 - Added *list-item-contained.jigx* showing vertical list-items wrapped in a card by using the `isContained` property.
 - Fixed minor bugs |
 
