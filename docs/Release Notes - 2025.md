@@ -17,7 +17,7 @@ updatedAt: Wed Apr 30 2025 11:16:41 GMT+0000 (Coordinated Universal Time)
 | Android version |          |
 | Jigx Builder    | 1.38.0   |
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 New features & improvements
 
@@ -82,13 +82,13 @@ Bug Fixes
 | Android version | 1.131.0       |
 | Jigx Builder    | 1.37.0        |
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 New features & improvements
 
 - Added the ability to update a user's name and phone number in their profile when using the [update-profile]() action.
-- Added the ability to customize the [User Profile]() screen.  The new `component.jig` added to the index.jigx file renders any jigs in the profile screen. The customized jig has a width header and actions.&#x20;
-- Added support for customizing the  [User Profile]() screen.&#x20;
+- Added the ability to customize the [User Profile]() screen.  The new `component.jig` added to the index.jigx file renders any jigs in the profile screen. The customized jig has a width header and actions.
+- Added support for customizing the  [User Profile]() screen.
   - A new `component.jig` entry in index.jigx renders custom jigs within the profile screen.
   - The customized jig includes a width header and actions.
 
@@ -100,7 +100,7 @@ Bug Fixes
 - Improved navigation from the Settings screen to the home page after switching solutions.
 - Fixed the `onRefresh` event, which was not executing for a list jig on Android devices.
 
-### Components&#x20;
+### Components
 
 New features & improvements
 
@@ -110,7 +110,7 @@ New features & improvements
 
 New features & improvements
 
-- Added validation to `grid-item` determining when `widgetId` is required.&#x20;
+- Added validation to `grid-item` determining when `widgetId` is required.
 - Enhanced the way you interact with jigs by introducing the ability to retrieve `outputs` from jigs you navigated to using the following expression `=@ctx.jigs.instance-id-of-the-jig.outputs.[key-of-ouput]`.
 -
 - Added the `onTableChange` event, which responds to remote system data changes and updates the mobile device. This event monitors specific data tables (entities) for changes and triggers the configured actions when a change is detected. This ensures data consistency between the remote system and the mobile device, keeping information up to date across the platform.
@@ -152,11 +152,11 @@ Bug Fixes
 
 New features & improvements
 
-- [Jigx Variables]() &#x20;
+- [Jigx Variables]() 
   - When invoked within an action, the `=@ctx.system.geolocation` method executes asynchronously.
   - Set the permissions on location using the system variable `=@ctx.system.locationPermissions`. `PermissionStatus` can be `granted` | `undetermined` | `denied`
 - Added Jigx Builder support for `action.sync-status`.
-- Implemented `action.execute-sql` in Jigx Builder.&#x20;
+- Implemented `action.execute-sql` in Jigx Builder.
 
 ### Jigx Management
 
@@ -175,23 +175,23 @@ Bug Fixes
 | Android version | 1.125.14       |
 | Jigx Builder    | 1.35.0         |
 
-### Important Updates and Migration Guidanc**e**
+### Important Updates and Migration Guidance
 
 Release 2025.1 introduces significant changes to existing functionality, components, and actions, along with new features that may impact existing solutions. While every effort has been made to provide [migration plans]() to ensure backward compatibility, once a solution is published on this release, the changes will take effect. The primary areas impacted include the home screen (index.jigx), location component, go-to action, widgets, and stories.
 
 - Jigx strongly recommends thoroughly testing all solutions after publishing to ensure expected behavior and stability.
 - The documentation is being updated to reflect the latest product offerings. As a result, some screenshots and code samples may not yet represent the most recent features and improvements.
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 New features & improvements
 
-- [go-to]() action - The action allows you to open a jig as a modal. Simply set the `isModal` property to `true`.&#x20;
+- [go-to]() action - The action allows you to open a jig as a modal. Simply set the `isModal` property to `true`.
 - [Navigation]()  - The [go-to]() action is used to configure the flow of jigs in the app using the `behaviour` property. With the `behaviour` you determine if you want to push the screen into the app history, by using the `new` value, or show the one you already have in history by using the `existing` value.
-- [Grid]() and [custom tabs]()  used to create Home Hub and bottom navigation bar. For backward compatibility - see [Migration plan]() to understand the changes that are required when republishing the solution.&#x20;
+- [Grid]() and [custom tabs]()  used to create Home Hub and bottom navigation bar. For backward compatibility - see [Migration plan]() to understand the changes that are required when republishing the solution.
 - [jig.grid]()  - Create grid layouts in your app, organizing content into rows and columns for a visually consistent and flexible interface. It helps align elements proportionally, ensuring a structured design. The grid is ideal for creating galleries to display photos or product images, as well as dashboards, menus, and product lists.
 - The home button has been removed from jigs and the profile button has been moved to the new bottom navigation tab bar. See [Home Hub]() for more information.&#x20;
-- Added the ability to remove the Support menu from the user profile screen. This can be configured via a flag in the build configuration.&#x20;
+- Added the ability to remove the Support menu from the user profile screen. This can be configured via a flag in the build configuration.
 - Solution switching has been moved to the Profile settings screen.
   ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" size="34" width="1224" height="2466" position="center" caption="Profile " alt="Profile"}
 
@@ -199,35 +199,35 @@ Bug Fixes
 
 - Improved the experience with errors appearing after logout due to long running sync actions.
 - Fixed an issue for REST calls where setting your parameter to an output location would cause it to fail.
-- Improvements made to error boundary and handling.&#x20;
+- Improvements made to error boundary and handling.
 - Changed keyboard panel to match theme's background colors.
-- Fixed deep translations, for example,  translation of formatting of values such as $.&#x20;
+- Fixed deep translations, for example,  translation of formatting of values such as $.
 
 ### Components and jig types
 
 New features & improvements
 
-- [jig.tabs]() - Tabs is a new jig type that allows you to navigate between different jigs with ease, enhancing the user experience by providing an organized layout.&#x20;
+- [jig.tabs]() - Tabs is a new jig type that allows you to navigate between different jigs with ease, enhancing the user experience by providing an organized layout.
 - [jig.grid]()  - This jig type enables you to create grid layouts in your app, organizing content into rows and columns for a visually consistent and flexible interface. The grid is ideal for creating galleries to display photos or product images.
 - [Grid component]() - create a grid layout as a component in a jig with other components.
 - [Divider]() -create a simple divider between components using the `component.divider`. The divider component adds a simple dark horizontal line across the screen. Common use cases include grouping related content or enhancing visual hierarchy.
 - [segmented-control]() - create a horizontal control consisting of segments that allows you to** **toggle between multiple options in a compact, efficient way.
-- Actions added on [jig-header]() - Configure actions to display as links or icons in the top right corner of the header.&#x20;
+- Actions added on [jig-header]() - Configure actions to display as links or icons in the top right corner of the header.
 - Enhanced the `media-picker’s` usability by reducing clicks/taps during the upload process.
 - `List `and `list-items` improvements include:
-  - Added support for using a [list-item outside a list]() component. This allows configuring a single list item with all list-item features, such as left and right elements and swipe actions, without requiring a full list. See a code example [Single list-item in an expander]()&#x20;
-  - Enhanced the `list-item` description to support multiple lines.&#x20;
+  - Added support for using a [list-item outside a list]() component. This allows configuring a single list item with all list-item features, such as left and right elements and swipe actions, without requiring a full list. See a code example [Single list-item in an expander]()
+  - Enhanced the `list-item` description to support multiple lines.
   - Added color support to the `value` property of the list's `rightElement`.
 - Multiple enhancements made to `location` component, including support for custom markers, different markers based on a state, user's location display, and follow a user location.** Note:** A [Migration plan]() is in place to ensure backward compatibility for existing solutions. However, once a solution is republished, you must update the code to ensure the location component continues to function as expected.
 - Multiple improvements made to the `expander` component, including:
   - Determine the background color for header versus body using the `variant` property with `plain` or `emphasis` values.
-  - Expander arrow align left or right
-  - Added the ability to add a solid or transparent `divider`&#x20;
+  - Expander arrow align left or right.
+  - Added the ability to add a solid or transparent `divider`.
 
 Bug Fixes
 
 - Fixed the shadow performance on `card` component.
-- Consolidated the standard and custom card components.&#x20;
+- Consolidated the standard and custom card components.
 - Various padding fixes across components.
 - Update `entity-fields` compact border setting and content size.
 
@@ -270,7 +270,7 @@ Bug Fixes
 
 New features & improvements
 
-- Determine the version of the app by using [system](https://docs.jigx.com/examples/jigx-variables) states, the expression used is `=@ctx.system.appVersion`.&#x20;
+- Determine the version of the app by using [system](https://docs.jigx.com/examples/jigx-variables) states, the expression used is `=@ctx.system.appVersion`.
 - REST improvements include:
   - Enabled the use of custom JavaScript in REST function expressions.
   - Added default 401 error handler in the REST provider to retry three times.
@@ -319,7 +319,7 @@ New features & improvements
 
 ### Deprecated
 
-- The `story-group` component and `stories` property in index.jigx has been removed for all new and existing solutions. If you currently use stories on your home screen they will no longer appear in the app and in Jigx Builder the YAML will have red squiggles. Remove the YAML in Jigx Builder and republish.&#x20;
+- The `story-group` component and `stories` property in index.jigx has been removed for all new and existing solutions. If you currently use stories on your home screen they will no longer appear in the app and in Jigx Builder the YAML will have red squiggles. Remove the YAML in Jigx Builder and republish.
 - The ability to set access to widgets in a solution in Jigx Management for users and groups has been removed.
 - The `home` property in index.jigx used to display a custom Home Hub has been removed. Reference the custom home jig under the new `tabs` property. See [Creating a Home Hub]() for more details.
 

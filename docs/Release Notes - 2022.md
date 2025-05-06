@@ -15,7 +15,7 @@ updatedAt: Mon Feb 12 2024 07:51:27 GMT+0000 (Coordinated Universal Time)
 New Features
 
 - Added new lifecycle event `onFocus` to the solution index.jigx schema
-- Errors are now being displayed as dismissable toast&#x20;
+- Errors are now being displayed as dismissable toast
 - Added `when` condition with expression support to standalone `actions` and actions in `action-list`
 
 Bug Fixes

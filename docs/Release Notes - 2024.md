@@ -30,7 +30,7 @@ New features & improvements
 
 New features & improvements
 
-- [duration-picker]() - The duration-picker in a form allows you to specify a time duration easily by providing a user-friendly interface where you can scroll or tap to select hours or minutes rather than manually typing in numbers. It's particularly useful for tasks that require tracking time intervals, like logging work shifts, break times, time spent on a particular task, or time-based billing. For example, an app user needs to record the time spent performing a certain activity, a duration-picker lets them choose the time.&#x20;
+- [duration-picker]() - The duration-picker in a form allows you to specify a time duration easily by providing a user-friendly interface where you can scroll or tap to select hours or minutes rather than manually typing in numbers. It's particularly useful for tasks that require tracking time intervals, like logging work shifts, break times, time spent on a particular task, or time-based billing. For example, an app user needs to record the time spent performing a certain activity, a duration-picker lets them choose the time.
 - [Lists]() - Enhanced list functionality for a better user experience: We've expanded the functionality of lists to enhance how you display content in both vertical and horizontal orientations.
 
   - [Card-wrapping](): Wrap list items in cards for a more visually appealing presentation.
@@ -110,7 +110,7 @@ Bug Fixes
 
 - *Issue:* When using a SELECT statement in a datasource query that does not return an `id` in the result set, and the dataset is large, it can negatively affect the solution's performance. This is especially noticeable when the data is used in a dropdown.
   *Workaround:* Ensure that the query always returns a unique `id` in the dataset. The `id` must be lowercase.
-- **Issue**: When using the `color` property in a number related component, such as `number-field` or `duration-picker`,  and the `when` property uses an expression to determine the `color` based on a condition such as > or \<, the `color` does not display as expected.&#x20;
+- **Issue**: When using the `color` property in a number related component, such as `number-field` or `duration-picker`,  and the `when` property uses an expression to determine the `color` based on a condition such as > or \<, the `color` does not display as expected.
   **Workaround**: The `color` property will display correctly if the `when` property is set to a simple true/false condition rather than a complex expression.
 
 ### Updates to documentation
@@ -158,12 +158,12 @@ New features & improvements
 ### Known issues
 
 - *Issue:* When using a SELECT statement in a datasource query that does not return an `id` in the result set, and the dataset is large, it can negatively affect the solution's performance. This is especially noticeable when the data is used in a dropdown.
-  *Workaround:*&#x20;
+  *Workaround:*
   Ensure that the query always returns a unique `id` in the dataset. The `id` must be lowercase.
 
 ### Updates to documentation
 
-- Add [REST error handling]()  and [REST errors]().&#x20;
+- Add [REST error handling]()  and [REST errors]().
 
 ## Release 2024.8
 
@@ -180,7 +180,7 @@ New features & improvements
 
 New features & improvements
 
-- **List filters -** Set the filter to open on a specific tab in a list. The filter property's YAML snippet has changed to include the `data` (required) and `initialValue` (optional) properties. The existing filter configuration will continue to work, but the YAML snippet is squiggled in red to indicate that the new `data` property is required. The filter now handles strings and booleans, ensure the `value` for filter is configured correctly. For more information see [list]() and [jig.list]().&#x20;
+- **List filters -** Set the filter to open on a specific tab in a list. The filter property's YAML snippet has changed to include the `data` (required) and `initialValue` (optional) properties. The existing filter configuration will continue to work, but the YAML snippet is squiggled in red to indicate that the new `data` property is required. The filter now handles strings and booleans, ensure the `value` for filter is configured correctly. For more information see [list]() and [jig.list]().
 
 :::CodeblockTabs
 filter-yaml-snippet
@@ -200,7 +200,7 @@ filter:
 
 - **Keyboard**: Introduced the option to hide the mobile keyboard on iOS devices on default jigs that require user input, such as forms. You can either tap the keyboard icon or click outside the keyboard to dismiss it and view the full screen.
   ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-nXraW9UkIsqVLHlVXLALx-20240916-134713.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-nXraW9UkIsqVLHlVXLALx-20240916-134713.png" size="46" width="1247" height="2500" position="center" caption}
-- Design your app to respond to the **device type** and **orientation**.&#x20;
+- Design your app to respond to the **device type** and **orientation**.
   Added two new system variables namely:
   \- `deviceType`: The variable returns the current user's device type, such as tablet or handset, when using the expression `=@ctx.system.deviceType`. This expression is useful for determining the appropriate image size based on the device type.
   \- `isPortrait`: The variable is set with a boolean and is used to configure the behavior of components in either portrait or landscape mode. The expression's structure is `=@ctx.system.isPortrait`.
@@ -217,8 +217,8 @@ New features & improvements
 
 - [Choice-field]() improvements include:
   - Improved the rending of the choice-field component in an expander component.
-  - The `itemsPerRow` property now supports multiline (up to two-lines) text ensuring that text is not cutoff.&#x20;
-  - Improved the padding of the choice-field to be consistent with all other components.&#x20;
+  - The `itemsPerRow` property now supports multiline (up to two-lines) text ensuring that text is not cutoff.
+  - Improved the padding of the choice-field to be consistent with all other components.
   - `isMultiple` now supports expressions.
 
 Bug Fixes
@@ -234,7 +234,7 @@ New features & improvements
 - ****[Device type and orientation expressions](): Added two new system variables namely:
   \- `deviceType`: The variable returns the current user's device type, such as tablet or handset, when using the expression `=@ctx.system.deviceType`. This expression is useful for determining the appropriate image size based on the device type.
   \- `isPortrait`: The variable is set with a boolean and is used to configure the behavior of components in either portrait or landscape mode. The expression's structure is `=@ctx.system.isPortrait`.
-- [JavaScript Expressions]()**  - **You can now use JavaScript functions in expressions to streamline logic within your solutions. This feature simplifies repetitive and complex tasks, making the code more readable, understandable, and easier to debug. JavaScript functions are created in the scripts/expressions folder, and are surfaced as expressions in the YAML within Jigx Builder. New solutions open with the scripts/expressions folder structure; existing solutions will not have the folder; you can manually add the folder to these solutions. For code examples see [JavaScript expressions]().&#x20;
+- [JavaScript Expressions]()**  - **You can now use JavaScript functions in expressions to streamline logic within your solutions. This feature simplifies repetitive and complex tasks, making the code more readable, understandable, and easier to debug. JavaScript functions are created in the scripts/expressions folder, and are surfaced as expressions in the YAML within Jigx Builder. New solutions open with the scripts/expressions folder structure; existing solutions will not have the folder; you can manually add the folder to these solutions. For code examples see [JavaScript expressions]().
 
 Bug Fixes
 
@@ -254,7 +254,7 @@ Bug Fixes
 ### Known issues
 
 - *Issue:* When using a SELECT statement in a datasource query that does not return an `id` in the result set, and the dataset is large, it can negatively affect the solution's performance. This is especially noticeable when the data is used in a dropdown.
-  *Workaround:*&#x20;
+  *Workaround:*
   Ensure that the query always returns a unique `id` in the dataset. The `id` must be lowercase.
 
 ### Updates to documentation
@@ -269,7 +269,7 @@ Bug Fixes
 | **Solution** | **Update or addition**                                                                                                                                                                                                                                   |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | jigx-samples | -  Updated list filter examples to add the data property.
--  Added a filter example with `initialValue` configured for both list jig and using the list component in a default jig.&#x20;
+-  Added a filter example with `initialValue` configured for both list jig and using the list component in a default jig.
 - Added examples for JavaScript functions used in expressions. |
 
 ## Release 2024.7
@@ -300,11 +300,11 @@ Bug Fixes
 New features & improvements
 
 - [chat]() - Experience seamless communication on the go with our chat-message component, keeping you connected anytime, anywhere. Create a chatbot using [OpenAI integration]().
-- [choice-field]() - The choice-field component allows you to select one or more options from a predefined list. This enhances user experience by providing a straightforward way to make selections, such as choosing a setting, selecting a category, or picking an item from a list.&#x20;
+- [choice-field]() - The choice-field component allows you to select one or more options from a predefined list. This enhances user experience by providing a straightforward way to make selections, such as choosing a setting, selecting a category, or picking an item from a list.
 
 Bug Fixes
 
-- &#x20;Fixed an issue with the elected `state` for multiple selected right checkboxes not resolving correctly in `functionParameters`.
+- Fixed an issue with the elected `state` for multiple selected right checkboxes not resolving correctly in `functionParameters`.
 - Fixed an issue with `component.list.state.amounts` not working correctly.
 - Fixed an issue with `when` conditions not evaluating correctly in action lists under certain cirumstances.
 
@@ -317,7 +317,7 @@ Bug Fixes
 ### Updates to documentation
 
 - Added documentation for the [chat]() component with a chatbot code example.
-- Added documentation and code examples for the [choice-field]() component that is used in a [form]().&#x20;
+- Added documentation and code examples for the [choice-field]() component that is used in a [form]().
 - Added a code example for autofilling forms using the [textContentTypes]() property.
 
 ### Updates to Quick-Start sample solutions&#x20;
@@ -337,7 +337,7 @@ Bug Fixes
 | **Android version**      | 1.43.3               |
 | **Jigx Builder version** | 1.30.0               |
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 Bug Fixes
 
@@ -357,7 +357,7 @@ Bug Fixes
 - Fixed an issue with the `component.dropdown` not resetting its value after sending data to a remote data store.
 - Fixed multiple issues with `component.expander's` rendering behavior.
 
-### Builder&#x20;
+### Builder
 
 New features & improvements
 
@@ -373,10 +373,10 @@ Bug Fixes
 
 - The *Developer Reference* and Examples spaces have been merged to create the <a href="https://docs.jigx.com/examples" target="_blank">Reference & Examples</a> section.
 - The [State]() topic has been updated.
-- Add new information and examples to [Passing data using inputs]().&#x20;
+- Add new information and examples to [Passing data using inputs]().
 - New topic on setting and using [custom variables]().
 
-### Updates to Quick-Start sample solutions&#x20;
+### Updates to Quick-Start sample solutions
 
 | **Solution** | **Update or addition**                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -409,7 +409,7 @@ New features & improvements
 
 Bug Fixes
 
-- &#x20;Fixed an issue with the app freezing on the splash screen when offline.
+- Fixed an issue with the app freezing on the splash screen when offline.
 - Fixed an issue with double encoding of URLs in `action.open-url`.
 - Fixed an issue with organizational information not being returned in multi-organization environments (e.g. `@ctx.organization.id`).
 - Fixed an issue with deep-linking from notifications into the app on Android.
@@ -418,24 +418,24 @@ Bug Fixes
 
 New features & improvements
 
-- [Carousel]()* *component - The carousel is an interactive component that lets you swipe through a set of items, making content navigation engaging and dynamic. For example, images, products, or content can be browsed by swiping left or right. In addition to swipe gestures, navigation identifiers are included in dots or a counter. The dots/counter indicate the current position within the carousel.&#x20;
-- [info-modal]() action - The info modal is a pop-up window that provides additional information or context without navigating away from the current screen. It displays additional information and offers guidance or instructions.&#x20;
+- [Carousel]()* *component - The carousel is an interactive component that lets you swipe through a set of items, making content navigation engaging and dynamic. For example, images, products, or content can be browsed by swiping left or right. In addition to swipe gestures, navigation identifiers are included in dots or a counter. The dots/counter indicate the current position within the carousel.
+- [info-modal]() action - The info modal is a pop-up window that provides additional information or context without navigating away from the current screen. It displays additional information and offers guidance or instructions.;
 - [media-field]() - now includes uploading files, images, videos, or a combination. The number of images allowed to be selected in the `component.media-picker` has been increased.
-- [Convert HEIC to JPEG]() in `conversions`—Files are uploaded as HEIC files on iOS, which can cause issues, and viewing HEIC files on a non-iOS device is difficult. A new property has been added in the `ConversionDefinition: convertHeicToJpg`. Set the flag to `true`, and the files are converted from HEIC to JPG.&#x20;
-- [card]() component - The card is a versatile and visually appealing UI element that encapsulates and presents information or interactive content in a structured, consistent, and user-friendly manner. Each card can include a mix of text, images, and interactive elements, creating a self-contained content unit.&#x20;
+- [Convert HEIC to JPEG]() in `conversions`—Files are uploaded as HEIC files on iOS, which can cause issues, and viewing HEIC files on a non-iOS device is difficult. A new property has been added in the `ConversionDefinition: convertHeicToJpg`. Set the flag to `true`, and the files are converted from HEIC to JPG.
+- [card]() component - The card is a versatile and visually appealing UI element that encapsulates and presents information or interactive content in a structured, consistent, and user-friendly manner. Each card can include a mix of text, images, and interactive elements, creating a self-contained content unit.
 - Added the ability to interact with disabled image groups in the `component.interactive-image`.
 
 Bug Fixes
 
 - Fixed an issue with `allDay` events in `component.event`.
 
-### Builder&#x20;
+### Builder
 
 Bug Fixes
 
 - Improved Jigx debug windows making long values easier to read, especially for function parameter, parameter, and inputs.
 - Fixed the `=@ctx.solution.settings` in the context of expressions when specified.
-- Fixed the expression `=@ctx.solution.organizationId` and `=@ctx.solution.solutionId` to return the correct value.&#x20;
+- Fixed the expression `=@ctx.solution.organizationId` and `=@ctx.solution.solutionId` to return the correct value.
 - Fixed intelliSense to show `@ctx` in data columns.
 
 ### Management
@@ -446,9 +446,9 @@ Bug Fixes
 
 ### Change in behavior&#x20;
 
-- Solutions listed in the Jigx App (not branded apps) will now be filtered according to the app's current region.&#x20;
-  Previously, all solutions were loaded regardless of the apps and/or organization's region. Now, solutions will load based on whether their organization's region matches the app's region.&#x20;
-  To ensure the Jigx App region matches your organization's region, you can go to Jigx Management to see what the *Organization Settings* are. By default, the mobile app logs into the US East region. To change your mobile device's *Home Region,* go to *Profile > Settings* to match the organization's region in Jigx Management.&#x20;
+- Solutions listed in the Jigx App (not branded apps) will now be filtered according to the app's current region.
+  Previously, all solutions were loaded regardless of the apps and/or organization's region. Now, solutions will load based on whether their organization's region matches the app's region.
+  To ensure the Jigx App region matches your organization's region, you can go to Jigx Management to see what the *Organization Settings* are. By default, the mobile app logs into the US East region. To change your mobile device's *Home Region,* go to *Profile > Settings* to match the organization's region in Jigx Management.
   This change prevents credential and connection lookup failures across regions.
 
 ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jx28UjfY63fxHAHfTAIt1_regionsettings.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jx28UjfY63fxHAHfTAIt1_regionsettings.png" size="98" width="2932" height="1374" position="center" caption}
@@ -457,9 +457,9 @@ Bug Fixes
 
 - Unlock the power of **AI search** in documentation.
   ![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/IAozYzG9KFta7TyEp6i7V_ai-docs2.gif)
-- Integrate with REST APIs, use the [REST]() data provider, see [REST best practices]() and explore [Create an app using REST APIs]() code examples. &#x20;
+- Integrate with REST APIs, use the [REST]() data provider, see [REST best practices]() and explore [Create an app using REST APIs]() code examples. 
 - [File handling]() – learn how to convert files between base64, buffer, local and data-uri.
-- Understand syncing remote data and loading local data.&#x20;
+- Understand syncing remote data and loading local data.
 - [Regex expressions]() – see how to combine regular (regex) expressions in your JSONata expressions in Jigx Builder, which is powerful when used in text processing to find, replace, or validate strings of text.
 - Customize your [home hub]() – Learn how to create that amazing home screen that is interactive and sleek.
 - Adding [deep links]() in your app to create seamless navigation between the app and external sources.
@@ -523,7 +523,7 @@ Bug fixes
 - Fixed multiple issues with Keyboard form lags and visibility.
 - Fixed an issue with the app crashing when the active solution was removed.
 
-### Builder&#x20;
+### Builder
 
 New features & improvements
 
@@ -556,7 +556,7 @@ Bug fixes
 
 - General performance improvements and bug fixes.
 
-### Updates to Quick Start Sample solutions&#x20;
+### Updates to Quick Start Sample solutions
 
 | **Solution** | **Update or addition**                                                                                                                                                                                                                                                                                                                                  |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -565,7 +565,7 @@ Bug fixes
 - Updated charts to include a `min` and `max` property determined by expressions.
 - Added examples for the `jigx-header` component.
 - Added additional examples to `product-item` component
-- Fixed minor bugs&#x20; |
+- Fixed minor bugs |
 
 ## Release 2024.3
 
@@ -583,20 +583,20 @@ Bug Fixes
 
 - Fixed an issue where an expression could not be used in the `title` property of the `component.section`.
 - Fixed bar charts where the bar was visually pushed up when specifying points outside the minimum and maximum range.
-- When public content in management was configured to enable the Request Access link, clicking on any of the widgets on a tablet (IOS and Android) gave a screen not found error. &#x20;
+- When public content in management was configured to enable the Request Access link, clicking on any of the widgets on a tablet (IOS and Android) gave a screen not found error.
 - Fixed an issue with the `onPress` event of swipeable actions that were not triggered if a list was set to `initiallyCollapsed: true`.
 
 Known Issue
 
 - When a `jig.list` re-renders, e.g., after a list item is deleted, and the `jig.list` property `initiallyCollapsed: true` is set, the list appears blank.
-  **Workaround:**&#x20;
+  **Workaround:**
   Avoid using the `initiallyCollapsed: true` property in this scenario. Collapsing and expanding the list or navigating away from the jig and back will render the list items again.
 
 ### Management
 
 New features & improvements
 
-- Improved the setting up of public content on an organizational level for branded apps. The improvements include JSON and YAML tabs that allow you to toggle between the files, ensuring that the JSON and YAML values are validated. Validation messages are shown to help you troubleshoot errors. See [Public Content]() for more information.&#x20;
+- Improved the setting up of public content on an organizational level for branded apps. The improvements include JSON and YAML tabs that allow you to toggle between the files, ensuring that the JSON and YAML values are validated. Validation messages are shown to help you troubleshoot errors. See [Public Content]() for more information.
 - Find solutions faster - The solution search field on the list of solutions now supports the GUID and partial name/title.
 - Improved error handling and validation.
 - Performance improvements and security enhancements.
@@ -626,16 +626,16 @@ Bug Fixes
 
 - Fixed animation on checkboxes.
 - Fixed the issue on `charts` where an expression didn't populate the x-axis correctly.
-- Fixed the incorrect jailbreak/rooted error received on specific mobile devices.&#x20;
+- Fixed the incorrect jailbreak/rooted error received on specific mobile devices.
 
-### Builder&#x20;
+### Builder
 
 New features & improvements
 
 - *Dynamically sync-entities* - When building a solution, the number of entities to sync and the parameters for each are not always known; for example, when syncing the attachments, files, and documents from a source, there can be zero, one, or more. It is necessary to dynamically specify a list of the entities, functions, and function parameters to return from the input source using an expression. For more information, see [Dynamically sync multiple entities]().
-- Best practice for production apps is to use REST as the data layer to access data and not directly integrate to SQL using the SQL data provider. The SQL data provider will be squiggled in blue to indicate it is not recommended, together with a message to use REST instead. &#x20;
+- Best practice for production apps is to use REST as the data layer to access data and not directly integrate to SQL using the SQL data provider. The SQL data provider will be squiggled in blue to indicate it is not recommended, together with a message to use REST instead. 
 - Use a  [scenario template]() to quickly create a *contacts management *solution. The solution consists of forms to create a new contact, view the contact details, edit the details, and list all your contacts. It is easy to customize the template for similar solutions.
-- Added [Widget Templates]() - Using widget templates significantly speeds up the development process. These templates provide a pre-built structure for the various [types of widgets]() that can be customized as needed. Widget templates are only available on widgets with a `size` setting of  2x2 or greater.&#x20;
+- Added [Widget Templates]() - Using widget templates significantly speeds up the development process. These templates provide a pre-built structure for the various [types of widgets]() that can be customized as needed. Widget templates are only available on widgets with a `size` setting of  2x2 or greater.
 - If an expression has a chain of single options, IntelliSense will add it at once.
 
 Bug Fixes
@@ -672,7 +672,7 @@ New features & improvements
 | **Android version**      | 1.19.5               |
 | **Jigx Builder version** | 1.25.0               |
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 New features & improvements
 
@@ -695,7 +695,7 @@ New features & improvements
   ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/nyezkaGLKSIjuq15fqExi_wraplist.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/nyezkaGLKSIjuq15fqExi_wraplist.PNG" size="34" width="1240" height="2500" position="center" caption="Wrap list " alt="Wrap list"}
 - Charts now support using expressions in the `max`, `min` and `tickAmount` properties.
 
-### Builder&#x20;
+### Builder
 
 Bug Fixes
 
@@ -720,13 +720,13 @@ Bug Fixes
 
 - The property `isScrollable` used in the `jig.default` allowing the component in the jig to fill the entire screen, has been depreciated. The new jig type [full-screen]() provides similiar functionality.
 
-### Updates to Quick Start Sample solutions&#x20;
+### Updates to Quick Start Sample solutions
 
 | **Solution** | **Update or addition**                                                                                                                                                                                                                                                                                                                                   |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | jigx-samples | - *location-fullscreen.jigx* and *location-fullscreen-dynamic.jigx* updated to use the new `jig.fullscreen` instead of `jig.default` with `isScrollable: false` property that has been depreciated.&#x20;
 - Added *list-item-contained.jigx *showing vertical list-items wrapped in a card by using the `isContained` property.
-- Fixed minor bugs&#x20; |
+- Fixed minor bugs |
 
 
 

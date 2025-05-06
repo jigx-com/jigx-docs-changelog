@@ -289,20 +289,20 @@ Bug Fixes
 
 New Features & improvements
 
-- Added a `size` option to `component.location` . For more information see [Full screen location]().
+- Added a `size` option to `component.location`. For more information see [Full screen location]().
 - Improved zoom-in animation of `component.location`. For more information see [location displaying path]() example.
-- Added support for custom cropping ratio to `component.media-field `. For more information see [media-field]().
+- Added support for custom cropping ratio to `component.media-field`. For more information see [media-field]().
 
 
 Bug Fixes
 
-- Fixed an issue with file uploads to REST endpoints 
-- Fixed an issue with `component.avatar` center alignment 
+- Fixed an issue with file uploads to REST endpoints
+- Fixed an issue with `component.avatar` center alignment
 - Fixed an issue with locally exectuted REST calls (useLocal)
--  Fixed an issue with `isHidden` on calendar `onButtonPress` not working correctly 
-- Fixed an issue with `component.media-picker` with `imageCropping` and `imageQuality` crashing the app 
-- Fixed an issue with `component.location` throwing a *coordinates must contain numbers *error 
-- &#x20;Fixed an issue with `component.location` and manually moving the map on Android 
+- Fixed an issue with `isHidden` on calendar `onButtonPress` not working correctly
+- Fixed an issue with `component.media-picker` with `imageCropping` and `imageQuality` crashing the app
+- Fixed an issue with `component.location` throwing a *coordinates must contain numbers *error
+- &#x20;Fixed an issue with `component.location` and manually moving the map on Android
 - &#x20;Fixed various rendering issues of `component.location` on Android
 
 ### Builder
