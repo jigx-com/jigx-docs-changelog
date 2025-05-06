@@ -8,7 +8,7 @@ updatedAt: Thu Jan 30 2025 10:12:27 GMT+0000 (Coordinated Universal Time)
 
 ## Release 2024.10
 
-![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-IjANpiWMLzBGNKBGbXbQ_-20241101-092333.gif)
+![Release 2024.10](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-IjANpiWMLzBGNKBGbXbQ_-20241101-092333.gif)
 
 |                 |                  |
 | --------------- | ---------------- |
@@ -17,7 +17,7 @@ updatedAt: Thu Jan 30 2025 10:12:27 GMT+0000 (Coordinated Universal Time)
 | Android version | 1.66.8           |
 | Jigx Builder    | 1.34.0           |
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 New features & improvements
 
@@ -119,7 +119,7 @@ Bug Fixes
 - Added examples of list rating, tags, wrapping, and badging to [jig.list]() , [list]()  and <a href="https://docs.jigx.com/examples/9Auy-list" target="_blank">list widgets</a>.
 - Updated [File handling]() topic with using expressions in conversions.
 
-### Updates to Quick-Start sample solutions&#x20;
+### Updates to Quick-Start sample solutions
 
 | **Solution** | **Update or addition**                                                                                                                                                                                                                     |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -176,7 +176,7 @@ New features & improvements
 | Android version | 1.55.21          |
 | Jigx Builder    | 1.32.0           |
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 New features & improvements
 
@@ -199,7 +199,8 @@ filter:
 :::
 
 - **Keyboard**: Introduced the option to hide the mobile keyboard on iOS devices on default jigs that require user input, such as forms. You can either tap the keyboard icon or click outside the keyboard to dismiss it and view the full screen.
-  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-nXraW9UkIsqVLHlVXLALx-20240916-134713.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-nXraW9UkIsqVLHlVXLALx-20240916-134713.png" size="46" width="1247" height="2500" position="center" caption}
+  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-nXraW9UkIsqVLHlVXLALx-20240916-134713.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-nXraW9UkIsqVLHlVXLALx-20240916-134713.png" size="46" width="1247" height="2500" position="center" caption} -->
+  <img src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-nXraW9UkIsqVLHlVXLALx-20240916-134713.png" size="46" width="1247" height="2500" position="center" />
 - Design your app to respond to the **device type** and **orientation**.
   Added two new system variables namely:
   \- `deviceType`: The variable returns the current user's device type, such as tablet or handset, when using the expression `=@ctx.system.deviceType`. This expression is useful for determining the appropriate image size based on the device type.
@@ -234,7 +235,7 @@ New features & improvements
 - ****[Device type and orientation expressions](): Added two new system variables namely:
   \- `deviceType`: The variable returns the current user's device type, such as tablet or handset, when using the expression `=@ctx.system.deviceType`. This expression is useful for determining the appropriate image size based on the device type.
   \- `isPortrait`: The variable is set with a boolean and is used to configure the behavior of components in either portrait or landscape mode. The expression's structure is `=@ctx.system.isPortrait`.
-- [JavaScript Expressions]()**  - **You can now use JavaScript functions in expressions to streamline logic within your solutions. This feature simplifies repetitive and complex tasks, making the code more readable, understandable, and easier to debug. JavaScript functions are created in the scripts/expressions folder, and are surfaced as expressions in the YAML within Jigx Builder. New solutions open with the scripts/expressions folder structure; existing solutions will not have the folder; you can manually add the folder to these solutions. For code examples see [JavaScript expressions]().
+- [JavaScript Expressions]()** - **You can now use JavaScript functions in expressions to streamline logic within your solutions. This feature simplifies repetitive and complex tasks, making the code more readable, understandable, and easier to debug. JavaScript functions are created in the scripts/expressions folder, and are surfaced as expressions in the YAML within Jigx Builder. New solutions open with the scripts/expressions folder structure; existing solutions will not have the folder; you can manually add the folder to these solutions. For code examples see [JavaScript expressions]().
 
 Bug Fixes
 
@@ -264,7 +265,7 @@ Bug Fixes
 - Added examples to filtering a [jig.list]() and filtering the [list]() component, showing how to open a specific tab using the `initialValue` property.
 - Added [JavaScript functions]() to the expressions topic and [JavaScript expressions]() code samples.
 
-### Updates to Quick-Start sample solutions&#x20;
+### Updates to Quick-Start sample solutions
 
 | **Solution** | **Update or addition**                                                                                                                                                                                                                                   |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -282,7 +283,7 @@ Bug Fixes
 | iOS version     | 1.46.3           |
 | Android version | 1.46.3           |
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 New features & improvements
 
@@ -328,7 +329,7 @@ Bug Fixes
 
 ## Release 2024.6
 
-![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-_Aeqvmbe8JAkwoQl28hfK-20240805-093104.png)
+![Release 2024.6](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-_Aeqvmbe8JAkwoQl28hfK-20240805-093104.png)
 
 |                          | **Versions & dates** |
 | ------------------------ | -------------------- |
@@ -444,14 +445,15 @@ Bug Fixes
 
 - General improvements and bug fixes.
 
-### Change in behavior&#x20;
+### Change in behavior
 
 - Solutions listed in the Jigx App (not branded apps) will now be filtered according to the app's current region.
   Previously, all solutions were loaded regardless of the apps and/or organization's region. Now, solutions will load based on whether their organization's region matches the app's region.
   To ensure the Jigx App region matches your organization's region, you can go to Jigx Management to see what the *Organization Settings* are. By default, the mobile app logs into the US East region. To change your mobile device's *Home Region,* go to *Profile > Settings* to match the organization's region in Jigx Management.
   This change prevents credential and connection lookup failures across regions.
 
-::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jx28UjfY63fxHAHfTAIt1_regionsettings.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jx28UjfY63fxHAHfTAIt1_regionsettings.png" size="98" width="2932" height="1374" position="center" caption}
+<!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jx28UjfY63fxHAHfTAIt1_regionsettings.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jx28UjfY63fxHAHfTAIt1_regionsettings.png" size="98" width="2932" height="1374" position="center" caption} -->
+<img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jx28UjfY63fxHAHfTAIt1_regionsettings.png" size="98" width="2932" height="1374" position="center" />
 
 ### Updates to documentation
 
@@ -466,7 +468,7 @@ Bug Fixes
 - [Public Content]() - specify what is accessible to the public on your organization's branded app before a user has onboarded or logged in.
 
 
-### Updates to Quick-Start sample solutions&#x20;
+### Updates to Quick-Start sample solutions
 
 | **Solution** | **Update or addition**                                                                                                                                                                                     |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -479,7 +481,7 @@ Bug Fixes
 
 ## Release 2024.4
 
-![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/kkOcAfwqNyMgk_VotZXys_whatsnew20244font.png)
+![Release 2024.4](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/kkOcAfwqNyMgk_VotZXys_whatsnew20244font.png)
 
 | **Hotfix**          | **Versions & dates**                                                                                                                                            |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -528,9 +530,12 @@ Bug fixes
 New features & improvements
 
 - [Code Navigation]() - navigate through code with the Go to Definition (F12) and Go to References (+F12) functionality. Quickly go to data sources, components, jigs, and function definitions, or see where these are referenced across your solution.
-  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/f7-gwdrARF6E6cymYcY4-_f12-go-to.gif" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/f7-gwdrARF6E6cymYcY4-_f12-go-to.gif" size="88" width="658" height="484" position="center" caption}
+  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/f7-gwdrARF6E6cymYcY4-_f12-go-to.gif" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/f7-gwdrARF6E6cymYcY4-_f12-go-to.gif" size="88" width="658" height="484" position="center" caption} -->
+  <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/f7-gwdrARF6E6cymYcY4-_f12-go-to.gif" size="88" width="658" height="484" position="center" />
+
 - *Authorization* - Jigx Builder remembers your login credentials after a successful login, this means the next time you open Jigx Builder and want to publish a project, your credentials do not need to be re-entered. You can re-login at any time by using the login again icon at the top of the Jigx Explorer pane, as shown below.
-  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YfpU8yYmDr17Tt5U0ePQL_autologin.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YfpU8yYmDr17Tt5U0ePQL_autologin.png" size="70" width="630" height="214" position="center" caption}
+  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YfpU8yYmDr17Tt5U0ePQL_autologin.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YfpU8yYmDr17Tt5U0ePQL_autologin.png" size="70" width="630" height="214" position="center" caption} -->
+  <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YfpU8yYmDr17Tt5U0ePQL_autologin.png" size="70" width="630" height="214" position="center" />
 
 Bug fixes
 
@@ -577,7 +582,7 @@ Bug fixes
 | **iOS version**     | 1.24.7               |
 | **Android version** | 1.24.7               |
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 Bug Fixes
 
@@ -677,10 +682,12 @@ New features & improvements
 New features & improvements
 
 - Added the ability to delete your account from the personal information section under your Profile screen in the mobile app. Once deleted, you are logged out of the Jigx App, and your account is deleted from Jigx Management.
-  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" size="30" width="1245" height="2500" position="center" caption="Delete Jigx account" alt="Delete Jigx account"}
+  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" size="30" width="1245" height="2500" position="center" caption="Delete Jigx account" alt="Delete Jigx account"} -->
+  <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" size="30" width="1245" height="2500" position="center" caption="Delete Jigx account" alt="Delete Jigx account" />
 - Added a new jig type for components such as [location]() to occupy the entire screen with no other elements. See [jig.fullscreen]() for more details.&#x20;
 
-::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" size="30" width="1240" height="2500" position="center" caption="Full screen jig" alt="Full screen jig"}
+<!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" size="30" width="1240" height="2500" position="center" caption="Full screen jig" alt="Full screen jig"} -->
+<img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" size="30" width="1240" height="2500" position="center" caption="Full screen jig" alt="Full screen jig" />
 
 Bug Fixes
 
@@ -692,7 +699,9 @@ Bug Fixes
 New features & improvements
 
 - Added the isContained property to enhance the styling of `jig.list` and `component.list-item` which wraps each item in the list in a card. See <a href="" target="_blank">Lists with items contained in a card</a>. This property can only be used with vertical lists and `component.list-item`.
-  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/nyezkaGLKSIjuq15fqExi_wraplist.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/nyezkaGLKSIjuq15fqExi_wraplist.PNG" size="34" width="1240" height="2500" position="center" caption="Wrap list " alt="Wrap list"}
+  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/nyezkaGLKSIjuq15fqExi_wraplist.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/nyezkaGLKSIjuq15fqExi_wraplist.PNG" size="34" width="1240" height="2500" position="center" caption="Wrap list " alt="Wrap list"} -->
+  <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/nyezkaGLKSIjuq15fqExi_wraplist.PNG" size="34" width="1240" height="2500" position="center" caption="Wrap list " alt="Wrap list" />
+  
 - Charts now support using expressions in the `max`, `min` and `tickAmount` properties.
 
 ### Builder
@@ -708,7 +717,8 @@ Bug Fixes
 New features & improvements
 
 - Added a dropdown to Solution Settings allowing you to choose which data to copy.  You can decide whether restricted data can be copied when a solution is copied.
-  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/mQPw9a0oTRQTZfAnaRb42_jm-ssettingdata.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/mQPw9a0oTRQTZfAnaRb42_jm-ssettingdata.png" size="76" width="1430" height="940" position="center" caption="Restrict data copying" alt="Restrict data copying"}
+  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/mQPw9a0oTRQTZfAnaRb42_jm-ssettingdata.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/mQPw9a0oTRQTZfAnaRb42_jm-ssettingdata.png" size="76" width="1430" height="940" position="center" caption="Restrict data copying" alt="Restrict data copying"} -->
+  <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/mQPw9a0oTRQTZfAnaRb42_jm-ssettingdata.png" size="76" width="1430" height="940" position="center" caption="Restrict data copying" alt="Restrict data copying" />
 - Removed the Disable user button from the User screen in Management, use permissions to deny users access.
 - Performance improvements and security enhancements.
 
@@ -725,7 +735,7 @@ Bug Fixes
 | **Solution** | **Update or addition**                                                                                                                                                                                                                                                                                                                                   |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | jigx-samples | - *location-fullscreen.jigx* and *location-fullscreen-dynamic.jigx* updated to use the new `jig.fullscreen` instead of `jig.default` with `isScrollable: false` property that has been depreciated.&#x20;
-- Added *list-item-contained.jigx *showing vertical list-items wrapped in a card by using the `isContained` property.
+- Added *list-item-contained.jigx* showing vertical list-items wrapped in a card by using the `isContained` property.
 - Fixed minor bugs |
 
 

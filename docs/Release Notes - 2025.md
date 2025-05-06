@@ -26,7 +26,8 @@ New features & improvements
 - The solution switch is now available in the bottom navigation menu. Tap the "More" (ellipsis) button to open it. Solutions are listed, with the total count displayed at the top.
 - The number of permitted `tabs` in the index.jigx file has been increased. The first four `tabs` are displayed in the Home Hub bottom navigation, and any additional `tabs` appear when the "More" (ellipsis) button is tapped.
 
-::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-tYaCSucebdLFNh9YN7A_D-20250429-134001.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-tYaCSucebdLFNh9YN7A_D-20250429-134001.png" size="94" width="3851" height="2471" position="center" caption}
+<!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-tYaCSucebdLFNh9YN7A_D-20250429-134001.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-tYaCSucebdLFNh9YN7A_D-20250429-134001.png" size="94" width="3851" height="2471" position="center" caption} -->
+<img src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-tYaCSucebdLFNh9YN7A_D-20250429-134001.png" size="94" width="3851" height="2471" position="center" />
 
 Bug Fixes
 
@@ -53,7 +54,10 @@ New features & improvements
 
 - [Custom variables]() - IntelliSense now displays the variables configured in Jigx Management > Solution Settings when using the `=@ctx.solution.settings.custom.{{variableName}}` expression. After adding a new custom variable in Management, you can use IntelliSense's  *Reload Solution Settings* option to update data from Jigx Management and make the variable visible in IntelliSense.
 
-::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif" size="92" width="1504" height="496" position="center" caption}
+<!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif" size="92" width="1504" height="496" position="center" caption} -->
+<img src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif" size="92" width="1504" height="496" position="center" />
+
+
 
 Bug fixes
 
@@ -73,7 +77,8 @@ Bug Fixes
 
 ## Release 2025.3
 
-![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-4AA-ROd4Ed6oGtDw1SXM1-20250320-135147.png)
+![Release 2025.3](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-4AA-ROd4Ed6oGtDw1SXM1-20250320-135147.png)
+
 
 |                 |               |
 | --------------- | ------------- |
@@ -129,7 +134,7 @@ Bug Fixes
 
 ## Release 2025.2
 
-![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-JhCvM6QU2wXeEshNuhwqq-20250228-113139.png)
+![Release 2025.2](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-JhCvM6QU2wXeEshNuhwqq-20250228-113139.png)
 
 |                 |               |
 | --------------- | ------------- |
@@ -166,7 +171,7 @@ Bug Fixes
 
 ## Release 2025.1
 
-![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-V6gq42u3APtiESK_cg3YA-20250131-072044.png)
+![Release 2025.1](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-V6gq42u3APtiESK_cg3YA-20250131-072044.png)
 
 |                 |                |
 | --------------- | -------------- |
@@ -194,6 +199,9 @@ New features & improvements
 - Added the ability to remove the Support menu from the user profile screen. This can be configured via a flag in the build configuration.
 - Solution switching has been moved to the Profile settings screen.
   ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" size="34" width="1224" height="2466" position="center" caption="Profile " alt="Profile"}
+  <img src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" size="34" width="1224" height="2466" position="center" caption="Profile " alt="Profile" />
+  
+  
 
 Bug Fixes
 
@@ -325,7 +333,7 @@ New features & improvements
 
 ### Updates to documentation
 
-- **Note: **The documentation is being updated to reflect the latest product offerings. As a result, some screenshots and code samples may not yet represent the most recent features and improvements.
+- **Note:** The documentation is being updated to reflect the latest product offerings. As a result, some screenshots and code samples may not yet represent the most recent features and improvements.
 
 
 

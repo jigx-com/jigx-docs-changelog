@@ -17,7 +17,7 @@ updatedAt: Mon Feb 12 2024 16:33:33 GMT+0000 (Coordinated Universal Time)
 | **Android version**      | 1.0.0                |
 | **Jigx Builder version** | 1.24.0               |
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 New Features & improvements
 
@@ -42,7 +42,7 @@ Bug Fixes
 - Fixed an issue with `mediaType:any` in components that upload files to OneDrive.
 - Fixed an issue with the `component.signature` that was not working correctly on Android 13+ devices.
 
-### Builder&#x20;
+### Builder
 
 New Features & improvements
 
@@ -93,9 +93,9 @@ Bug Fixes
 
 ### Breaking Changes
 
-- &#x20;When working with the REST or SQL providers that use files, or datastores with files and actions with files, and you used base64 or buffer you must update your YAML to use the new `conversions` property. The change stores the image files as local files on the device and only saves the file uri to the file in the datastore/state. When a component needs the actual binary data, it reads the local file from the file uri.  Previously the call in the jig would be similar to `=@ctx.components.image.state.base64` or `=@ctx.components.profilePicture.state.blob` .&#x20;
+- When working with the REST or SQL providers that use files, or datastores with files and actions with files, and you used base64 or buffer you must update your YAML to use the new `conversions` property. The change stores the image files as local files on the device and only saves the file uri to the file in the datastore/state. When a component needs the actual binary data, it reads the local file from the file uri.  Previously the call in the jig would be similar to `=@ctx.components.image.state.base64` or `=@ctx.components.profilePicture.state.blob`.
   The new `conversion` property allows for the call to use:
-  &#x20;`=@ctx.components.image.state.value` or `=@ctx.components.profilePicture.state.value` . &#x20;
+  &#x20;`=@ctx.components.image.state.value` or `=@ctx.components.profilePicture.state.value`.
 - For more information, see [File handling]().
 
 ## Release 2023.12.1
@@ -124,7 +124,7 @@ Bug Fixes
 
 ::embed[]{url="https://vimeo.com/880852874?share=copy"}
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 New Features & improvements
 
@@ -148,7 +148,7 @@ Bug Fixes
 - Fixed an issue with location sharing and going offline
 - Fixed an issue with the keyboard covering form text fields
 
-### Builder&#x20;
+### Builder
 
 New Features & improvements
 
@@ -159,7 +159,7 @@ New Features & improvements
 
 Bug Fixes
 
-- Fixed an issue where query parsing listed invalid columns as part of data source intelliSense.&#x20;
+- Fixed an issue where query parsing listed invalid columns as part of data source intelliSense.
 - Fixed an issue where the Placeholder `icon` suggested incorrect options.
 - Fixed several issues related to intelliSense performance.
 - Fixed an issue where intelliSense incorrectly showed `=@ctx` for properties that only allow `string`.
@@ -181,7 +181,7 @@ Bug Fixes
 
 ## Release 2023.11
 
-![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/NCPhQvxVdc817iZIMPJHm_release2311.png)
+![Release 2023.11](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/NCPhQvxVdc817iZIMPJHm_release2311.png)
 
 ### Mobile Apps
 
@@ -269,7 +269,7 @@ After
 
 ## Release 2023.10
 
-![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/zLaA3dRyOlFnjM5jKIzHr_release20.png)
+![Release 2023.10](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/zLaA3dRyOlFnjM5jKIzHr_release20.png)
 
 ### Mobile Apps
 
@@ -301,9 +301,9 @@ Bug Fixes
 - Fixed an issue with locally exectuted REST calls (useLocal)
 - Fixed an issue with `isHidden` on calendar `onButtonPress` not working correctly
 - Fixed an issue with `component.media-picker` with `imageCropping` and `imageQuality` crashing the app
-- Fixed an issue with `component.location` throwing a *coordinates must contain numbers *error
-- &#x20;Fixed an issue with `component.location` and manually moving the map on Android
-- &#x20;Fixed various rendering issues of `component.location` on Android
+- Fixed an issue with `component.location` throwing a *coordinates must contain numbers* error
+- Fixed an issue with `component.location` and manually moving the map on Android
+- Fixed various rendering issues of `component.location` on Android
 
 ### Builder
 
@@ -376,7 +376,10 @@ The text property in `component.avatar` has changed to `title`. You must manuall
 
 ## Release 2023.8
 
-::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/pdYToA6-e5lWhO6Tyt04c_release2382x.png" size="98" width="3000" height="1640" caption position="flex-start" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/pdYToA6-e5lWhO6Tyt04c_release2382x.png"}
+<!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/pdYToA6-e5lWhO6Tyt04c_release2382x.png" size="98" width="3000" height="1640" caption position="flex-start" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/pdYToA6-e5lWhO6Tyt04c_release2382x.png"} -->
+<img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/pdYToA6-e5lWhO6Tyt04c_release2382x.png" size="98" width="3000" height="1640" caption position="flex-start />
+
+
 
 ### Mobile Apps
 
