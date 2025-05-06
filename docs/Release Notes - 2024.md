@@ -684,7 +684,7 @@ New features & improvements
 
 - Added the ability to delete your account from the personal information section under your Profile screen in the mobile app. Once deleted, you are logged out of the Jigx App, and your account is deleted from Jigx Management.
   <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" size="30" width="1245" height="2500" position="center" caption="Delete Jigx account" alt="Delete Jigx account"} -->
-  ![Delete Jigx account](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG "Delete Jigx account")
+  ![Delete Jigx account](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG "Delete Jigx account"){size=30 width=1245 height=2500 position=center}
 - Added a new jig type for components such as [location]() to occupy the entire screen with no other elements. See [jig.fullscreen]() for more details.
 
 <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" size="30" width="1240" height="2500" position="center" caption="Full screen jig" alt="Full screen jig"} -->
