@@ -123,10 +123,7 @@ Bug Fixes
 
 | **Solution** | **Update or addition**                                                                                                                                                                                                                     |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| jigx-samples | - Updated finance-charts.jigx datasource.
-- Added examples for the new duration-picker.
-- Added examples for list wrapping, rating, and tags.
-- Updated examples using `execute-entity` and `execute-entities` to use action.go-back&#x20; |
+| jigx-samples | - Updated finance-charts.jigx datasource.<br>- Added examples for the new duration-picker.<br>- Added examples for list wrapping, rating, and tags.<br>- Updated examples using `execute-entity` and `execute-entities` to use action.go-back |
 
 ## Release 2024.9
 
@@ -180,7 +177,7 @@ New features & improvements
 
 New features & improvements
 
-- **List filters -** Set the filter to open on a specific tab in a list. The filter property's YAML snippet has changed to include the `data` (required) and `initialValue` (optional) properties. The existing filter configuration will continue to work, but the YAML snippet is squiggled in red to indicate that the new `data` property is required. The filter now handles strings and booleans, ensure the `value` for filter is configured correctly. For more information see [list]() and [jig.list]().
+- **List filters -** Set the filter to open on a specific tab in a list. The filter property's YAML snippet has changed to include the `data` (required) and `initialValue` (optional) properties. The existing filter configuration will continue to work, but the YAML snippet is squiggled in <span style="color: red;">red</span> to indicate that the new `data` property is required. The filter now handles strings and booleans, ensure the `value` for filter is configured correctly. For more information see [list]() and [jig.list]().
 
 :::CodeblockTabs
 filter-yaml-snippet
@@ -199,8 +196,8 @@ filter:
 :::
 
 - **Keyboard**: Introduced the option to hide the mobile keyboard on iOS devices on default jigs that require user input, such as forms. You can either tap the keyboard icon or click outside the keyboard to dismiss it and view the full screen.
-  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-nXraW9UkIsqVLHlVXLALx-20240916-134713.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-nXraW9UkIsqVLHlVXLALx-20240916-134713.png" size="46" width="1247" height="2500" position="center" caption} -->
-  <img src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-nXraW9UkIsqVLHlVXLALx-20240916-134713.png" size="46" width="1247" height="2500" position="center" />
+  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-nXraW9UkIsqVLHlVXLALx-20240916-134713.png" size="40" position="center"}
+  
 - Design your app to respond to the **device type** and **orientation**.
   Added two new system variables namely:
   \- `deviceType`: The variable returns the current user's device type, such as tablet or handset, when using the expression `=@ctx.system.deviceType`. This expression is useful for determining the appropriate image size based on the device type.
@@ -269,9 +266,7 @@ Bug Fixes
 
 | **Solution** | **Update or addition**                                                                                                                                                                                                                                   |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| jigx-samples | -  Updated list filter examples to add the data property.
--  Added a filter example with `initialValue` configured for both list jig and using the list component in a default jig.
-- Added examples for JavaScript functions used in expressions. |
+| jigx-samples | -  Updated list filter examples to add the data property.<br>-  Added a filter example with `initialValue` configured for both list jig and using the list component in a default jig.<br>- Added examples for JavaScript functions used in expressions. |
 
 ## Release 2024.7
 
@@ -381,9 +376,8 @@ Bug Fixes
 
 | **Solution** | **Update or addition**                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| jigx-samples | -  Added jigx-widgets
-- Updated the location widgets<br />If you have a copy of the jigx-samples and jigx-widgets solutions in your organization, we recommend you get a new copy of the jigx-samples solution from <a href="https://github.com/jigx-com/jigx-samples/tree/main/quickstart/jigx-samples" target="_blank">GitHub</a> or <a href="https://manage.jigx.com/quickstart" target="_blank">Management Prod</a>.  |
-| jigx-widgets | Merged the jigx-widgets solution into jigx-samples solution.                                                                                                                                                                                                                                                                                                                                                              |
+| jigx-samples | -  Added jigx-widgets<br>- Updated the location widgets<br />If you have a copy of the jigx-samples and jigx-widgets solutions in your organization, we recommend you get a new copy of the jigx-samples solution from <a href="https://github.com/jigx-com/jigx-samples/tree/main/quickstart/jigx-samples" target="_blank">GitHub</a> or <a href="https://manage.jigx.com/quickstart" target="_blank">Management Prod</a>.  |
+| jigx-widgets | Merged the jigx-widgets solution into jigx-samples solution.  |
 
 ## Release 2024.5
 
@@ -396,12 +390,12 @@ Bug Fixes
 | **Android version**      | 1.38.2               |
 | **Jigx Builder version** | 1.29.0               |
 
-### Mobile Apps&#x20;
+### Mobile Apps
 
 New features & improvements
 
 - [Troubleshooting]() - The app's profile > troubleshooting section now has improved detailed logging. Toggle the categories you want to troubleshoot or see which ones are enabled using the *Selected* tab.
-  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/vivuYJoEYbI9aA9wxEhln_jm-troubleshooting.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/vivuYJoEYbI9aA9wxEhln_jm-troubleshooting.PNG" size="60" width="2540" height="2500" position="center" caption alt}
+::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/vivuYJoEYbI9aA9wxEhln_jm-troubleshooting.PNG" size="60" position="center" }
 - Added the ability to tap on a widget to trigger an action by adding an `onPress` event to the widget properties. See the widget [onPress]() example for more information.
 - [Offline remote data handling]() - Dealing with offline remote data is fundamental to ensuring data synchronization between the mobile app and the remote data source, allowing users to continue using the app and performing actions without interruption. Queue operations provide the functionality needed when the device regains network connectivity. `QueueOperations` manage a sequence of elements in a specific order. The commands in the queue can be manipulated to reduce the number of calls to the remote data store.
 - Added a setting to display the current solution version in the profile>solutions screen.
@@ -452,8 +446,7 @@ Bug Fixes
   To ensure the Jigx App region matches your organization's region, you can go to Jigx Management to see what the *Organization Settings* are. By default, the mobile app logs into the US East region. To change your mobile device's *Home Region,* go to *Profile > Settings* to match the organization's region in Jigx Management.
   This change prevents credential and connection lookup failures across regions.
 
-<!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jx28UjfY63fxHAHfTAIt1_regionsettings.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jx28UjfY63fxHAHfTAIt1_regionsettings.png" size="98" width="2932" height="1374" position="center" caption} -->
-<img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jx28UjfY63fxHAHfTAIt1_regionsettings.png" size="98" width="2932" height="1374" position="center" />
+::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jx28UjfY63fxHAHfTAIt1_regionsettings.png" size="60"  position="center" }
 
 ### Updates to documentation
 
@@ -472,12 +465,8 @@ Bug Fixes
 
 | **Solution** | **Update or addition**                                                                                                                                                                                     |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| jigx-samples | - Added [info-modal]() component examples
-- Added [carousel]() component examples
-- Added [widgets]() `onPress` example
-- Added [card]() component examples
-- Added additional examples to [media-field]() |
-| jigx-widget  | Added [onPress]() to widgets examples                                                                                                                                                                    |
+| jigx-samples | - Added [info-modal]() component examples<br>- Added [carousel]() component examples<br>- Added [widgets]() `onPress` example<br>- Added [card]() component examples<br>- Added additional examples to [media-field]() |
+| jigx-widget  | Added [onPress]() to widgets examples |
 
 ## Release 2024.4
 
@@ -683,12 +672,10 @@ New features & improvements
 New features & improvements
 
 - Added the ability to delete your account from the personal information section under your Profile screen in the mobile app. Once deleted, you are logged out of the Jigx App, and your account is deleted from Jigx Management.
-  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" size="30" width="1245" height="2500" position="center" caption="Delete Jigx account" alt="Delete Jigx account"} -->
-  ![Delete Jigx account](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG "Delete Jigx account"){width=1245 height=2500}
+  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/sc34K5ttLE6AQRttGn9rb_deleteaccount.PNG" size="30"  position="center" caption="Delete Jigx account" alt="Delete Jigx account"}
+  
 - Added a new jig type for components such as [location]() to occupy the entire screen with no other elements. See [jig.fullscreen]() for more details.
-
-<!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" size="30" width="1240" height="2500" position="center" caption="Full screen jig" alt="Full screen jig"} -->
-<img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" size="30" width="1240" height="2500" position="center" caption="Full screen jig" alt="Full screen jig" />
+  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eZBXSOSu8nRO1uzSO9Lzz_location-fullscreen.PNG" size="30" position="center" caption="Full screen jig" alt="Full screen jig"}
 
 Bug Fixes
 
@@ -699,10 +686,8 @@ Bug Fixes
 
 New features & improvements
 
-- Added the isContained property to enhance the styling of `jig.list` and `component.list-item` which wraps each item in the list in a card. See <a href="" target="_blank">Lists with items contained in a card</a>. This property can only be used with vertical lists and `component.list-item`.
-  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/nyezkaGLKSIjuq15fqExi_wraplist.PNG" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/nyezkaGLKSIjuq15fqExi_wraplist.PNG" size="34" width="1240" height="2500" position="center" caption="Wrap list " alt="Wrap list"} -->
-  <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/nyezkaGLKSIjuq15fqExi_wraplist.PNG" size="34" width="1240" height="2500" position="center" caption="Wrap list " alt="Wrap list" />
-  
+- Added the `sContained` property to enhance the styling of `jig.list` and `component.list-item` which wraps each item in the list in a card. See <a href="" target="_blank">Lists with items contained in a card</a>. This property can only be used with vertical lists and `component.list-item`.
+  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/nyezkaGLKSIjuq15fqExi_wraplist.PNG" size="34" position="center" caption="Wrap list " alt="Wrap list"}
 - Charts now support using expressions in the `max`, `min` and `tickAmount` properties.
 
 ### Builder
@@ -718,8 +703,8 @@ Bug Fixes
 New features & improvements
 
 - Added a dropdown to Solution Settings allowing you to choose which data to copy.  You can decide whether restricted data can be copied when a solution is copied.
-  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/mQPw9a0oTRQTZfAnaRb42_jm-ssettingdata.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/mQPw9a0oTRQTZfAnaRb42_jm-ssettingdata.png" size="76" width="1430" height="940" position="center" caption="Restrict data copying" alt="Restrict data copying"} -->
-  <img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/mQPw9a0oTRQTZfAnaRb42_jm-ssettingdata.png" caption="Restrict data copying" alt="Restrict data copying" />
+  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/mQPw9a0oTRQTZfAnaRb42_jm-ssettingdata.png" size="76" position="center" caption="Restrict data copying" alt="Restrict data copying"}
+  
 - Removed the Disable user button from the User screen in Management, use permissions to deny users access.
 - Performance improvements and security enhancements.
 
@@ -735,9 +720,7 @@ Bug Fixes
 
 | **Solution** | **Update or addition**                                                                                                                                                                                                                                                                                                                                   |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| jigx-samples | - *location-fullscreen.jigx* and *location-fullscreen-dynamic.jigx* updated to use the new `jig.fullscreen` instead of `jig.default` with `isScrollable: false` property that has been depreciated.
-- Added *list-item-contained.jigx* showing vertical list-items wrapped in a card by using the `isContained` property.
-- Fixed minor bugs |
+| jigx-samples | - *location-fullscreen.jigx* and *location-fullscreen-dynamic.jigx* updated to use the new `jig.fullscreen` instead of `jig.default` with `isScrollable: false` property that has been depreciated.<br>- Added *list-item-contained.jigx* showing vertical list-items wrapped in a card by using the `isContained` property.<br>- Fixed minor bugs |
 
 
 
