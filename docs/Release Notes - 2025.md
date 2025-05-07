@@ -195,12 +195,8 @@ New features & improvements
 - The home button has been removed from jigs and the profile button has been moved to the new bottom navigation tab bar. See [Home Hub]() for more information.&#x20;
 - Added the ability to remove the Support menu from the user profile screen. This can be configured via a flag in the build configuration.
 - Solution switching has been moved to the Profile settings screen.
-  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" size="34" width="1224" height="2466" position="center" caption="Profile " alt="Profile"} -->
-  <!-- <img src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" size="34" width="800" height="2466" position="center" caption="Profile " alt="Profile" /> -->
-  <!-- ![Profile](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png "Profile") -->
-  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" size="34" caption="Profile " alt="Profile"}
+  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" size="40" caption="Profile " alt="Profile"}
   
-
 Bug Fixes
 
 - Improved the experience with errors appearing after logout due to long running sync actions.
