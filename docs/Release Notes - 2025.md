@@ -26,7 +26,6 @@ New features & improvements
 - The solution switch is now available in the bottom navigation menu. Tap the "More" (ellipsis) button to open it. Solutions are listed, with the total count displayed at the top.
 - The number of permitted `tabs` in the index.jigx file has been increased. The first four `tabs` are displayed in the Home Hub bottom navigation, and any additional `tabs` appear when the "More" (ellipsis) button is tapped.
 
-<!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-tYaCSucebdLFNh9YN7A_D-20250429-134001.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-tYaCSucebdLFNh9YN7A_D-20250429-134001.png" size="94" width="3851" height="2471" position="center" caption} -->
 <img src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-tYaCSucebdLFNh9YN7A_D-20250429-134001.png" size="94" width="3851" height="2471" position="center" />
 
 Bug Fixes
@@ -54,7 +53,6 @@ New features & improvements
 
 - [Custom variables]() - IntelliSense now displays the variables configured in Jigx Management > Solution Settings when using the `=@ctx.solution.settings.custom.{{variableName}}` expression. After adding a new custom variable in Management, you can use IntelliSense's  *Reload Solution Settings* option to update data from Jigx Management and make the variable visible in IntelliSense.
 
-<!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif" size="92" width="1504" height="496" position="center" caption} -->
 <img src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif" size="92" width="1504" height="496" position="center" />
 
 
@@ -117,7 +115,6 @@ New features & improvements
 
 - Added validation to `grid-item` determining when `widgetId` is required.
 - Enhanced the way you interact with jigs by introducing the ability to retrieve `outputs` from jigs you navigated to using the following expression `=@ctx.jigs.instance-id-of-the-jig.outputs.[key-of-ouput]`.
--
 - Added the `onTableChange` event, which responds to remote system data changes and updates the mobile device. This event monitors specific data tables (entities) for changes and triggers the configured actions when a change is detected. This ensures data consistency between the remote system and the mobile device, keeping information up to date across the platform.
 - Added validation for grid-item, determining when widgetId is required.
 - Enhanced interaction with jigs by enabling the retrieval of outputs from navigated jigs using the following expression: `=@ctx.jigs.instance-id-of-the-jig.outputs.[key-of-output]`.
@@ -198,8 +195,9 @@ New features & improvements
 - The home button has been removed from jigs and the profile button has been moved to the new bottom navigation tab bar. See [Home Hub]() for more information.&#x20;
 - Added the ability to remove the Support menu from the user profile screen. This can be configured via a flag in the build configuration.
 - Solution switching has been moved to the Profile settings screen.
-  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" size="34" width="1224" height="2466" position="center" caption="Profile " alt="Profile"}
-  <img src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" size="34" width="1224" height="2466" position="center" caption="Profile " alt="Profile" />
+  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" size="34" width="1224" height="2466" position="center" caption="Profile " alt="Profile"} -->
+  <!-- <img src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" size="34" width="800" height="2466" position="center" caption="Profile " alt="Profile" /> -->
+  <img src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png"  
   
   
 
