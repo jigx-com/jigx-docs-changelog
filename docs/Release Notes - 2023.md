@@ -376,10 +376,7 @@ The text property in `component.avatar` has changed to `title`. You must manuall
 
 ## Release 2023.8
 
-<!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/pdYToA6-e5lWhO6Tyt04c_release2382x.png" size="98" width="3000" height="1640" caption position="flex-start" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/pdYToA6-e5lWhO6Tyt04c_release2382x.png"} -->
-<img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/pdYToA6-e5lWhO6Tyt04c_release2382x.png" size="98" width="3000" height="1640" caption position="flex-start />
-
-
+::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/pdYToA6-e5lWhO6Tyt04c_release2382x.png" size="98" caption position="flex-start" }
 
 ### Mobile Apps
 
@@ -430,7 +427,7 @@ Bug Fixes
 
 New Features
 
-- Added the ability to limit the max file size of media uploads using the `maximumFileSize` property. For more information see <a href="https://docs.jigx.com/examples/media-field" target="_blank">media-field</a>&#x20;
+- Added the ability to limit the max file size of media uploads using the `maximumFileSize` property. For more information see <a href="https://docs.jigx.com/examples/media-field" target="_blank">media-field</a>
 - Added the ability to use a `when` condition to hide or show jigs on a composite jig. For more information see [composite jig]()
 
 Bug Fixes
@@ -438,7 +435,7 @@ Bug Fixes
 - Fixed an issue where the incorrect actions were displayed in a long-press preview popup
 - Fixed the way the `media-field` calculates the media-type
 - Fixed an issue with the calendar jig in dark mode
-- Fixed an issue with the rendering of event dates and data in a calendar jig&#x20;
+- Fixed an issue with the rendering of event dates and data in a calendar jig
 - Fixed an issue with the progress element’s theming
 - Fixed an issue with selecting records in a dropdown
 - Fixed an issue with the interactive image’s rendering
@@ -510,8 +507,6 @@ New Features
 ### Breaking Changes
 
 None
-
-
 
 ## Release 2023.5
 

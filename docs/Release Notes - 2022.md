@@ -52,7 +52,7 @@ New Features
 
 Bug Fixes
 
-- Fixed an issue where Inputs displayed `[object][object`] when passing an object as a Parameter
+- Fixed an issue where Inputs displayed `[object][object]` when passing an object as a Parameter
 - Fixed an issue where index.jigx did not validate the YAML in real-time
 - Fixed an issue where syntax validation incorrectly showed an error when an object was passed as an input
 
