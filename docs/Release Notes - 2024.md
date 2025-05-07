@@ -376,7 +376,7 @@ Bug Fixes
 
 | **Solution** | **Update or addition**                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| jigx-samples | -  Added jigx-widgets<br>- Updated the location widgets<br />If you have a copy of the jigx-samples and jigx-widgets solutions in your organization, we recommend you get a new copy of the jigx-samples solution from <a href="https://github.com/jigx-com/jigx-samples/tree/main/quickstart/jigx-samples" target="_blank">GitHub</a> or <a href="https://manage.jigx.com/quickstart" target="_blank">Management Prod</a>.  |
+| jigx-samples | -  Added jigx-widgets<br>- Updated the location widgets<br />If you have a copy of the jigx-samples and jigx-widgets solutions in your organization, we recommend you get a new copy of the jigx-samples solution from <a href="https://github.com/jigx-com/jigx-samples/tree/main/quickstart/jigx-samples" target="_blank"> GitHub</a> or <a href="https://manage.jigx.com/quickstart" target="_blank"> Management Prod</a>.  |
 | jigx-widgets | Merged the jigx-widgets solution into jigx-samples solution.  |
 
 ## Release 2024.5
@@ -446,7 +446,7 @@ Bug Fixes
   To ensure the Jigx App region matches your organization's region, you can go to Jigx Management to see what the *Organization Settings* are. By default, the mobile app logs into the US East region. To change your mobile device's *Home Region,* go to *Profile > Settings* to match the organization's region in Jigx Management.
   This change prevents credential and connection lookup failures across regions.
 
-::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jx28UjfY63fxHAHfTAIt1_regionsettings.png" size="60"  position="center" }
+::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jx28UjfY63fxHAHfTAIt1_regionsettings.png" size="90"  position="center" }
 
 ### Updates to documentation
 
@@ -519,13 +519,10 @@ Bug fixes
 New features & improvements
 
 - [Code Navigation]() - navigate through code with the Go to Definition (F12) and Go to References (+F12) functionality. Quickly go to data sources, components, jigs, and function definitions, or see where these are referenced across your solution.
-  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/f7-gwdrARF6E6cymYcY4-_f12-go-to.gif" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/f7-gwdrARF6E6cymYcY4-_f12-go-to.gif" size="88" width="658" height="484" position="center" caption} -->
-
-<img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/f7-gwdrARF6E6cymYcY4-_f12-go-to.gif" size="88" width="658" height="484" position="center" />
+  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/f7-gwdrARF6E6cymYcY4-_f12-go-to.gif" size="88" position="center" }
 
 - *Authorization* - Jigx Builder remembers your login credentials after a successful login, this means the next time you open Jigx Builder and want to publish a project, your credentials do not need to be re-entered. You can re-login at any time by using the login again icon at the top of the Jigx Explorer pane, as shown below.
-  <!-- ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YfpU8yYmDr17Tt5U0ePQL_autologin.png" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YfpU8yYmDr17Tt5U0ePQL_autologin.png" size="70" width="630" height="214" position="center" caption} -->
-<img src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YfpU8yYmDr17Tt5U0ePQL_autologin.png" size="70" width="630" height="214" position="center" />
+  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YfpU8yYmDr17Tt5U0ePQL_autologin.png" size="70" position="center"}
 
 Bug fixes
 
@@ -555,12 +552,7 @@ Bug fixes
 
 | **Solution** | **Update or addition**                                                                                                                                                                                                                                                                                                                                  |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| jigx-samples | - General improvements
-- Changed the actions folder name to jigx-actions to allow global actions in the solution folder structure.
-- Updated charts to include a `min` and `max` property determined by expressions.
-- Added examples for the `jigx-header` component.
-- Added additional examples to `product-item` component
-- Fixed minor bugs |
+| jigx-samples | - General improvements<br>- Changed the actions folder name to jigx-actions to allow global actions in the solution folder structure.<br>- Updated charts to include a `min` and `max` property determined by expressions.<br>- Added examples for the `jigx-header` component.<br>- Added additional examples to `product-item` component.<br>- Fixed minor bugs |
 
 ## Release 2024.3
 
