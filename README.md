@@ -1,1 +1,2 @@
-Jigx Changelog /Rlease notes
+# Jigx Changelog
+Jigx Changelog / Release notes
