@@ -90,7 +90,7 @@ Bug Fixes
 
 ### Updates to Quick-Start sample solutions
 
-| **Solution** | ** Additions**          |
+| **Solution** | **Additions**          |
 | ------------ | ----------------------- |
 | jigx-sample  | [jig.grid]()            |
 |              | [jig.tabs]()            |
