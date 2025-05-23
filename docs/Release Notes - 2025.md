@@ -2,6 +2,8 @@
 
 ## Release 2025.4
 
+![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-ws06Vbw_rddbPEXhcEO92-20250521-173021.png)
+
 |                 |          |
 | --------------- | -------- |
 | Release date    | May 2025 |
@@ -14,7 +16,7 @@
 New features & improvements
 
 - The `onRefresh` spinner is now persistently visible while an action is executing, preventing users from triggering a redundant pull-to-refresh gesture.
-- Enjoy more control over your jigs—by default, the Home button appears on all jigs except the Home Hub, but now you have the flexibility to show or hide it on any jig by simply setting the `isHomeButtonVisible` property on a jig. See [Home button visibility]() for more information.
+- Enjoy more control over your jigs—by default, the Home button appears on all jigs except the Home Hub, but now you have the flexibility to show or hide it on any jig by simply setting the `isHomeButtonVisible` property on a jig. See [Home button visibility](#) for more information.
 - Enhanced app stability and performance by fetching only necessary image and icon assets and loading them when needed, ensuring a faster and smoother user experience.
 - The profile menu has moved to the top left of the header and now appears on all  Home Hub screens.
 - The solution switch is now available in the bottom navigation menu. Tap the "More" (ellipsis) button to open it. Solutions are listed, with the total count displayed at the top.
@@ -30,7 +32,7 @@ Bug Fixes
 - Enhanced dynamic data syncing between Jigx Management and the mobile app, providing faster updates and significantly reducing delays.
 - Fixed an issue on Android where scrolling lists within tabs caused layout problems and resulted in the search bar disappearing.
 - Fixed multiple issues with notifications
-  - Fixed an issue where viewing a notification with a target jig from the *Notifications *screen resulted in a "Screen not found" message due to the jig not being properly located.
+  - Fixed an issue where viewing a notification with a target jig from the \*Notifications \*screen resulted in a "Screen not found" message due to the jig not being properly located.
   - Fixed notification ordering, when pressing on a message it would be sorted to the top of the screen.
 - Fixed an issue where the sync scope was not correctly limited to the specific solution, ensuring accurate data synchronization.
 - Resolved an issue where users could become stuck in an offline state due to a failed network request.
@@ -45,7 +47,7 @@ New features & improvements
 - [media-field](#) -The media-field picker allows users to view and upload media files, with configurable filters to restrict document file types (e.g., PDF, DOC, PPT, or plainText) based on your app’s requirements.
 - [bottomSheet (Beta)](#) - The bottomSheet slides up from the bottom of the screen to display contextual content or actions without leaving the current screen. Ideal for menus, filters, forms, or quick actions.
 - ***Enhanced field component flexibility***: Components previously only available within the form component can now be used either as standalone components or wrapped within a form component.
-- Dynamic Files extend Jigx's Dynamic Data entities to include file references, allowing files to be securely stored and associated with entities. Files are physically stored in Amazon S3, offering a combination of simplicity, security, and portability.&#x20;
+- [Dynamic files]() extend Jigx's Dynamic Data entities to include file references, allowing files to be securely stored and associated with entities. Files are physically stored in Amazon S3, offering a combination of simplicity, security, and portability.&#x20;
 
 New features & improvements
 
@@ -63,7 +65,8 @@ New features & improvements
 
 New features & improvements
 
-- Added [F12 code navigation]()  functionality that allows quick navigation from within a datasource to the databases/default.jigx file for faster access and improved developer efficiency.
+- Added [F12 code navigation](#)  functionality that allows quick navigation from within a datasource to the databases/default.jigx file for faster access and improved developer efficiency.
+- [Jigx Solution Diagnostics]()  - ** **is a built-in analysis tool that helps you identify and troubleshoot issues across your entire Jigx solution or a subset of files in the solution. It detects project build errors, missing references, and scans your source code for programmatic errors, warnings, and overall solution health.
 - [Custom variables](#) - IntelliSense now displays the variables configured in Jigx Management > Solution Settings when using the `=@ctx.solution.settings.custom.{{variableName}}` expression. After adding a new custom variable in Management, you can use IntelliSense's  *Reload Solution Settings* option to update data from Jigx Management and make the variable visible in IntelliSense.
 
 ![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif)
@@ -84,6 +87,16 @@ Bug Fixes
 
 - *Issue:* `action.share`- When sharing via AirDrop, the item is shared twice instead of once.
 - *Issue*: The keyboard expands over input text fields in the `bottomSheet`.
+
+### Updates to Quick-Start sample solutions
+
+| **Solution** | ** Additions**          |
+| ------------ | ----------------------- |
+| jigx-sample  | [jig.grid]()            |
+|              | [jig.tabs]()            |
+|              | [jig.table]()           |
+|              | [bottomSheet (Beta)]()  |
+|              | [segmented-control]()   |
 
 ## Release 2025.3
 
