@@ -32,7 +32,7 @@ Bug Fixes
 - Enhanced dynamic data syncing between Jigx Management and the mobile app, providing faster updates and significantly reducing delays.
 - Fixed an issue on Android where scrolling lists within tabs caused layout problems and resulted in the search bar disappearing.
 - Fixed multiple issues with notifications
-  - Fixed an issue where viewing a notification with a target jig from the \*Notifications \*screen resulted in a "Screen not found" message due to the jig not being properly located.
+  - Fixed an issue where viewing a notification with a target jig from the Notifications screen resulted in a "Screen not found" message due to the jig not being properly located.
   - Fixed notification ordering, when pressing on a message it would be sorted to the top of the screen.
 - Fixed an issue where the sync scope was not correctly limited to the specific solution, ensuring accurate data synchronization.
 - Resolved an issue where users could become stuck in an offline state due to a failed network request.
@@ -47,9 +47,10 @@ New features & improvements
 - [media-field](#) -The media-field picker allows users to view and upload media files, with configurable filters to restrict document file types (e.g., PDF, DOC, PPT, or plainText) based on your app’s requirements.
 - [bottomSheet (Beta)](#) - The bottomSheet slides up from the bottom of the screen to display contextual content or actions without leaving the current screen. Ideal for menus, filters, forms, or quick actions.
 - ***Enhanced field component flexibility***: Components previously only available within the form component can now be used either as standalone components or wrapped within a form component.
-- [Dynamic files]() extend Jigx's Dynamic Data entities to include file references, allowing files to be securely stored and associated with entities. Files are physically stored in Amazon S3, offering a combination of simplicity, security, and portability.&#x20;
+- [Dynamic files](#) extend Jigx's Dynamic Data entities to include file references, allowing files to be securely stored and associated with entities. Files are physically stored in Amazon S3, offering a combination of simplicity, security, and portability.&#x20;
+- **Widget customization enhancements** in [jig.grid]() and [grid-item]() - You can now override the default widget title and icon using the `title` and `icon` properties. Additionally, widgets can be configured with an `onPress` event, enabling interactive behavior such as opening maps, displaying modals, or triggering actions.
 
-New features & improvements
+Bug fixes
 
 - Fixed an issue in the `component.location` where the second line of the address was not displaying.
 - Fixed an issue where `filters` were not being highlighted in lists on Android devices.
@@ -66,15 +67,24 @@ New features & improvements
 New features & improvements
 
 - Added [F12 code navigation](#)  functionality that allows quick navigation from within a datasource to the databases/default.jigx file for faster access and improved developer efficiency.
-- [Jigx Solution Diagnostics]()  - ** **is a built-in analysis tool that helps you identify and troubleshoot issues across your entire Jigx solution or a subset of files in the solution. It detects project build errors, missing references, and scans your source code for programmatic errors, warnings, and overall solution health.
+- [Jigx Solution Diagnostics](#)  - ** **is a built-in analysis tool that helps you identify and troubleshoot issues across your entire Jigx solution or a subset of files in the solution. It detects project build errors, missing references, and scans your source code for programmatic errors, warnings, and overall solution health.
 - [Custom variables](#) - IntelliSense now displays the variables configured in Jigx Management > Solution Settings when using the `=@ctx.solution.settings.custom.{{variableName}}` expression. After adding a new custom variable in Management, you can use IntelliSense's  *Reload Solution Settings* option to update data from Jigx Management and make the variable visible in IntelliSense.
 
 ![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif)
+
+- **Templates** - Added templates in builder for the following jigs and components.
+  - [jig.grid]()
+  - [jig.tabs]()
+  - [jig.table]()
+  - [expander with variant]()
+  - [segmented-control]()
+  - [grid-item]()&#x20;
 
 Bug fixes
 
 - Fixed issues with JSONata expression validation to ensure more accurate and reliable evaluations.
 - Aligned the available options between Quick Fix and IntelliSense in Jigx Builder to ensure a consistent and streamlined developer experience.
+- Fixed the YAML in the location and scenario templates.
 
 ### Jigx Management
 
@@ -90,13 +100,14 @@ Bug Fixes
 
 ### Updates to Quick-Start sample solutions
 
-| **Solution** | **Additions**          |
+| **Solution** | **Additions**           |
 | ------------ | ----------------------- |
-| jigx-sample  | [jig.grid]()            |
-|              | [jig.tabs]()            |
-|              | [jig.table]()           |
-|              | [bottomSheet (Beta)]()  |
-|              | [segmented-control]()   |
+| jigx-sample  | [jig.grid](#)           |
+|              | [jig.tabs](#)           |
+|              | [jig.table](#)          |
+|              | [bottomSheet (Beta)](#) |
+|              | [segmented-control](#)  |
+|              | [grid-item]()           |
 
 ## Release 2025.3
 
