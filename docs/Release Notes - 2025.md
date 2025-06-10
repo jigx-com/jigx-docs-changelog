@@ -4,12 +4,12 @@
 
 ![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-ws06Vbw_rddbPEXhcEO92-20250521-173021.png)
 
-|                 |          |
-| --------------- | -------- |
-| Release date    | May 2025 |
-| iOS version     |          |
-| Android version |          |
-| Jigx Builder    | 1.38.0   |
+|                 |           |
+| --------------- | --------- |
+| Release date    | June 2025 |
+| iOS version     |           |
+| Android version |           |
+| Jigx Builder    | 1.38.0    |
 
 ### Mobile Apps
 
@@ -48,7 +48,7 @@ New features & improvements
 - [bottomSheet (Beta)](#) - The bottomSheet slides up from the bottom of the screen to display contextual content or actions without leaving the current screen. Ideal for menus, filters, forms, or quick actions.
 - ***Enhanced field component flexibility***: Components previously only available within the form component can now be used either as standalone components or wrapped within a form component.
 - [Dynamic files](#) extend Jigx's Dynamic Data entities to include file references, allowing files to be securely stored and associated with entities. Files are physically stored in Amazon S3, offering a combination of simplicity, security, and portability.&#x20;
-- **Widget customization enhancements** in [jig.grid]() and [grid-item]() - You can now override the default widget title and icon using the `title` and `icon` properties. Additionally, widgets can be configured with an `onPress` event, enabling interactive behavior such as opening maps, displaying modals, or triggering actions.
+- **Widget customization enhancements** in [jig.grid](#) and [grid-item](#) - You can now override the default widget title and icon using the `title` and `icon` properties. Additionally, widgets can be configured with an `onPress` event, enabling interactive behavior such as opening maps, displaying modals, or triggering actions.
 
 Bug fixes
 
@@ -73,12 +73,12 @@ New features & improvements
 ![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif)
 
 - **Templates** - Added templates in builder for the following jigs and components.
-  - [jig.grid]()
-  - [jig.tabs]()
-  - [jig.table]()
-  - [expander with variant]()
-  - [segmented-control]()
-  - [grid-item]()&#x20;
+  - [jig.grid](#)
+  - [jig.tabs](#)
+  - [jig.table](#)
+  - [expander with variant](#)
+  - [segmented-control](#)
+  - [grid-item](#)&#x20;
 
 Bug fixes
 
@@ -107,7 +107,7 @@ Bug Fixes
 |              | [jig.table](#)          |
 |              | [bottomSheet (Beta)](#) |
 |              | [segmented-control](#)  |
-|              | [grid-item]()           |
+|              | [grid-item](#)          |
 
 ## Release 2025.3
 
