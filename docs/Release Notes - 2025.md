@@ -191,7 +191,7 @@ New features & improvements
 
 - [Jigx Variables](#)
   - When invoked within an action, the `=@ctx.system.geolocation` method executes asynchronously.
-  - Set the permissions on location using the system variable `=@ctx.system.locationPermissions`. `PermissionStatus` can be `granted` | `undetermined` | `denied`
+  - **DEPRECATED: **Set the permissions on location using the system variable `=@ctx.system.locationPermissions`. `PermissionStatus` can be `granted` | `undetermined` | `denied`
 - Added Jigx Builder support for `action.sync-status`.
 - Implemented `action.execute-sql` in Jigx Builder.
 
