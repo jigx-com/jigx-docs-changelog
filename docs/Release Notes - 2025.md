@@ -85,6 +85,7 @@ Bug fixes
 - Fixed issues with JSONata expression validation to ensure more accurate and reliable evaluations.
 - Aligned the available options between Quick Fix and IntelliSense in Jigx Builder to ensure a consistent and streamlined developer experience.
 - Fixed the YAML in the location and scenario templates.
+- The `=@ctx.actions[instanceId].outputs` functionality has been updated to allow configuration outside of a sequential list for generate-file, generate-pdf, and share actions.&#x20;
 
 ### Jigx Management
 
