@@ -18,7 +18,7 @@ New features & improvements
 - The `onRefresh` spinner is now persistently visible while an action is executing, preventing users from triggering a redundant pull-to-refresh gesture.
 - Enjoy more control over your jigs—by default, the Home button appears on all jigs except the Home Hub, but now you have the flexibility to show or hide it on any jig by simply setting the `isHomeButtonVisible` property on a jig. See [Home button visibility](#) for more information.
 - Enhanced app stability and performance by fetching only necessary image and icon assets and loading them when needed, ensuring a faster and smoother user experience.
-- The profile menu has moved to the top left of the header and now appears on all  Home Hub screens.
+- The profile menu has moved to the top left of the header and now appears on all Home Hub screens.
 - The solution switch is now available in the bottom navigation menu. Tap the "More" (ellipsis) button to open it. Solutions are listed, with the total count displayed at the top.
 - The number of permitted `tabs` in the index.jigx file has been increased. The first four `tabs` are displayed in the Home Hub bottom navigation, and any additional `tabs` appear when the "More" (ellipsis) button is tapped.
 
@@ -26,7 +26,7 @@ New features & improvements
 
 Bug Fixes
 
-- Resolved an issue where the Notifications screen appeared empty, even when notifications were available.
+-
 - Resolved an issue preventing PDF document previews from displaying correctly in the media-picker component.
 - Fixed an issue where translations in header actions were not functioning correctly.
 - Enhanced dynamic data syncing between Jigx Management and the mobile app, providing faster updates and significantly reducing delays.
@@ -34,6 +34,7 @@ Bug Fixes
 - Fixed multiple issues with notifications
   - Fixed an issue where viewing a notification with a target jig from the Notifications screen resulted in a "Screen not found" message due to the jig not being properly located.
   - Fixed notification ordering, when pressing on a message it would be sorted to the top of the screen.
+  - Resolved an issue where the Notifications screen appeared empty, even when notifications were available.
 - Fixed an issue where the sync scope was not correctly limited to the specific solution, ensuring accurate data synchronization.
 - Resolved an issue where users could become stuck in an offline state due to a failed network request.
 - Resolved an issue where switching from portrait to landscape mode on a tablet caused unintended navigation back, instead of simply adjusting the view. The app now maintains the correct screen during orientation changes.
