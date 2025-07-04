@@ -4,12 +4,12 @@
 
 ![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-ws06Vbw_rddbPEXhcEO92-20250521-173021.png)
 
-|                 |           |
-| --------------- | --------- |
-| Release date    | June 2025 |
-| iOS version     | 1.146.2   |
-| Android version | 1.146.2   |
-| Jigx Builder    | 1.38.0    |
+|                 |             |
+| --------------- | ----------- |
+| Release date    | 4 July 2025 |
+| iOS version     | 1.146.2     |
+| Android version | 1.146.2     |
+| Jigx Builder    | 1.38.0      |
 
 ### Mobile Apps
 
