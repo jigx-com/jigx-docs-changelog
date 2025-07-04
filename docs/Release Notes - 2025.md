@@ -16,7 +16,7 @@
 New features & improvements
 
 - The `onRefresh` spinner is now persistently visible while an action is executing, preventing users from triggering a redundant pull-to-refresh gesture.
-- Enjoy more control over your jigs, by default, the Home button appears on all jigs except the Home Hub, but now you have the flexibility to show or hide it on any jig by simply setting the `isHomeButtonVisible` property on a jig. See [Home button visibility]() for more information.
+- Enjoy more control over your jigs, by default, the Home button appears on all jigs except the Home Hub, but now you have the flexibility to show or hide it on any jig by simply setting the `isHomeButtonVisible` property on a jig. See     [Home button visibility]() for more information.
 - Enhanced app stability and performance by fetching only necessary image and icon assets and loading them when needed, ensuring a faster and smoother user experience.
 - The profile menu has moved to the top left of the header and now appears on all Home Hub screens.
 - The solution switch is now available in the bottom navigation menu. Tap the "More" (ellipsis) button to open it. Solutions are listed, with the total count displayed at the top.
@@ -66,19 +66,19 @@ New features & improvements
 
 New features & improvements
 
-- Added [F12 code navigation]()  functionality that allows quick navigation from within a datasource to the databases/default.jigx file for faster access and improved developer efficiency.
+- Added [F12 code navigation]() functionality that allows quick navigation from within a datasource to the databases/default.jigx file for faster access and improved developer efficiency.
 - [Jigx Solution Diagnostics]()  - ** **is a built-in analysis tool that helps you identify and troubleshoot issues across your entire Jigx solution or a subset of files in the solution. It detects project build errors, missing references, and scans your source code for programmatic errors, warnings, and overall solution health.
 - [Custom variables]() - IntelliSense now displays the variables configured in Jigx Management > Solution Settings when using the `=@ctx.solution.settings.custom.{{variableName}}` expression. After adding a new custom variable in Management, you can use IntelliSense's  *Reload Solution Settings* option to update data from Jigx Management and make the variable visible in IntelliSense.
 
 ![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif)
 
 - **Templates** - Added templates in builder for the following jigs and components.
-  - [jig.grid]()
+  - [jig.grid]()&#x20;
   - [jig.tabs]()
   - [jig.table]()
   - [expander with variant]()
   - [segmented-control]()
-  - [grid-item]()&#x20;
+  - [grid-item]()
 
 Bug fixes
 
