@@ -1,5 +1,10 @@
 # Release Notes - 2025
 
+:::hint{type="danger"}
+🚧 **Notice: Documentation is currently unstable**
+Due to ongoing issues with Archbee, some content may be incomplete or missing. Jigx is aware of the situation and will be transitioning to a new documentation platform soon. We appreciate your patience and understanding.
+:::
+
 ## Release 2025.4
 
 ![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-ws06Vbw_rddbPEXhcEO92-20250521-173021.png)
@@ -46,7 +51,7 @@ New features & improvements
 - [jig.table](https://docs.jigx.com/examples/jigtable) - The table jig displays structured data in rows and columns, allowing users to view and interact with multiple records within the app.
 - [media-field](https://docs.jigx.com/examples/media-field#xvJAM) -The media-field picker allows users to view and upload media files, with configurable filters to restrict document file types (e.g., PDF, DOC, PPT, or plainText) based on your app’s requirements.
 - [bottomSheet (Beta)](https://docs.jigx.com/examples/bottomsheet-beta) - The bottomSheet slides up from the bottom of the screen to display contextual content or actions without leaving the current screen. Ideal for menus, filters, forms, or quick actions.
-- **_Enhanced field component flexibility_**: Components previously only available within the form component can now be used either as standalone components or wrapped within a form component.
+- ***Enhanced field component flexibility***: Components previously only available within the form component can now be used either as standalone components or wrapped within a form component.
 - [Dynamic files](https://docs.jigx.com/dynamic-files) extend Jigx's Dynamic Data entities to include file references, allowing files to be securely stored and associated with entities. Files are physically stored in Amazon S3, offering a combination of simplicity, security, and portability.&#x20;
 - **Widget customization enhancements** in [jig.grid](https://docs.jigx.com/examples/jiggrid) and [grid-item](https://docs.jigx.com/examples/grid) - You can now override the default widget title and icon using the `title` and `icon` properties. Additionally, widgets can be configured with an `onPress` event, enabling interactive behavior such as opening maps, displaying modals, or triggering actions.
 
@@ -68,7 +73,7 @@ New features & improvements
 
 - Added [F12 code navigation](https://docs.jigx.com/editor#5m93r) functionality that allows quick navigation from within a datasource to the databases/default.jigx file for faster access and improved developer efficiency.
 - [Jigx Solution Diagnostics](https://docs.jigx.com/editor#NjUMZ) - is a built-in analysis tool that helps you identify and troubleshoot issues across your entire Jigx solution or a subset of files in the solution. It detects project build errors, missing references, and scans your source code for programmatic errors, warnings, and overall solution health.
-- [Custom variables](https://docs.jigx.com/solution-settings#UIqCn) - IntelliSense now displays the variables configured in Jigx Management > Solution Settings when using the `=@ctx.solution.settings.custom.{{variableName}}` expression. After adding a new custom variable in Management, you can use IntelliSense's _Reload Solution Settings_ option to update data from Jigx Management and make the variable visible in IntelliSense.
+- [Custom variables](https://docs.jigx.com/solution-settings#UIqCn) - IntelliSense now displays the variables configured in Jigx Management > Solution Settings when using the `=@ctx.solution.settings.custom.{{variableName}}` expression. After adding a new custom variable in Management, you can use IntelliSense's *Reload Solution Settings* option to update data from Jigx Management and make the variable visible in IntelliSense.
 
 ![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif)
 
@@ -96,8 +101,8 @@ Bug Fixes
 
 ### Known issues
 
-- _Issue:_ `action.share`- When sharing via AirDrop, the item is shared twice instead of once.
-- _Issue_: The keyboard expands over input text fields in the `bottomSheet`.
+- *Issue:* `action.share`- When sharing via AirDrop, the item is shared twice instead of once.
+- *Issue*: The keyboard expands over input text fields in the `bottomSheet`.
 
 ### Updates to Quick-Start sample solutions
 
@@ -249,7 +254,7 @@ New features & improvements
 - [jig.grid]() - This jig type enables you to create grid layouts in your app, organizing content into rows and columns for a visually consistent and flexible interface. The grid is ideal for creating galleries to display photos or product images.
 - [Grid component]() - create a grid layout as a component in a jig with other components.
 - [Divider]() -create a simple divider between components using the `component.divider`. The divider component adds a simple dark horizontal line across the screen. Common use cases include grouping related content or enhancing visual hierarchy.
-- [segmented-control]() - create a horizontal control consisting of segments that allows you to\*\* \*\*toggle between multiple options in a compact, efficient way.
+- [segmented-control]() - create a horizontal control consisting of segments that allows you to** **toggle between multiple options in a compact, efficient way.
 - Actions added on [jig-header]() - Configure actions to display as links or icons in the top right corner of the header.
 - Enhanced the `media-picker’s` usability by reducing clicks/taps during the upload process.
 - `List `and `list-items` improvements include:
@@ -353,7 +358,7 @@ New features & improvements
 
 ### Change in behavior
 
-- _Backwards compatibility_ - When a widget displayed on the Home Hub and no specific icon was configured, a default icon of four squares was shown. In existing solutions the four squares are now replaced with a default heart icon. You can change the icon by configuring the `icon` property in each jig file.
+- *Backwards compatibility* - When a widget displayed on the Home Hub and no specific icon was configured, a default icon of four squares was shown. In existing solutions the four squares are now replaced with a default heart icon. You can change the icon by configuring the `icon` property in each jig file.
 
 ### Deprecated
 
@@ -364,3 +369,4 @@ New features & improvements
 ### Updates to documentation
 
 - **Note:** The documentation is being updated to reflect the latest product offerings. As a result, some screenshots and code samples may not yet represent the most recent features and improvements.
+
