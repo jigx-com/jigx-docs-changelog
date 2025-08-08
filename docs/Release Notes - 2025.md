@@ -1,17 +1,11 @@
 # Release Notes - 2025
 
-:::hint{type="danger"}
-🚧 **Notice: Documentation is currently unstable**
-Due to ongoing issues with Archbee, some content may be incomplete or missing. Jigx is aware of the situation and will be transitioning to a new documentation platform soon. We appreciate your patience and understanding.
-:::
-
 ## Release 2025.4
 
 ![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-ws06Vbw_rddbPEXhcEO92-20250521-173021.png)
 
-|                 |             |
-| --------------- | ----------- |
 | Release date    | 4 July 2025 |
+| --------------- | ----------- |
 | iOS version     | 1.146.2     |
 | Android version | 1.146.2     |
 | Jigx Builder    | 1.38.0      |
@@ -119,9 +113,8 @@ Bug Fixes
 
 ![Release 2025.3](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-4AA-ROd4Ed6oGtDw1SXM1-20250320-135147.png)
 
-|                 |               |
-| --------------- | ------------- |
 | Release date    | 21 March 2025 |
+| --------------- | ------------- |
 | iOS version     | 1.131.0       |
 | Android version | 1.131.0       |
 | Jigx Builder    | 1.37.0        |
@@ -174,9 +167,8 @@ Bug Fixes
 
 ![Release 2025.2](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-JhCvM6QU2wXeEshNuhwqq-20250228-113139.png)
 
-|                 |              |
-| --------------- | ------------ |
 | Release date    | 6 March 2025 |
+| --------------- | ------------ |
 | iOS version     | 1.127.1      |
 | Android version | 1.127.1      |
 | Jigx Builder    | 1.36.0       |
@@ -211,9 +203,8 @@ Bug Fixes
 
 ![Release 2025.1](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-V6gq42u3APtiESK_cg3YA-20250131-072044.png)
 
-|                 |               |
-| --------------- | ------------- |
 | Release date    | February 2025 |
+| --------------- | ------------- |
 | iOS version     | 1.125.14      |
 | Android version | 1.125.14      |
 | Jigx Builder    | 1.35.0        |
@@ -236,7 +227,7 @@ New features & improvements
 - The home button has been removed from jigs and the profile button has been moved to the new bottom navigation tab bar. See [Home Hub]() for more information.&#x20;
 - Added the ability to remove the Support menu from the user profile screen. This can be configured via a flag in the build configuration.
 - Solution switching has been moved to the Profile settings screen.
-  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" size="40" position="center" caption="Profile " alt="Profile" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png"}
+  ::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" size="40" position="center" caption="Profile " alt="Profile" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NGrWw9SMNv_vpn6k1f6rE-20250130-102419.png" width="800" height="1611" darkWidth="800" darkHeight="1611"}
 
 Bug Fixes
 
