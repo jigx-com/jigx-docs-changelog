@@ -270,7 +270,7 @@ Bug Fixes
 
 ## Release 2024.7
 
-::embed[]{url="https://youtu.be/9_bdv-VVj6s"}
+{% embed url="https://youtu.be/9_bdv-VVj6s" %}
 
 |                 |                  |
 | --------------- | ---------------- |
