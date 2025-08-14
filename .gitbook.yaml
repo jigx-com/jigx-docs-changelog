@@ -1,7 +1,0 @@
-root: ./docs/
-
-​structure:
-  readme: ./docs/Release Notes - 2025.md
-  summary: ./docs/SUMMARY.md​
-# redirects:
-#   previous/page: new-folder/page.md
