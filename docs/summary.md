@@ -1,4 +1,3 @@
-# Table of contents
 
 * [Release Notes - 2025](Release%20Notes%20-%202025.md)
 * [Release Notes - 2024](Release%20Notes%20-%202024.md)
