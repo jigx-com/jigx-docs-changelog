@@ -496,7 +496,7 @@ Bug fixes
 
 ### Release 2024.3
 
-![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/jyaBdn2E0rofmFPvxS7-I_release-243.png)
+<figure><img src=".gitbook/assets/release_24.3.png" alt=""><figcaption></figcaption></figure>
 
 <table><thead><tr><th width="177.671875"></th><th>Versions &#x26; dates</th></tr></thead><tbody><tr><td><strong>Release date</strong></td><td>22 March 2024</td></tr><tr><td><strong>iOS version</strong></td><td>1.24.7</td></tr><tr><td><strong>Android version</strong></td><td>1.24.7</td></tr></tbody></table>
 
@@ -577,7 +577,7 @@ New features & improvements
 
 ### Release 2024.1
 
-![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/Lz72mAGRKwc1WyPA6PPXP_release-241-2.png)
+<figure><img src=".gitbook/assets/release_24.1_2.png" alt=""><figcaption></figcaption></figure>
 
 |                          | Versions & dates |
 | ------------------------ | ---------------- |
