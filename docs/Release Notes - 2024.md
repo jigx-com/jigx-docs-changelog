@@ -298,7 +298,7 @@ Bug Fixes
 
 ### Release 2024.6
 
-![Release 2024.6](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-_Aeqvmbe8JAkwoQl28hfK-20240805-093104.png)
+<figure><img src=".gitbook/assets/WhatsNewin2024.6.png" alt=""><figcaption></figcaption></figure>
 
 | **Release date**         | 21 August 2024 |
 | ------------------------ | -------------- |
@@ -434,7 +434,7 @@ Bug Fixes
 
 ### Release 2024.4
 
-![Release 2024.4](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/kkOcAfwqNyMgk_VotZXys_whatsnew20244font.png)
+<figure><img src=".gitbook/assets/WhatsNew20244Fallback.png" alt=""><figcaption></figcaption></figure>
 
 <table><thead><tr><th width="184.12109375">Hotfix</th><th>Versions &#x26; dates</th></tr></thead><tbody><tr><td><strong>Release date</strong></td><td>22 May 2024</td></tr><tr><td><strong>iOS version</strong></td><td>1.27.10</td></tr><tr><td><strong>Android version</strong></td><td>1.27.10</td></tr><tr><td><strong>Fix</strong></td><td>This hotfix release includes the following fix: - Using expressions in components with a <code>when</code> and <code>color</code> property did not change the component's color.</td></tr></tbody></table>
 
