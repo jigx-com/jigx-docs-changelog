@@ -528,7 +528,7 @@ Bug Fixes
 
 ### Release 2024.2
 
-![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/4KZTBHXYBT-6cvlutlKcY_release-242-2.png)
+<figure><img src=".gitbook/assets/release_24.2_2.png" alt=""><figcaption></figcaption></figure>
 
 <table><thead><tr><th width="212.63671875"></th><th>Versions &#x26; dates</th></tr></thead><tbody><tr><td><strong>Release date</strong></td><td>20 February 2024</td></tr><tr><td><strong>iOS version</strong></td><td>1.23.2</td></tr><tr><td><strong>Android version</strong></td><td>1.23.2</td></tr><tr><td><strong>Jigx Builder version</strong></td><td>1.26.0</td></tr></tbody></table>
 
@@ -564,19 +564,16 @@ Bug Fixes
 
 New features & improvements
 
-* Added the ability to clean up [favorite solutions](<Release Notes - 2024.md>) and to remove favorite entries that are no longer available. This is useful when a solution is deleted, or you can no longer see the solution in the list. Only the last 5 solutions pinned as favorites are tracked. This enhancement provides a quick indicator that a frequented solution from management is no longer available. ![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/aZbFx-iNsZ6smoytCDG1y_jm-favoritecleanup.png)
+* Added the ability to clean up [favorite solutions](<Release Notes - 2024.md>) and to remove favorite entries that are no longer available. This is useful when a solution is deleted, or you can no longer see the solution in the list. Only the last 5 solutions pinned as favorites are tracked. This enhancement provides a quick indicator that a frequented solution from management is no longer available.&#x20;
 * Creating a copy of a solution duplicates the structure of the credentials and connections to allow for easy configuration by only having to respecify secrets.
-* Widgets and stories now indicate when non-group-assigned items are inaccessible by anyone. Once access is applied, access is granted according to the applied permissions. ![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/ZAxuFLZUQBWUbi-ofpLrC_jm-widgetnoaccess.png)
+* Widgets and stories now indicate when non-group-assigned items are inaccessible by anyone. Once access is applied, access is granted according to the applied permissions.&#x20;
 * Added a visible _Edit groups_ link to the solutions permissions tab making it easier to edit group access to the solution.
 
-&#x20;![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/YQEv_s2grP81KrkXfkqFX_jm-editgroups.png)
+&#x20;
 
 * Changed help icons to open in a new tab rather than in a widget.
 * Added an indication of the solution count per organization on the [User > Profile - Organizations](<Release Notes - 2024.md>) section. This is useful for people belonging to multi-organizations. On the user's profile, all organizations assigned to the user are visible with an active solution count. Clicking on an organization will easily switch you to that organization where solutions are assigned; go to the Solutions tab, and manipulate access as required.
-
-&#x20;![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/MrXjDx_SvJuwQya4LlhP0_jm-solutioncount.png)
-
-* Added an _Idle logout minutes_ option for Jigx Management. This is an optional security setting that, once applied, will display a prompt and then log the person out of Jigx Management after being idle for the configured period. Enabling the checkbox has a default of 120 minutes but is configurable to your requirements. See [Advanced Setting](<Release Notes - 2024.md>) for more information. ![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/BE55NVlooXC3mS4deTVSR_jm-idletimeout.png)
+* Added an _Idle logout minutes_ option for Jigx Management. This is an optional security setting that, once applied, will display a prompt and then log the person out of Jigx Management after being idle for the configured period. Enabling the checkbox has a default of 120 minutes but is configurable to your requirements. See [Advanced Setting](<Release Notes - 2024.md>) for more information.
 
 ### Release 2024.1
 
