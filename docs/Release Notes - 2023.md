@@ -12,7 +12,7 @@ description: >-
 
 ### Release 2023.13
 
-::embed\[]{url="https://vimeo.com/894412134?share=copy"}
+{% embed url="https://vimeo.com/894412134?share=copy" %}
 
 |                          | **Versions & dates** |
 | ------------------------ | -------------------- |
@@ -53,23 +53,31 @@ New Features & improvements
 * Shared (Global) actions - Shared actions enable creators to define an effort once and reuse it across multiple Jigs. New solutions open with the action folder structure; existing solutions will not have the folder; you need to manually add the folder for these solutions. See [global actions](<Release Notes - 2023.md>) for more information.
 * [Salesforce](<Release Notes - 2023.md>) provider now recognizes standard Salesforce objects and provides a list of these when using IntelliSense in Jigx Builder. Note that custom objects need to be manually added and will be squiggled in blue to indicate the Salesforce entity is unknown. Ignore this warning if the entity is custom.
 
-::::VerticalSplit{layout="middle"} :::VerticalSplitItem **Previous Salesforce YAML**
+{% columns %}
+{% column %}
+**Previous Salesforce YAML**
 
-![Previous entity structure](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/ld-_WFvssZH8N8LvmU4SK_salesforce-previous.png) :::
+<figure><img src=".gitbook/assets/salesforce-previous.png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
 
-:::VerticalSplitItem **New Salesforce YAML**
+{% column %}
+**New Salesforce YAML**
 
-![IntelliSense for Salesforce entities](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/3bKta_nxnecc_e9T0I1kn_salesforce-new.png) ::: ::::
+<figure><img src=".gitbook/assets/salesforce-new.png" alt=""><figcaption></figcaption></figure>
+
+
+{% endcolumn %}
+{% endcolumns %}
 
 * General improvements have been implemented in snippets to enhance usability.
 * In \`index\`, `widget` configuration now provides a quick fix to address problems related to invalid jig references.
 * Moved assets (icons and images) from index.jigx to a new assets folder. The icons.jigx and images.jigx files are automatically created for you under the folder.
-  1. \*Icons - \*For **existing** solutions the icon.jigx is automatically created but the assets `icon` entries from the index.jigx file must be manually deleted.
-  2. \*Images - \*For **existing** solutions the image.jigx is automatically created with images referenced in jig `headers`, but the assets `image` entries from the index.jigx file must be manually copied over to the images.jigx file and deleted from the index.jigx file.
+  1. Icons - For **existing** solutions the icon.jigx is automatically created but the assets `icon` entries from the index.jigx file must be manually deleted.
+  2. Images - For **existing** solutions the image.jigx is automatically created with images referenced in jig `headers`, but the assets `image` entries from the index.jigx file must be manually copied over to the images.jigx file and deleted from the index.jigx file.
 
 For more information see [Assets](<Release Notes - 2023.md>).
 
-![Assets folder](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/p55r-nUQgHaxSfagUPh5D_assets.png)
+<figure><img src=".gitbook/assets/Assets.png" alt=""><figcaption></figcaption></figure>
 
 Bug Fixes
 
@@ -96,7 +104,7 @@ Bug Fixes
 
 ### Release 2023.12.1
 
-::embed\[]{url="https://vimeo.com/884268897?share=copy"}
+{% embed url="https://vimeo.com/884268897?share=copy" %}
 
 #### Mobile apps
 
@@ -177,7 +185,7 @@ Bug Fixes
 
 ### Release 2023.11
 
-![Release 2023.11](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/NCPhQvxVdc817iZIMPJHm_release2311.png)
+<figure><img src=".gitbook/assets/release_23.11@2x.png" alt=""><figcaption></figcaption></figure>
 
 #### Mobile Apps
 
@@ -223,8 +231,7 @@ Bug Fixes
 
 * When using icon elements in `leftElement`, `rightElement` and `leftIcon`, the property used was `name`. This `name` property has been changed to `icon`. In Jigx Builder the `name` property displays with red validation squiggles. Hover over the validation issue to see the available icon property. For example:
 
-:::::VerticalSplit{layout="middle"} ::::VerticalSplitItem :::CodeblockTabs Before
-
+{% code title=" Before" %}
 ```yaml
  leftElement:
       element: icon
@@ -237,11 +244,9 @@ Bug Fixes
       name: =(@ctx.current.item.materials = true ? 'attachment' :'alert-triangle')
      
 ```
+{% endcode %}
 
-::: ::::
-
-::::VerticalSplitItem :::CodeblockTabs After
-
+{% code title="After" %}
 ```yaml
  leftElement:
       element: icon
@@ -254,12 +259,11 @@ Bug Fixes
       icon: =(@ctx.current.item.materials = true ? 'attachment' :'alert-triangle')
      
 ```
-
-::: :::: :::::
+{% endcode %}
 
 ### Release 2023.10
 
-![Release 2023.10](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/zLaA3dRyOlFnjM5jKIzHr_release20.png)
+<figure><img src=".gitbook/assets/Release-2023-10Final.png" alt=""><figcaption></figcaption></figure>
 
 #### Mobile Apps
 
@@ -326,7 +330,7 @@ Certain properties can be deprecated or changed in Jigx Builder between versions
 
 ### Release 2023.9
 
-![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/eNlD-QuiYMP1ZdFgHnti5_release239.png)
+<figure><img src=".gitbook/assets/release_23.9.png" alt=""><figcaption></figcaption></figure>
 
 #### Mobile Apps
 
@@ -364,7 +368,7 @@ The text property in `component.avatar` has changed to `title`. You must manuall
 
 ### Release 2023.8
 
-::Image\[]{src="https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/pdYToA6-e5lWhO6Tyt04c\_release2382x.png" size="98" caption position="flex-start" }
+<figure><img src=".gitbook/assets/Release2023.8.png" alt=""><figcaption></figcaption></figure>
 
 #### Mobile Apps
 
@@ -401,7 +405,7 @@ None
 
 ### Release 2023.7
 
-![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/xxlFKLAyhduE21gdm3pmd_whatsnew20237.png)
+<figure><img src=".gitbook/assets/WhatsNew2023.7.png" alt=""><figcaption></figcaption></figure>
 
 #### Mobile Apps
 
@@ -433,7 +437,7 @@ New Features & Improvements
 
 * Jigx watcher is a new window making it easy for creators to monitor the result of one or more expressions during a debug session
 
-&#x20;Bug Fixes
+Bug Fixes
 
 * Fixed an issue where REST errors did not get logged in Jigx logs
 * Fixed an issue where the Jig column was empty with logs created from index
@@ -445,7 +449,7 @@ None
 
 ### Release 2023.6
 
-![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/4pvAfeaQm4fOPzXfRylz1_release20236.png)
+<figure><img src=".gitbook/assets/Release-2023-6.png" alt=""><figcaption></figcaption></figure>
 
 #### Mobile Apps
 
@@ -497,7 +501,7 @@ None
 
 ### Release 2023.5
 
-![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/D531Lv2VcFj9xnIHq43Jk_release20235.jpg)
+<figure><img src=".gitbook/assets/Release2023.5.png" alt=""><figcaption></figcaption></figure>
 
 #### Mobile Apps
 
@@ -544,7 +548,7 @@ None
 
 ### Release 2023.4
 
-![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/ikfXUzF0__4YoBIf2niqi_release20234.jpg)
+<figure><img src=".gitbook/assets/Release-2023-4.png" alt=""><figcaption></figcaption></figure>
 
 #### Mobile Apps
 
@@ -616,7 +620,7 @@ New Features
 
 ### Release 2023.3
 
-![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/05kfCTpHxqjOjjOine_os_release20233.jpg)
+<figure><img src=".gitbook/assets/Release-2023-3.png" alt=""><figcaption></figcaption></figure>
 
 #### Mobile Apps
 
@@ -689,7 +693,7 @@ New Features
 
 ### Release 2023.2
 
-![](https://archbee-image-uploads.s3.amazonaws.com/x7vdIDH6-ScTprfmi2XXX/XwfGxiiYHWyDc7EIdcEX5_release20232.jpg)
+<figure><img src=".gitbook/assets/Release-2023-2.png" alt=""><figcaption></figcaption></figure>
 
 #### Mobile Apps
 
