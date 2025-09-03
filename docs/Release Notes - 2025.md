@@ -2,7 +2,7 @@
 
 ## Release 2025.4
 
-![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-ws06Vbw_rddbPEXhcEO92-20250521-173021.png)
+<figure><img src=".gitbook/assets/Release 2025.4.png" alt=""><figcaption></figcaption></figure>
 
 | Release date    | 4 July 2025 |
 | --------------- | ----------- |
@@ -21,7 +21,7 @@ New features & improvements
 * The solution switch is now available in the bottom navigation menu. Tap the "More" (ellipsis) button to open it. Solutions are listed, with the total count displayed at the top.
 * The number of permitted `tabs` in the index.jigx file has been increased. The first four `tabs` are displayed in the Home Hub bottom navigation, and any additional `tabs` appear when the "More" (ellipsis) button is tapped.
 
-![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-tYaCSucebdLFNh9YN7A_D-20250429-134001.png)
+<figure><img src=".gitbook/assets/solution-profile.png" alt=""><figcaption></figcaption></figure>
 
 Bug Fixes
 
@@ -69,7 +69,7 @@ New features & improvements
 * [Jigx Solution Diagnostics](https://docs.jigx.com/editor#NjUMZ) - is a built-in analysis tool that helps you identify and troubleshoot issues across your entire Jigx solution or a subset of files in the solution. It detects project build errors, missing references, and scans your source code for programmatic errors, warnings, and overall solution health.
 * [Custom variables](https://docs.jigx.com/solution-settings#UIqCn) - IntelliSense now displays the variables configured in Jigx Management > Solution Settings when using the `=@ctx.solution.settings.custom.{{variableName}}` expression. After adding a new custom variable in Management, you can use IntelliSense's _Reload Solution Settings_ option to update data from Jigx Management and make the variable visible in IntelliSense.
 
-![](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-Xlz4cUJDzdSHr1WCVNU3a-20250408-093707.gif)
+<figure><img src=".gitbook/assets/custom-variables.gif" alt=""><figcaption></figcaption></figure>
 
 * **Templates** - Added templates in builder for the following jigs and components.
   * [jig.grid](https://docs.jigx.com/examples/jiggrid)
@@ -100,18 +100,11 @@ Bug Fixes
 
 ### Updates to Quick-Start sample solutions
 
-| **Solution** | **Additions**                                                         |
-| ------------ | --------------------------------------------------------------------- |
-| jigx-sample  | [jig.grid](https://docs.jigx.com/examples/jiggrid)                    |
-|              | [jig.tabs](https://docs.jigx.com/examples/jigtabs)                    |
-|              | [jig.table](https://docs.jigx.com/examples/jigtable)                  |
-|              | [bottomSheet (Beta)](https://docs.jigx.com/examples/bottomsheet-beta) |
-|              | [segmented-control](https://docs.jigx.com/examples/segmented-control) |
-|              | [grid-item](https://docs.jigx.com/examples/grid)                      |
+<table><thead><tr><th width="167.05859375">Solution</th><th>Additions</th></tr></thead><tbody><tr><td>jigx-sample</td><td><a href="https://docs.jigx.com/examples/jiggrid">jig.grid</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/jigtabs">jig.tabs</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/jigtable">jig.table</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/bottomsheet-beta">bottomSheet (Beta)</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/segmented-control">segmented-control</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/grid">grid-item</a></td></tr></tbody></table>
 
 ## Release 2025.3
 
-![Release 2025.3](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-4AA-ROd4Ed6oGtDw1SXM1-20250320-135147.png)
+<figure><img src=".gitbook/assets/Release 2025.3.png" alt=""><figcaption></figcaption></figure>
 
 | Release date    | 21 March 2025 |
 | --------------- | ------------- |
@@ -165,7 +158,7 @@ Bug Fixes
 
 ## Release 2025.2
 
-![Release 2025.2](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-JhCvM6QU2wXeEshNuhwqq-20250228-113139.png)
+<figure><img src=".gitbook/assets/Release-2025-2.png" alt=""><figcaption></figcaption></figure>
 
 | Release date    | 6 March 2025 |
 | --------------- | ------------ |
@@ -201,7 +194,7 @@ Bug Fixes
 
 ## Release 2025.1
 
-![Release 2025.1](https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-V6gq42u3APtiESK_cg3YA-20250131-072044.png)
+<figure><img src=".gitbook/assets/Release 2025.1.png" alt=""><figcaption></figcaption></figure>
 
 | Release date    | February 2025 |
 | --------------- | ------------- |
