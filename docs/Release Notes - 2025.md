@@ -15,7 +15,7 @@
 New features & improvements
 
 * The `onRefresh` spinner is now persistently visible while an action is executing, preventing users from triggering a redundant pull-to-refresh gesture.
-* Enjoy more control over your jigs, by default, the Home button appears on all jigs except the Home Hub, but now you have the flexibility to show or hide it on any jig by simply setting the `isHomeButtonVisible` property on a jig. See [Home button visibility](https://docs.jigx.com/examples/common-jig-type-properties#4XJE6) for more information.
+* Enjoy more control over your jigs, by default, the Home button appears on all jigs except the Home Hub, but now you have the flexibility to show or hide it on any jig by simply setting the `isHomeButtonVisible` property on a jig. See [Home button visibility](https://docs.jigx.com/examples/readme/jig-types/common-jig-type-properties#home-button-visibility) for more information.
 * Enhanced app stability and performance by fetching only necessary image and icon assets and loading them when needed, ensuring a faster and smoother user experience.
 * The profile menu has moved to the top left of the header and now appears on all Home Hub screens.
 * The solution switch is now available in the bottom navigation menu. Tap the "More" (ellipsis) button to open it. Solutions are listed, with the total count displayed at the top.
@@ -42,12 +42,12 @@ Bug Fixes
 
 New features & improvements
 
-* [jig.table](https://docs.jigx.com/examples/jigtable) - The table jig displays structured data in rows and columns, allowing users to view and interact with multiple records within the app.
-* [media-field](https://docs.jigx.com/examples/media-field#xvJAM) -The media-field picker allows users to view and upload media files, with configurable filters to restrict document file types (e.g., PDF, DOC, PPT, or plainText) based on your app’s requirements.
-* [bottomSheet (Beta)](https://docs.jigx.com/examples/bottomsheet-beta) - The bottomSheet slides up from the bottom of the screen to display contextual content or actions without leaving the current screen. Ideal for menus, filters, forms, or quick actions.
+* [jig.table](https://docs.jigx.com/examples/readme/jig-types/jig_table) - The table jig displays structured data in rows and columns, allowing users to view and interact with multiple records within the app.
+* [media-field](https://docs.jigx.com/examples/readme/components/media-field#restrict-or-filter-the-upload-of-media-file-types) -The media-field picker allows users to view and upload media files, with configurable filters to restrict document file types (e.g., PDF, DOC, PPT, or plainText) based on your app’s requirements.
+* [bottomSheet (Beta)](https://docs.jigx.com/examples/readme/jig-types/common-jig-type-properties/bottomsheet-_beta_) - The bottomSheet slides up from the bottom of the screen to display contextual content or actions without leaving the current screen. Ideal for menus, filters, forms, or quick actions.
 * _**Enhanced field component flexibility**_: Components previously only available within the form component can now be used either as standalone components or wrapped within a form component.
-* [Dynamic files](https://docs.jigx.com/dynamic-files) extend Jigx's Dynamic Data entities to include file references, allowing files to be securely stored and associated with entities. Files are physically stored in Amazon S3, offering a combination of simplicity, security, and portability.
-* **Widget customization enhancements** in [jig.grid](https://docs.jigx.com/examples/jiggrid) and [grid-item](https://docs.jigx.com/examples/grid) - You can now override the default widget title and icon using the `title` and `icon` properties. Additionally, widgets can be configured with an `onPress` event, enabling interactive behavior such as opening maps, displaying modals, or triggering actions.
+* [Dynamic files](https://docs.jigx.com/building-apps-with-jigx/data/data-providers/dynamic-files) extend Jigx's Dynamic Data entities to include file references, allowing files to be securely stored and associated with entities. Files are physically stored in Amazon S3, offering a combination of simplicity, security, and portability.
+* **Widget customization enhancements** in [jig.grid](https://docs.jigx.com/examples/readme/jig-types/jig_grid) and [grid-item](https://docs.jigx.com/examples/readme/components/grid/grid-item) - You can now override the default widget title and icon using the `title` and `icon` properties. Additionally, widgets can be configured with an `onPress` event, enabling interactive behavior such as opening maps, displaying modals, or triggering actions.
 
 Bug fixes
 
@@ -58,26 +58,26 @@ Bug fixes
 
 New features & improvements
 
-* Improvements have been made to the [generate-file](https://docs.jigx.com/examples/generate-file) functionality, specifically related to encoding reliability and consistency.
-* [open-app-settings](https://docs.jigx.com/examples/open-app-settings) - The action directs users straight to the app’s settings page, helping them quickly find and adjust permissions without needing to navigate through their device settings manually.
+* Improvements have been made to the [generate-file](https://docs.jigx.com/examples/readme/actions/generate-file) functionality, specifically related to encoding reliability and consistency.
+* [open-app-settings](https://docs.jigx.com/examples/readme/actions/open-app-settings) - The action directs users straight to the app’s settings page, helping them quickly find and adjust permissions without needing to navigate through their device settings manually.
 
 ### Builder
 
 New features & improvements
 
-* Added [F12 code navigation](https://docs.jigx.com/editor#5m93r) functionality that allows quick navigation from within a datasource to the databases/default.jigx file for faster access and improved developer efficiency.
-* [Jigx Solution Diagnostics](https://docs.jigx.com/editor#NjUMZ) - is a built-in analysis tool that helps you identify and troubleshoot issues across your entire Jigx solution or a subset of files in the solution. It detects project build errors, missing references, and scans your source code for programmatic errors, warnings, and overall solution health.
-* [Custom variables](https://docs.jigx.com/solution-settings#UIqCn) - IntelliSense now displays the variables configured in Jigx Management > Solution Settings when using the `=@ctx.solution.settings.custom.{{variableName}}` expression. After adding a new custom variable in Management, you can use IntelliSense's _Reload Solution Settings_ option to update data from Jigx Management and make the variable visible in IntelliSense.
+* Added [F12 code navigation](https://docs.jigx.com/building-apps-with-jigx/jigx-builder-code-editor/editor#definition-f12) functionality that allows quick navigation from within a datasource to the databases/default.jigx file for faster access and improved developer efficiency.
+* [Jigx Solution Diagnostics](https://docs.jigx.com/building-apps-with-jigx/jigx-builder-code-editor/editor#validation-solution-diagnostics) - is a built-in analysis tool that helps you identify and troubleshoot issues across your entire Jigx solution or a subset of files in the solution. It detects project build errors, missing references, and scans your source code for programmatic errors, warnings, and overall solution health.
+* [Custom variables](https://docs.jigx.com/administration/solutions/solution-settings/custom-variables#reloading-variables-in-jigx-builder) - IntelliSense now displays the variables configured in Jigx Management > Solution Settings when using the `=@ctx.solution.settings.custom.{{variableName}}` expression. After adding a new custom variable in Management, you can use IntelliSense's _Reload Solution Settings_ option to update data from Jigx Management and make the variable visible in IntelliSense.
 
 <figure><img src=".gitbook/assets/custom-variables.gif" alt=""><figcaption></figcaption></figure>
 
 * **Templates** - Added templates in builder for the following jigs and components.
-  * [jig.grid](https://docs.jigx.com/examples/jiggrid)
-  * [jig.tabs](https://docs.jigx.com/examples/jigtabs)
-  * [jig.table](https://docs.jigx.com/examples/jigtable)
-  * [expander with variant](https://docs.jigx.com/examples/expander#sRhC4)
-  * [segmented-control](https://docs.jigx.com/examples/segmented-control)
-  * [grid-item](https://docs.jigx.com/examples/grid)
+  * [jig.grid](https://docs.jigx.com/examples/readme/jig-types/jig_grid)
+  * [jig.tabs](https://docs.jigx.com/examples/readme/jig-types/jig_tabs)
+  * [jig.table](https://docs.jigx.com/examples/readme/jig-types/jig_table)
+  * [expander with variant](https://docs.jigx.com/examples/readme/components/expander#expander-with-variant-divider-and-expandicon)
+  * [segmented-control](https://docs.jigx.com/examples/readme/components/segmented-control)
+  * [grid-item](https://examples/readme/components/grid/grid-item)
 
 Bug fixes
 
@@ -100,7 +100,7 @@ Bug Fixes
 
 ### Updates to Quick-Start sample solutions
 
-<table><thead><tr><th width="167.05859375">Solution</th><th>Additions</th></tr></thead><tbody><tr><td>jigx-sample</td><td><a href="https://docs.jigx.com/examples/jiggrid">jig.grid</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/jigtabs">jig.tabs</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/jigtable">jig.table</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/bottomsheet-beta">bottomSheet (Beta)</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/segmented-control">segmented-control</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/grid">grid-item</a></td></tr></tbody></table>
+<table><thead><tr><th width="167.05859375">Solution</th><th>Additions</th></tr></thead><tbody><tr><td>jigx-sample</td><td><a href="https://docs.jigx.com/examples/readme/jig-types/jig_grid">jig.grid</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/jig-types/jig_tabs">jig.tabs</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/jig-types/jig_table">jig.table</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/jig-types/common-jig-type-properties/bottomsheet-_beta_">bottomSheet (Beta)</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/components/segmented-control">segmented-control</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/components/grid/grid-item">grid-item</a></td></tr></tbody></table>
 
 ## Release 2025.3
 
@@ -298,7 +298,7 @@ Bug Fixes
 
 New features & improvements
 
-* Determine the version of the app by using [system](https://docs.jigx.com/examples/jigx-variables) states, the expression used is `=@ctx.system.appVersion`.
+* Determine the version of the app by using [system](https://docs.jigx.com/examples/readme/expressions/jigx-variables) states, the expression used is `=@ctx.system.appVersion`.
 * REST improvements include:
   * Enabled the use of custom JavaScript in REST function expressions.
   * Added default 401 error handler in the REST provider to retry three times.

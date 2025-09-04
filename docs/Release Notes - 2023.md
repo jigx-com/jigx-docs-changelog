@@ -418,7 +418,7 @@ Bug Fixes
 
 New Features
 
-* Added the ability to limit the max file size of media uploads using the `maximumFileSize` property. For more information see [media-field](https://docs.jigx.com/examples/media-field)
+* Added the ability to limit the max file size of media uploads using the `maximumFileSize` property. For more information see [media-field](https://docs.jigx.com/examples/readme/components/media-field)
 * Added the ability to use a `when` condition to hide or show jigs on a composite jig. For more information see [composite jig](<Release Notes - 2023.md>)
 
 Bug Fixes
@@ -626,7 +626,7 @@ New Features
 
 New Features
 
-* 🎉 Added ability for long-press gestures on iOS to display a `preview` with context actions. See [https://docs.jigx.com/examples/overview](https://docs.jigx.com/examples/overview) for more details
+* 🎉 Added ability for long-press gestures on iOS to display a `preview` with context actions. See [https://docs.jigx.com/examples](https://docs.jigx.com/examples) for more details
 * Improved splash screen performance and startup time
 * Improved navigation stack implementation for phone and tablet
 

@@ -111,7 +111,7 @@ Bug Fixes
 #### Updates to documentation
 
 * Added [duration-picker](<Release Notes - 2024.md>) documentation and code examples.
-* Added examples of list rating, tags, wrapping, and badging to [jig.list](<Release Notes - 2024.md>) , [list](<Release Notes - 2024.md>) and [list widgets](https://docs.jigx.com/examples/9Auy-list).
+* Added examples of list rating, tags, wrapping, and badging to [jig.list](<Release Notes - 2024.md>) , [list](<Release Notes - 2024.md>) and [list widgets](https://docs.jigx.com/examples/readme/jig-types/jig_list).
 * Updated [File handling](<Release Notes - 2024.md>) topic with using expressions in conversions.
 
 #### Updates to Quick-Start sample solutions

@@ -62,7 +62,7 @@ Bug Fixes
 
 Deprecated Functionality
 
-* Moving forward, Datasource Providers can only be configured by selecting from Dynamic Data, SQLite Data (local), Static Datasource, and System Datasource. Use the sync-entity action to sync remote data to the device. For more information, see [Syncing Remote and Loading Local Data](https://docs.jigx.com/syncing-remote-and-loading-local-data)
+* Moving forward, Datasource Providers can only be configured by selecting from Dynamic Data, SQLite Data (local), Static Datasource, and System Datasource. Use the sync-entity action to sync remote data to the device. For more information, see [Syncing Remote and Loading Local Data](https://docs.jigx.com/building-apps-with-jigx/data/syncing-remote-and-loading-local-data)
 
 #### Jigx Management
 
