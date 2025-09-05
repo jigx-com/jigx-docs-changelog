@@ -1,6 +1,23 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+---
+
 # Release Notes - 2025
 
-## [https://docs.jigx.com/examples/readme/custom-components-\_alpha\_/view-\_alpha\_](https://docs.jigx.com/examples/readme/custom-components-_alpha_/view-_alpha_)Release 2025.5
+## Release 2025.5
 
 | Release date    | September 2025 |
 | --------------- | -------------- |

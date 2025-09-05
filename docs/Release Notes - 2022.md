@@ -6,6 +6,20 @@ updatedAt: Mon Feb 12 2024 07:51:27 GMT+0000 (Coordinated Universal Time)
 description: >-
   Jigx release notes provide information on new features, enhancements, and bug
   fixes
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Release Notes - 2022

@@ -6,6 +6,20 @@ updatedAt: Thu Jan 30 2025 10:12:27 GMT+0000 (Coordinated Universal Time)
 description: >-
   Jigx release notes provide information on new features, enhancements, and bug
   fixes
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Release Notes - 2024
@@ -180,7 +194,7 @@ filter:
 ```
 {% endcode %}
 
-* **Keyboard**: Introduced the option to hide the mobile keyboard on iOS devices on default jigs that require user input, such as forms. You can either tap the keyboard icon or click outside the keyboard to dismiss it and view the full screen.&#x20;
+* **Keyboard**: Introduced the option to hide the mobile keyboard on iOS devices on default jigs that require user input, such as forms. You can either tap the keyboard icon or click outside the keyboard to dismiss it and view the full screen.
 
 <figure><img src=".gitbook/assets/Keyboard-ios.png" alt="" width="188"><figcaption></figcaption></figure>
 
@@ -364,9 +378,9 @@ Bug Fixes
 
 New features & improvements
 
-* [Troubleshooting](<Release Notes - 2024.md>) - The app's profile > troubleshooting section now has improved detailed logging. Toggle the categories you want to troubleshoot or see which ones are enabled using the _Selected_ tab.&#x20;
+* [Troubleshooting](<Release Notes - 2024.md>) - The app's profile > troubleshooting section now has improved detailed logging. Toggle the categories you want to troubleshoot or see which ones are enabled using the _Selected_ tab.
 
-<p align="center"><img src=".gitbook/assets/JM-Troubleshooting.PNG" alt=""></p>
+<div align="center"><img src=".gitbook/assets/JM-Troubleshooting.PNG" alt=""></div>
 
 * Added the ability to tap on a widget to trigger an action by adding an `onPress` event to the widget properties. See the widget [onPress](<Release Notes - 2024.md>) example for more information.
 * [Offline remote data handling](<Release Notes - 2024.md>) - Dealing with offline remote data is fundamental to ensuring data synchronization between the mobile app and the remote data source, allowing users to continue using the app and performing actions without interruption. Queue operations provide the functionality needed when the device regains network connectivity. `QueueOperations` manage a sequence of elements in a specific order. The commands in the queue can be manipulated to reduce the number of calls to the remote data store.
@@ -462,8 +476,8 @@ Bug fixes
 
 New features & improvements
 
-* [Code Navigation](<Release Notes - 2024.md>) - navigate through code with the Go to Definition (F12) and Go to References (+F12) functionality. Quickly go to data sources, components, jigs, and function definitions, or see where these are referenced across your solution.&#x20;
-* _Authorization_ - Jigx Builder remembers your login credentials after a successful login, this means the next time you open Jigx Builder and want to publish a project, your credentials do not need to be re-entered. You can re-login at any time by using the login again icon at the top of the Jigx Explorer pane, as shown below.&#x20;
+* [Code Navigation](<Release Notes - 2024.md>) - navigate through code with the Go to Definition (F12) and Go to References (+F12) functionality. Quickly go to data sources, components, jigs, and function definitions, or see where these are referenced across your solution.
+* _Authorization_ - Jigx Builder remembers your login credentials after a successful login, this means the next time you open Jigx Builder and want to publish a project, your credentials do not need to be re-entered. You can re-login at any time by using the login again icon at the top of the Jigx Explorer pane, as shown below.
 
 <figure><img src=".gitbook/assets/autoLogin.png" alt="" width="473"><figcaption></figcaption></figure>
 
@@ -564,13 +578,10 @@ Bug Fixes
 
 New features & improvements
 
-* Added the ability to clean up [favorite solutions](<Release Notes - 2024.md>) and to remove favorite entries that are no longer available. This is useful when a solution is deleted, or you can no longer see the solution in the list. Only the last 5 solutions pinned as favorites are tracked. This enhancement provides a quick indicator that a frequented solution from management is no longer available.&#x20;
+* Added the ability to clean up [favorite solutions](<Release Notes - 2024.md>) and to remove favorite entries that are no longer available. This is useful when a solution is deleted, or you can no longer see the solution in the list. Only the last 5 solutions pinned as favorites are tracked. This enhancement provides a quick indicator that a frequented solution from management is no longer available.
 * Creating a copy of a solution duplicates the structure of the credentials and connections to allow for easy configuration by only having to respecify secrets.
-* Widgets and stories now indicate when non-group-assigned items are inaccessible by anyone. Once access is applied, access is granted according to the applied permissions.&#x20;
+* Widgets and stories now indicate when non-group-assigned items are inaccessible by anyone. Once access is applied, access is granted according to the applied permissions.
 * Added a visible _Edit groups_ link to the solutions permissions tab making it easier to edit group access to the solution.
-
-&#x20;
-
 * Changed help icons to open in a new tab rather than in a widget.
 * Added an indication of the solution count per organization on the [User > Profile - Organizations](<Release Notes - 2024.md>) section. This is useful for people belonging to multi-organizations. On the user's profile, all organizations assigned to the user are visible with an active solution count. Clicking on an organization will easily switch you to that organization where solutions are assigned; go to the Solutions tab, and manipulate access as required.
 * Added an _Idle logout minutes_ option for Jigx Management. This is an optional security setting that, once applied, will display a prompt and then log the person out of Jigx Management after being idle for the configured period. Enabling the checkbox has a default of 120 minutes but is configurable to your requirements. See [Advanced Setting](<Release Notes - 2024.md>) for more information.
@@ -590,13 +601,11 @@ New features & improvements
 
 New features & improvements
 
-* Added the ability to delete your account from the personal information section under your Profile screen in the mobile app. Once deleted, you are logged out of the Jigx App, and your account is deleted from Jigx Management.&#x20;
+* Added the ability to delete your account from the personal information section under your Profile screen in the mobile app. Once deleted, you are logged out of the Jigx App, and your account is deleted from Jigx Management.
 
 <figure><img src=".gitbook/assets/DeleteAccount.PNG" alt="Delete Jigx account" width="188"><figcaption><p>Delete Jigx account</p></figcaption></figure>
 
-
-
-* Added a new jig type for components such as [location](<Release Notes - 2024.md>) to occupy the entire screen with no other elements. See [jig.fullscreen](<Release Notes - 2024.md>) for more details.&#x20;
+* Added a new jig type for components such as [location](<Release Notes - 2024.md>) to occupy the entire screen with no other elements. See [jig.fullscreen](<Release Notes - 2024.md>) for more details.
 
 <figure><img src=".gitbook/assets/location-fullscreen.png" alt="Full screen jig" width="188"><figcaption><p>Full screen jig</p></figcaption></figure>
 
@@ -609,7 +618,7 @@ Bug Fixes
 
 New features & improvements
 
-* Added the `sContained` property to enhance the styling of `jig.list` and `component.list-item` which wraps each item in the list in a card. See [Lists with items contained in a card](<Release Notes - 2024.md>). This property can only be used with vertical lists and `component.list-item`.&#x20;
+* Added the `sContained` property to enhance the styling of `jig.list` and `component.list-item` which wraps each item in the list in a card. See [Lists with items contained in a card](<Release Notes - 2024.md>). This property can only be used with vertical lists and `component.list-item`.
 
 <figure><img src=".gitbook/assets/WrapList.PNG" alt="Wrap list" width="188"><figcaption><p>Wrap list</p></figcaption></figure>
 
@@ -627,7 +636,7 @@ Bug Fixes
 
 New features & improvements
 
-* Added a dropdown to Solution Settings allowing you to choose which data to copy. You can decide whether restricted data can be copied when a solution is copied.&#x20;
+* Added a dropdown to Solution Settings allowing you to choose which data to copy. You can decide whether restricted data can be copied when a solution is copied.
 
 <figure><img src=".gitbook/assets/WrapList (1).PNG" alt="Restrict data copying" width="188"><figcaption><p>Restrict data copying</p></figcaption></figure>
 

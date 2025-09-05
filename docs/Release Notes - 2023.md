@@ -6,6 +6,20 @@ updatedAt: Mon Feb 12 2024 16:33:33 GMT+0000 (Coordinated Universal Time)
 description: >-
   Jigx release notes provide information on new features, enhancements, and bug
   fixes
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
 ---
 
 # Release Notes - 2023
@@ -64,8 +78,6 @@ New Features & improvements
 **New Salesforce YAML**
 
 <figure><img src=".gitbook/assets/salesforce-new.png" alt=""><figcaption></figcaption></figure>
-
-
 {% endcolumn %}
 {% endcolumns %}
 
