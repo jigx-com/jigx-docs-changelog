@@ -1,5 +1,75 @@
 # Release Notes - 2025
 
+## [https://docs.jigx.com/examples/readme/custom-components-\_alpha\_/view-\_alpha\_](https://docs.jigx.com/examples/readme/custom-components-_alpha_/view-_alpha_)Release 2025.5
+
+| Release date    | September 2025 |
+| --------------- | -------------- |
+| iOS version     | 1.xx.0         |
+| Android version | 1.xx.0         |
+| Jigx Builder    | 1.39.0         |
+
+## Mobile Apps
+
+#### New features & improvements
+
+*   Solution switcher - Added properties for configuring an icon, icon color, and custom category in the index.jigx file of a solution. This allows each solution in the solution switcher to display its own customized details for better visual identification and organization.\
+
+
+    <figure><img src=".gitbook/assets/JB-indexNaming.png" alt="Customized solution switcher" width="563"><figcaption><p>Customized solution switcher</p></figcaption></figure>
+
+#### Bug Fixes
+
+*
+
+### Components and jig types
+
+#### New features & improvements
+
+* [jig.gallery](https://docs.jigx.com/examples/readme/jig-types/jig_gallery) - surface and swipe through a collection of images. This gallery fetches data dynamically from a datasource and presents each image as a gallery item, tapping an image opens it in fullscreen, where you can access the share and delete action icons at the bottom of the image. The fullscreen view also supports pinch-and-zoom to explore image details.&#x20;
+* [View (custom components)](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>) - Enhanced the view component with additional color options and support for shadows using the hasShadow property.&#x20;
+* List-item enhancements:&#x20;
+  * `text` - Added a new `element: text` option to the `rightElement`, allowing configuration of up to three defined lines of text.&#x20;
+  * Introduced Line Options (`text`) for the `title`, `subtitle`, and `description` fields, allowing configuration of individual parts of the central element in a list-item. You can now set properties such as color, font size, bold, format, opacity, and the number of lines (`numberOfLines`) for each line separately, rather than applying them globally via the root. This change is fully backward compatible.&#x20;
+  * `avatar` - Added a new `element: avatar` option to the `leftElement`, allowing configuration of avatar `text` and `uri` properties to display on the left of the list-item.&#x20;
+  * `image` - Added a new `element: image` option to the `leftElement`, allowing configuration of the `text` and `uri` properties to display on an image on the left of the list-item.&#x20;
+  * `icon` - Enhanced the `element: icon` to support multiple shapes (basic, circle, rounded), and style `type` (basic, contained, duotone).&#x20;
+  * Visual improvements made to the list-item include:&#x20;
+  * Added a 1px padding/margin when the list-item is `contained` and either `isHighlighted` or a percentage `value` is present, improving visibility.&#x20;
+  * Introduced spacing between the label and central content.&#x20;
+  * Added a minimal gap between lines in the central element to improve readability.&#x20;
+  * Increased the font size of the rating for better visibility.
+
+### Builder
+
+#### New features & improvements
+
+* REST - guard function, multi-table operations, queries&#x20;
+* The use of `functionParameters` to store and manipulate data has been enhanced. Previously, when using `functionParameters` with `execute-entity/ies`, the parameters were combined with data and saved into local tables, which limited control over local data. Now, `functionParameters` has been split into two parts, offering greater flexibility and allowing independent interaction with local and remote databases. Backward compatibility is maintained for existing solutions that use `functionParameters`. In the YAML, `functionParameters` will appear with a yellow squiggle to indicate that it has been deprecated.&#x20;
+  * `parameters`: Interacts with the remote database&#x20;
+  * `data`: Interacts with the local database
+
+#### Bug Fixes
+
+*
+
+### Deprecated changes
+
+Data providers- The `functionParameters` property has been split into two separate properties: parameters and data. The original `functionParameters` will continue to work to support backward compatibility; the YAML will display a yellow squiggle with a message stating "Deprecated. Use the parameters and data properties instead".&#x20;
+
+The properties `isDuotone: true` and `iscontained` have been replaced with `type: duotone` and  `type: contained`.  While these will still function, it will be flagged in the YAML with a red squiggle to indicate it’s deprecated.
+
+### Updates to Quick-Start sample solutions
+
+| Solution    | Additions                                                                                                                               |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| jigx-sample | [jig.gallery](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>)       |
+|             | [count-up](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>)          |
+|             | [location - radius](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>) |
+|             | [open-media-picker](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>) |
+|             | [open-map](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>)          |
+|             | [generate-pdf](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>)      |
+|             | [share](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>)             |
+
 ## Release 2025.4
 
 <figure><img src=".gitbook/assets/Release 2025.4.png" alt=""><figcaption></figcaption></figure>
@@ -219,7 +289,7 @@ New features & improvements
 * [jig.grid](<Release Notes - 2025.md>) - Create grid layouts in your app, organizing content into rows and columns for a visually consistent and flexible interface. It helps align elements proportionally, ensuring a structured design. The grid is ideal for creating galleries to display photos or product images, as well as dashboards, menus, and product lists.
 * The home button has been removed from jigs and the profile button has been moved to the new bottom navigation tab bar. See [Home Hub](<Release Notes - 2025.md>) for more information.
 * Added the ability to remove the Support menu from the user profile screen. This can be configured via a flag in the build configuration.
-* Solution switching has been moved to the Profile settings screen.&#x20;
+* Solution switching has been moved to the Profile settings screen.
 
 <figure><img src=".gitbook/assets/Solution-switch.png" alt="Profile" width="188"><figcaption><p>Profile</p></figcaption></figure>
 
