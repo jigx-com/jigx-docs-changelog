@@ -19,6 +19,8 @@ layout:
 
 ## Release 2025.5
 
+<figure><img src=".gitbook/assets/Release 2025_5.png" alt=""><figcaption></figcaption></figure>
+
 | Release date    | September 2025 |
 | --------------- | -------------- |
 | iOS version     | 1.xx.0         |
@@ -36,7 +38,18 @@ layout:
 
 #### Bug Fixes
 
-*
+* The keyboard is now automatically dismissed when the `go-to` action is triggered, preventing it from staying open and obscuring components such as the bottom sheet when a field is focused.
+* The `isSelectable` list type now works as expected. The select button is only visible when `isSelectable` is set to `true`. The navigation bar’s right element was updated to correctly render the Select button in the header.
+* Enhanced the troubleshooting and logging UI, with better handling of toggles, headers, and dropdowns, and improved enabling troubleshooting through deeplinks.
+* Fixed icons, including the flag icon, which now render correctly as location markers within the location component and as header action icons.
+* Improved when a solution loads in the app, clearer feedback is now provided:
+  * A _No Solution_ screen is shown instead of a blank screen.
+  * The _No Solution_ screen is displayed when applicable.
+  * If no bottom navigation tabs are available, a proper error message is shown.
+* Fixed the logging reminder flow has been corrected. Previously, selecting _Continue Logging_ did not reset the reminder timer, causing the message to appear every time the app returned to focus. Now, choosing _Continue Logging_ properly resets the timer, and the reminder will only appear again after two weeks.
+* Specific error toasts now display correctly when triggered, ensuring users see the appropriate error messages.
+* Corrected the padding in the _Dropdown_ component to ensure consistent spacing and alignment.
+* Inconsistent image display across screens has been resolved, ensuring images render reliably and consistently.
 
 ### Components and jig types
 
@@ -44,6 +57,9 @@ layout:
 
 * [jig.gallery](https://docs.jigx.com/examples/readme/jig-types/jig_gallery) - surface and swipe through a collection of images. This gallery fetches data dynamically from a datasource and presents each image as a gallery item, tapping an image opens it in fullscreen, where you can access the share and delete action icons at the bottom of the image. The fullscreen view also supports pinch-and-zoom to explore image details.&#x20;
 * [View (custom components)](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>) - Enhanced the view component with additional color options and support for shadows using the hasShadow property.&#x20;
+* Added the `isSearchable` and `filter` properties to any jig type, allowing screens to be easily searched and filtered for faster navigation and improved usability.
+* In the custom component view, you can now create a _card-like view_ with additional customization options, including background and border colors.
+* A single `component.form` now automatically includes all nested field components, or custom components—eliminating the need for multiple forms on one screen.
 * List-item enhancements:&#x20;
   * `text` - Added a new `element: text` option to the `rightElement`, allowing configuration of up to three defined lines of text.&#x20;
   * Introduced Line Options (`text`) for the `title`, `subtitle`, and `description` fields, allowing configuration of individual parts of the central element in a list-item. You can now set properties such as color, font size, bold, format, opacity, and the number of lines (`numberOfLines`) for each line separately, rather than applying them globally via the root. This change is fully backward compatible.&#x20;
@@ -55,6 +71,14 @@ layout:
   * Introduced spacing between the label and central content.&#x20;
   * Added a minimal gap between lines in the central element to improve readability.&#x20;
   * Increased the font size of the rating for better visibility.
+  * `hasDynamicHeight`
+
+#### Bug fixes:
+
+* _Custom components_ no longer send through an empty state when used within a form. The form now correctly receives and returns the states of its child components.
+* In the _Choice_ component, configuring the `itemsPerRow` property with an expression no longer forces every item onto a new line. The component now correctly respects values such as 2 or 3 items per row.
+* The _Summary_ component now displays long text descriptions correctly, ensuring proper layout and readability.
+* In a jig table, actions within the select toolbar now correctly hide when the `isHidden` property is set to `true`, or the `when` property is configured.
 
 ### Builder
 
@@ -67,7 +91,10 @@ layout:
 
 #### Bug Fixes
 
-*
+* Resolved multiple icon cache errors in Jigx Builder when using _Solution Diagnostics_:
+  * The parser no longer fails with unnecessary errors.
+  * Rendering the same icon multiple times no longer produces errors.
+* Resolved an issue where `queryParameters` containing substrings of other parameters were replaced incorrectly. Parameters now update reliably without unintended replacements.
 
 ### Deprecated changes
 
