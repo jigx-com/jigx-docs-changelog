@@ -71,7 +71,7 @@ layout:
   * Introduced spacing between the label and central content.&#x20;
   * Added a minimal gap between lines in the central element to improve readability.&#x20;
   * Increased the font size of the rating for better visibility.
-  * `hasDynamicHeight`
+  * Added the `hasDynamicHeight` property for vertical lists. When used with the `numberOfLines` property, list item heights are calculated dynamically based on content. If not combined, items display as a single line. Note: Using `hasDynamicHeight` with many items may cause performance issues.
 
 #### Bug fixes:
 
@@ -84,7 +84,10 @@ layout:
 
 #### New features & improvements
 
-* REST - guard function, multi-table operations, queries&#x20;
+* Enhancements to REST functions now include powerful new capabilities for greater flexibility and control:
+  * **Queries** – Define Just-In-Time (JIT) queries that run when the function executes, retrieving the latest local data from SQLite.
+  * **Operations** – Automatically process REST responses and store results across one or more SQLite tables, with support for both success and error scenarios.
+  * **Guard functions** – Control whether the main REST call should execute based on runtime conditions (e.g., query results, server responses, or business rules). Guards run after queries and before the main REST call, ensuring app flows only proceed when conditions are met.
 * The use of `functionParameters` to store and manipulate data has been enhanced. Previously, when using `functionParameters` with `execute-entity/ies`, the parameters were combined with data and saved into local tables, which limited control over local data. Now, `functionParameters` has been split into two parts, offering greater flexibility and allowing independent interaction with local and remote databases. Backward compatibility is maintained for existing solutions that use `functionParameters`. In the YAML, `functionParameters` will appear with a yellow squiggle to indicate that it has been deprecated.&#x20;
   * `parameters`: Interacts with the remote database&#x20;
   * `data`: Interacts with the local database
@@ -104,15 +107,7 @@ The properties `isDuotone: true` and `iscontained` have been replaced with `type
 
 ### Updates to Quick-Start sample solutions
 
-| Solution    | Additions                                                                                                                               |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| jigx-sample | [jig.gallery](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>)       |
-|             | [count-up](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>)          |
-|             | [location - radius](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>) |
-|             | [open-media-picker](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>) |
-|             | [open-map](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>)          |
-|             | [generate-pdf](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>)      |
-|             | [share](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>)             |
+<table><thead><tr><th width="176.40234375">Solution</th><th>Additions</th></tr></thead><tbody><tr><td>jigx-sample</td><td><a href="Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5">jig.gallery</a></td></tr><tr><td></td><td><a href="Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5">count-up</a></td></tr><tr><td></td><td><a href="Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5">location - radius</a></td></tr><tr><td></td><td><a href="Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5">open-media-picker</a></td></tr><tr><td></td><td><a href="Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5">open-map</a></td></tr><tr><td></td><td><a href="Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5">generate-pdf</a></td></tr><tr><td></td><td><a href="Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5">share</a></td></tr></tbody></table>
 
 ## Release 2025.4
 
