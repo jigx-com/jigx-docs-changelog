@@ -57,7 +57,7 @@ layout:
 
 * [jig.gallery](https://docs.jigx.com/examples/readme/jig-types/jig_gallery) - surface and swipe through a collection of images. This gallery fetches data dynamically from a datasource and presents each image as a gallery item, tapping an image opens it in fullscreen, where you can access the share and delete action icons at the bottom of the image. The fullscreen view also supports pinch-and-zoom to explore image details.&#x20;
 * [View (custom components)](<Release Notes - 2025.md#https-docs.jigx.com-examples-readme-custom-components-_alpha_-view-_alpha_release-2025.5>) - Enhanced the view component with additional color options and support for shadows using the `hasShadow` property.&#x20;
-* Added the [isSearchable](https://docs.jigx.com/examples/readme/components/common-component-properties#isSearchable) and [filter](https://docs.jigx.com/examples/readme/components/common-component-properties#filter) properties to the default and grid jig type, allowing screens to be easily searched and filtered for faster navigation and improved usability.&#x20;
+* Added the [isSearchable](https://docs.jigx.com/examples/readme/components/common-component-properties#issearchable) and [filter](https://docs.jigx.com/examples/readme/components/common-component-properties#filter) properties to the default and grid jig type, allowing screens to be easily searched and filtered for faster navigation and improved usability.&#x20;
 * A single `component.form` now automatically includes all nested field components, or custom components—eliminating the need for multiple forms on one screen.
 * List-item enhancements:&#x20;
   * `text` - Added a new `element: text` option to the `rightElement`, allowing configuration of up to three defined lines of text.&#x20;
