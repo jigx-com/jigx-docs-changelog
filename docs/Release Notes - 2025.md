@@ -21,11 +21,11 @@ layout:
 
 <figure><img src=".gitbook/assets/Release 2025_5.png" alt=""><figcaption></figcaption></figure>
 
-| Release date    | September 2025 |
-| --------------- | -------------- |
-| iOS version     | 1.xx.0         |
-| Android version | 1.xx.0         |
-| Jigx Builder    | 1.39.0         |
+| Release date    | 10 September 2025 |
+| --------------- | ----------------- |
+| iOS version     | 1.xx.0            |
+| Android version | 1.xx.0            |
+| Jigx Builder    | 1.39.0            |
 
 ## Mobile Apps
 
@@ -83,10 +83,10 @@ layout:
 
 #### New features & improvements
 
-* Enhancements to REST functions now include powerful new capabilities for greater flexibility and control:
-  * **Queries** – Define Just-In-Time (JIT) queries that run when the function executes, retrieving the latest local data from SQLite.
-  * **Operations** – Automatically process REST responses and store results across one or more SQLite tables, with support for both success and error scenarios.
-  * **Guard functions** – Control whether the main REST call should execute based on runtime conditions (e.g., query results, server responses, or business rules). Guards run after queries and before the main REST call, ensuring app flows only proceed when conditions are met.
+* Enhancements to [REST functions](https://docs.jigx.com/building-apps-with-jigx/data/data-providers/rest/functions) now include powerful new capabilities for greater flexibility and control:
+  * [Queries](https://docs.jigx.com/building-apps-with-jigx/data/data-providers/rest/functions/queries) – Define Just-In-Time (JIT) queries that run when the function executes, retrieving the latest local data from SQLite.
+  * [Operations](https://docs.jigx.com/building-apps-with-jigx/data/data-providers/rest/functions/operations) – Automatically process REST responses and store results across one or more SQLite tables, with support for both success and error scenarios.
+  * [Guard functions](https://docs.jigx.com/building-apps-with-jigx/data/data-providers/rest/functions/guard) – Control whether the main REST call should execute based on runtime conditions (e.g., query results, server responses, or business rules). Guards run after queries and before the main REST call, ensuring app flows only proceed when conditions are met.
 * The use of `functionParameters` to store and manipulate data has been enhanced. Previously, when using `functionParameters` with `execute-entity/ies`, the parameters were combined with data and saved into local tables, which limited control over local data. Now, `functionParameters` has been split into two parts, offering greater flexibility and allowing independent interaction with local and remote databases. Backward compatibility is maintained for existing solutions that use `functionParameters`. In the YAML, `functionParameters` will appear with a yellow squiggle to indicate that it has been deprecated.&#x20;
   * `parameters`: Interacts with the remote database&#x20;
   * `data`: Interacts with the local database
