@@ -21,10 +21,10 @@ layout:
 
 <figure><img src=".gitbook/assets/Release 2025_5.png" alt=""><figcaption></figcaption></figure>
 
-| Release date    | 10 September 2025 |
+| Release date    | 25 September 2025 |
 | --------------- | ----------------- |
-| iOS version     | 1.xx.0            |
-| Android version | 1.xx.0            |
+| iOS version     | 1.159.23          |
+| Android version | 1.159.23          |
 | Jigx Builder    | 1.39.0            |
 
 ## Mobile Apps
