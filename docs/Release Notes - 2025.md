@@ -1,20 +1,3 @@
----
-layout:
-  width: wide
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # Release Notes - 2025
 
 ## Release 2025.5
@@ -31,8 +14,7 @@ layout:
 
 #### New features & improvements
 
-*   Solution switcher - Added properties for configuring an icon, icon color, and custom category in the index.jigx file of a solution. This allows each solution in the solution switcher to display its own customized details for better visual identification and organization.\
-
+*   Solution switcher - Added properties for configuring an icon, icon color, and custom category in the index.jigx file of a solution. This allows each solution in the solution switcher to display its own customized details for better visual identification and organization.<br>
 
     <figure><img src=".gitbook/assets/JB-indexNaming.png" alt="Customized solution switcher" width="563"><figcaption><p>Customized solution switcher</p></figcaption></figure>
 
@@ -191,7 +173,7 @@ New features & improvements
   * [jig.table](https://docs.jigx.com/examples/readme/jig-types/jig_table)
   * [expander with variant](https://docs.jigx.com/examples/readme/components/expander#expander-with-variant-divider-and-expandicon)
   * [segmented-control](https://docs.jigx.com/examples/readme/components/segmented-control)
-  * [grid-item](https://examples/readme/components/grid/grid-item)
+  * [grid-item](https://docs.jigx.com/examples/readme/components/grid/grid-item)
 
 Bug fixes
 

@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Releases](README.md)
+* [Release Notes - 2026](release-notes-2026.md)
 * [Release Notes - 2025](<Release Notes - 2025.md>)
 * [Release Notes - 2024](<Release Notes - 2024.md>)
 * [Release Notes - 2023](<Release Notes - 2023.md>)
