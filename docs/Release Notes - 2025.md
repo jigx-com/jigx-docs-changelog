@@ -4,12 +4,6 @@
 
 <figure><img src=".gitbook/assets/Release 2025_5.png" alt=""><figcaption></figcaption></figure>
 
-| Release date    | 25 September 2025 |
-| --------------- | ----------------- |
-| iOS version     | 1.159.23          |
-| Android version | 1.159.23          |
-| Jigx Builder    | 1.39.0            |
-
 ## Mobile Apps
 
 #### New features & improvements
@@ -94,17 +88,9 @@ The properties `isDuotone: true` and `iscontained` have been replaced with `type
 
 ### Updates to Quick-Start sample solutions
 
-<table><thead><tr><th width="176.40234375">Solution</th><th>Additions</th></tr></thead><tbody><tr><td>jigx-sample</td><td><a href="https://docs.jigx.com/examples/readme/jig-types/jig.gallery">jig.gallery</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/components/count-up">count-up</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/components/location#location-radius">location - radius</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/actions/open-media-picker">open-media-picker</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/actions/open-map">open-map</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/actions/generate-pdf">generate-pdf</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/actions/share">share</a></td></tr></tbody></table>
-
 ## Release 2025.4
 
 <figure><img src=".gitbook/assets/Release 2025.4.png" alt=""><figcaption></figcaption></figure>
-
-| Release date    | 4 July 2025 |
-| --------------- | ----------- |
-| iOS version     | 1.146.2     |
-| Android version | 1.146.2     |
-| Jigx Builder    | 1.38.0      |
 
 ### Mobile Apps
 
@@ -196,17 +182,9 @@ Bug Fixes
 
 ### Updates to Quick-Start sample solutions
 
-<table><thead><tr><th width="167.05859375">Solution</th><th>Additions</th></tr></thead><tbody><tr><td>jigx-sample</td><td><a href="https://docs.jigx.com/examples/readme/jig-types/jig_grid">jig.grid</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/jig-types/jig_tabs">jig.tabs</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/jig-types/jig_table">jig.table</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/jig-types/common-jig-type-properties/bottomsheet-_beta_">bottomSheet (Beta)</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/components/segmented-control">segmented-control</a></td></tr><tr><td></td><td><a href="https://docs.jigx.com/examples/readme/components/grid/grid-item">grid-item</a></td></tr></tbody></table>
-
 ## Release 2025.3
 
 <figure><img src=".gitbook/assets/Release 2025.3.png" alt=""><figcaption></figcaption></figure>
-
-| Release date    | 21 March 2025 |
-| --------------- | ------------- |
-| iOS version     | 1.131.0       |
-| Android version | 1.131.0       |
-| Jigx Builder    | 1.37.0        |
 
 ### Mobile Apps
 
@@ -256,12 +234,6 @@ Bug Fixes
 
 <figure><img src=".gitbook/assets/Release-2025-2.png" alt=""><figcaption></figcaption></figure>
 
-| Release date    | 6 March 2025 |
-| --------------- | ------------ |
-| iOS version     | 1.127.1      |
-| Android version | 1.127.1      |
-| Jigx Builder    | 1.36.0       |
-
 ### Mobile Apps
 
 Bug Fixes
@@ -291,12 +263,6 @@ Bug Fixes
 ## Release 2025.1
 
 <figure><img src=".gitbook/assets/Release 2025.1.png" alt=""><figcaption></figcaption></figure>
-
-| Release date    | February 2025 |
-| --------------- | ------------- |
-| iOS version     | 1.125.14      |
-| Android version | 1.125.14      |
-| Jigx Builder    | 1.35.0        |
 
 ### Important Updates and Migration Guidance
 
@@ -364,27 +330,6 @@ New features & improvements
 * Enabled the action buttons to be displayed on the Home Hub.
 * Actions added on [jig-header](<Release Notes - 2025.md>) - Configure actions to display as links or icons in the top right corner of the header.
 * Added multiple new actions, as described in the table below:
-
-| **New actions**                       | **Functionality**                                                                                                                                                                                                                                                                        |
-| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `action.execute-sql`                  | Execute custom SQL queries on the database securely when the action button is tapped.                                                                                                                                                                                                    |
-| `action.open-map`                     | Open the device's default map app (e.g., Google Maps, Apple Maps, or Waze) with the provided address when the on-screen button is tapped. See [open-map](<Release Notes - 2025.md>) for more information.                                                                                |
-| `action.open-media-picker`            | Quickly manage selected media files on your device—modify or remove selections with a tap of the on-screen button. See [open-media-picker](<Release Notes - 2025.md>) for more information.                                                                                              |
-| `action.generate-file`                | Generate files such as PDFs, CSVs, or text files. Content is written to the file, along with an optional encoding parameter. Once generated, the file's URI is returned and included in the action instance output. See [generate-file](<Release Notes - 2025.md>) for more information. |
-| `action.generate-pdf`                 | Create a PDF file version of HTML content, whether a receipt, report, form, or other document, with just a tap. See [generate-pdf](<Release Notes - 2025.md>) for more information.                                                                                                      |
-| `action.print`                        | Generate hard copies of invoices, receipts, articles, or any rendered content in raw HTML, that works across different devices and printers. See [print](<Release Notes - 2025.md>) for more information.                                                                                |
-| `action.set-active-tab`               | Programmatically set the active tab in the `jig.tab` component. See [set-active-tab](<Release Notes - 2025.md>) for more information.                                                                                                                                                    |
-| `action.share`                        | Share files directly from the app with just a tap. Whether it's a document, image, or report, the share action lets you send files via the devices messaging apps. See [share](<Release Notes - 2025.md>) for more information.                                                          |
-| `action.set-jig-state`                | Programmatically set the state of the current jig.                                                                                                                                                                                                                                       |
-| `action.reset-jig-state`              | Programmatically reset the state of the current jig.                                                                                                                                                                                                                                     |
-| `action.set-solution-state`           | Programmatically set the state of the solution. Note, this action is similar to `action.set.state`.                                                                                                                                                                                      |
-| `action.reset-solution-state`         | Programmatically reset the state of the solution. Note, this action is similar to `action.reset.state`.                                                                                                                                                                                  |
-| `action.set-custom-component-state`   | Programmatically set the state of the [Custom Components (Alpha)](<Release Notes - 2025.md>) in the current jig.                                                                                                                                                                         |
-| `action.reset-custom-component-state` | Programmatically reset the state of the [Custom Components (Alpha)](<Release Notes - 2025.md>) in the current jig.                                                                                                                                                                       |
-| `action.start-sync-scope`             | The action configured to start syncing a specific subset of data with the server, effectively cutting down on network traffic and useful when the app is offline.                                                                                                                        |
-| `action.delete-sync-scope`            | The action configured to delete syncing a specific subset of data with the server, effectively cutting down on network traffic and useful when the app is offline.                                                                                                                       |
-| `action.delete-sync-status`           | Set the action to remove the sync status displayed on the screen (syncing, synced, failed, synced, and interrupted).                                                                                                                                                                     |
-| `action.update-profile`               | Allow the user to update their profile (avatar URL) easily to keep their personal information current and ensure that the app experience is tailored to their preferences.                                                                                                               |
 
 Bug Fixes
 
