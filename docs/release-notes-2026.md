@@ -21,12 +21,6 @@ Create and submit powerful, customizable forms, directly from your phone.
 * Fixed progressive performance degradation on Android.
 * Resolved an issue where newly created users in existing or new organizations could see the “No Solution” screen in the mobile app, despite solutions being assigned correctly. This was caused by an update to the backend identity provider which introduced non-standard user IDs (GUIDs) for newly created users. This caused validation checks used during solution assignment to fail
 
-### Components and jig types
-
-#### New features & improvements
-
-* [Web-view](https://docs.jigx.com/examples/readme/components/web-view) component - Add `allowInAppRedirect` option to `component.web-view`, when enabled, Jigx deeplinks navigate within the app, regular URLs open in an in-app browser, and other schemes delegate to the system.
-
 ### Actions
 
 #### New features & improvements
@@ -38,7 +32,7 @@ Create and submit powerful, customizable forms, directly from your phone.
 
 #### New features & improvements
 
-* REST functions have been enhancement to allow the  `UseLocal:true` prpoerty to be used with secrets.
+* REST functions have been enhancement to allow the  `UseLocal:true` property to be used with secrets.
 * [Index.jigx](https://docs.jigx.com/building-apps-with-jigx/ui/home-hub/index-settings) - You can now use the `bundleId` property in the `dependencies` section of the index.jigx file to restrict a solution to specific mobile app bundle IDs. This enhancement allows greater control over which branded or distributed mobile apps can load a solution. This enhancement is useful for managing solution availability across multiple branded mobile apps or deployment environments.
 
 ### Jigx Management
