@@ -1,5 +1,50 @@
 # Release Notes - 2026
 
+## Release 2026.2
+
+<figure><img src=".gitbook/assets/Release 2026.2.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="169.2421875">Release 2026.2</th><th>22 May 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>2.90.4</td></tr><tr><td>Android version</td><td>2.83.4</td></tr><tr><td>Jigx Builder</td><td>1.43.0</td></tr></tbody></table>
+
+### <i class="fa-rocket-launch">:rocket-launch:</i> Announcement : Introducing JigxForms
+
+**What  is JigxForms?** \
+AI-powered forms. Built for the field. Ready anytime, anywhere.\
+Create and submit powerful, customizable forms, directly from your phone.
+
+<a href="https://jigx.com/products/jigx-for-acumatica/jigxforms/?utm_source=docs.jigx.com" class="button primary" data-icon="rocket-launch">Register now for JigxForms!  </a>
+
+### Mobile Apps
+
+#### Bug Fixes
+
+* Fixed progressive performance degradation on Android.
+* Resolved an issue where newly created users in existing or new organizations could see the “No Solution” screen in the mobile app, despite solutions being assigned correctly. This was caused by an update to the backend identity provider which introduced non-standard user IDs (GUIDs) for newly created users. This caused validation checks used during solution assignment to fail
+
+### Components and jig types
+
+#### New features & improvements
+
+* [Web-view](https://docs.jigx.com/examples/readme/components/web-view) component - Add `allowInAppRedirect` option to `component.web-view`, when enabled, Jigx deeplinks navigate within the app, regular URLs open in an in-app browser, and other schemes delegate to the system.
+
+### Actions
+
+#### New features & improvements
+
+* Add `page` property to [action.generate-pdf](https://docs.jigx.com/examples/readme/actions/generate-pdf) to control paper `size` (letter, legal, tabloid, a4, a3), `orientation` (portrait, landscape), custom dimensions (width/height in PDF points), and `margins` (uniform number or per-side object). Fix iOS PDF generation to paginate multi-page content correctly instead of producing a single oversized page.
+* A new `onAppActivated` [event](https://docs.jigx.com/examples/readme/events) is available on solution and jig level, allowing you to define actions that automatically execute when the app returns to the foreground from the background or inactive state. This is useful for refreshing data or triggering syncs when a user returns to the app mid-session. Note that `onAppActivated` does not fire on initial app launch, only on subsequent foreground transitions.
+
+### Builder
+
+#### New features & improvements
+
+* REST functions have been enhancement to allow the  `UseLocal:true` prpoerty to be used with secrets.
+* [Index.jigx](https://index.jigxhttps/docs.jigx.com/building-apps-with-jigx/ui/home-hub/index-settings) - You can now use the `bundleId` property in the `dependencies` section of the index.jigx file to restrict a solution to specific mobile app bundle IDs. This enhancement allows greater control over which branded or distributed mobile apps can load a solution. This enhancement is useful for managing solution availability across multiple branded mobile apps or deployment environments.
+
+### Jigx Management
+
+* Bug fixes, performance improvements, and usability improvements.
+
 ## Release 2026.1
 
 <figure><img src=".gitbook/assets/Release 2026.1.png" alt=""><figcaption></figcaption></figure>
