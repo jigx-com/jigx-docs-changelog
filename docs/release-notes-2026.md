@@ -39,7 +39,7 @@ Create and submit powerful, customizable forms, directly from your phone.
 #### New features & improvements
 
 * REST functions have been enhancement to allow the  `UseLocal:true` prpoerty to be used with secrets.
-* [Index.jigx](https://index.jigxhttps/docs.jigx.com/building-apps-with-jigx/ui/home-hub/index-settings) - You can now use the `bundleId` property in the `dependencies` section of the index.jigx file to restrict a solution to specific mobile app bundle IDs. This enhancement allows greater control over which branded or distributed mobile apps can load a solution. This enhancement is useful for managing solution availability across multiple branded mobile apps or deployment environments.
+* [Index.jigx](https://docs.jigx.com/building-apps-with-jigx/ui/home-hub/index-settings) - You can now use the `bundleId` property in the `dependencies` section of the index.jigx file to restrict a solution to specific mobile app bundle IDs. This enhancement allows greater control over which branded or distributed mobile apps can load a solution. This enhancement is useful for managing solution availability across multiple branded mobile apps or deployment environments.
 
 ### Jigx Management
 
