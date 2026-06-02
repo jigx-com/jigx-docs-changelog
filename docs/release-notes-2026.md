@@ -1,4 +1,70 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # Release Notes - 2026
+
+## Release 2026.3
+
+<figure><img src=".gitbook/assets/Release 2026.3.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="169.2421875">Release 2026.3</th><th>June 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>2.99.3</td></tr><tr><td>Android version</td><td>2.92.3</td></tr><tr><td>Jigx Builder</td><td>1.44.0</td></tr></tbody></table>
+
+### <i class="fa-rocket-launch">:rocket-launch:</i> Announcement : Introducing JigxForms
+
+**What  is JigxForms?** \
+AI-powered forms. Built for the field. Ready anytime, anywhere.\
+Create and submit powerful, customizable forms, directly from your phone.
+
+<a href="https://jigx.com/products/jigx-for-acumatica/jigxforms/?utm_source=docs.jigx.com" class="button primary" data-icon="rocket-launch">Register now for JigxForms!  </a>
+
+### Mobile Apps
+
+#### New features & improvements
+
+* Added support for **packages** - solutions composed inside other solutions. A jig can navigate into a package, execute its actions, with expression-resolved targets, and pass callback actions for the package to invoke back. The package property (target solution name) is available in the [action.go-to](https://docs.jigx.com/examples/readme/actions/go-to#accessing-a-jig-in-another-solution) and [execute.action](https://execute.actionhttps/docs.jigx.com/examples/readme/actions/execute-action#cross-solution-action-access). Package `onLoad`, `datasources`, and `@ctx.solution.*` state are scoped to the package. The app switcher now hides package, form, and data solutions, showing only real apps.
+* **Solution title** available in expressions - The `=@ctx.solution.title` expression is now supported in YAML configurations, allowing you to reference the solution's display title (as defined in `index.jigx`) directly within your jigs. This follows the same pattern as other solution metadata properties such as `=@ctx.solution.name`, `=@ctx.solution.id`, and `=@ctx.solution.organizationId`. Use this expression wherever you need to dynamically display or reference the solution title, for example, in screen headers, labels, banners, or conditional logic, without hardcoding the title string into individual components.
+
+#### Bug Fixes
+
+* **Persistent file storage for media, signatures, and generated outputs** - Media picker selections, captured signatures, and generated PDFs and files are now written to permanent storage locations that survive cache purges, app restarts, and low-memory events. On iOS, media and signatures are saved to `Library/Application Support` (excluded from iCloud backup), and generated PDFs and files are saved to `Documents/Generated PDFs` and `Documents/Generated Files` respectively. On Android, outputs are directed to internal storage and the documents directory. A loading indicator is displayed in the media field while the background copy is in progress, keeping the experience responsive. This resolves a number of issues where files appeared to save successfully but were lost after the OS purged temporary or cache directories.
+* Fixed an incorrect item height calculation in list widgets that caused list items to not properly fill the available container space. Items now render at the correct height regardless of screen size or the number of items in the list.
+* Fixed an issue on the sign-in screen where the on-screen keyboard remained visible when entering the SSO flow from the email field, covering the SSO options modal and making it difficult or impossible to interact with. The keyboard is now dismissed before the SSO options modal opens, ensuring it is fully visible and accessible.
+* Fixed an issue where `component.grid` rendered slowly on Android, with tiles appearing sequentially after the rest of the screen had already loaded. The per-tile entrance animation that triggered off-screen layer processing has been removed on both Android and iOS, so grid tiles now appear in a single frame and render consistently across platforms.
+* Remove orphaned cached files during a full entity sync to prevent unbounded storage growth.
+* Resolved issues affecting file uploads and downloads when using the Dynamic Data provider on unreliable network connections. File uploads and downloads now correctly transition to a Failed status when a network error occurs, instead of remaining indefinitely in an Uploading or Downloading state. Active file transfers on slow but functioning connections are no longer incorrectly cancelled by connection timeout checks during the transfer process.
+
+### Components and jig types
+
+#### New features & improvements
+
+* [Web-view](https://docs.jigx.com/examples/readme/components/web-view) component - Add `allowInAppRedirect` option to `component.web-view`, when enabled, Jigx deeplinks navigate within the app, regular URLs open in an in-app browser, and other schemes delegate to the system.
+* Added the `listHeader` property to [jig.list](https://jig.listhttps/docs.jigx.com/examples/readme/jig-types/jig_list), enabling fully configurable custom child components in the list header. This eliminates the need to use `jig.default` with `component.list` as a workaround for custom list header content, while maintaining the performance benefits of `jig.list`. The existing `header` /`jig-header` property remains reserved for configuring the hero header.
+
+### Jigx Management
+
+* Bug fixes, performance improvements, and usability improvements.
+
+### Updates to Quick-Start sample solutions
+
+<table><thead><tr><th width="146.08984375">Solution</th><th>Additions</th></tr></thead><tbody><tr><td>jigx-samples</td><td>List jig with listHeader</td></tr><tr><td> </td><td>List jig with listHeader &#x26; jig-header</td></tr><tr><td></td><td>Changed CSV data files to JSON files to upload to Management</td></tr></tbody></table>
 
 ## Release 2026.2
 
