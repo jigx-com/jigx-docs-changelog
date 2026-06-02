@@ -25,7 +25,7 @@ layout:
 
 <figure><img src=".gitbook/assets/Release 2026.3.png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="169.2421875">Release 2026.3</th><th>June 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>2.99.3</td></tr><tr><td>Android version</td><td>2.92.3</td></tr><tr><td>Jigx Builder</td><td>1.44.0</td></tr></tbody></table>
+<table><thead><tr><th width="169.2421875">Release 2026.3</th><th>2 June 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>2.99.3</td></tr><tr><td>Android version</td><td>2.92.3</td></tr><tr><td>Jigx Builder</td><td>1.44.0</td></tr></tbody></table>
 
 ### <i class="fa-rocket-launch">:rocket-launch:</i> Announcement : Introducing JigxForms
 
