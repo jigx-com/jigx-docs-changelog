@@ -21,6 +21,54 @@ layout:
 
 # Release Notes - 2026
 
+## Release 2026.4
+
+<figure><img src=".gitbook/assets/Release 2026.4.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="169.2421875">Release 2026.3</th><th>10 June 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>2.105.2</td></tr><tr><td>Android version</td><td>2.98.2</td></tr><tr><td>Jigx Builder</td><td>1.45.0</td></tr></tbody></table>
+
+### <i class="fa-rocket-launch">:rocket-launch:</i> Announcement : Introducing JigxForms
+
+**What  is JigxForms?** \
+AI-powered forms. Built for the field. Ready anytime, anywhere.\
+Create and submit powerful, customizable forms, directly from your phone.
+
+<a href="https://jigx.com/products/jigx-for-acumatica/jigxforms/?utm_source=docs.jigx.com" class="button primary" data-icon="rocket-launch">Register now for JigxForms!  </a>
+
+### Mobile Apps
+
+#### New features & improvements
+
+* Added the ability to manage **notifications** in the app using the _Mark All as Read_ icon, and the _Trash_ icon to delete read or all notifications.
+* A redesigned media picker flow for the mobile app. Updated user experience for selecting and managing media across image, video, and document fields.
+
+#### Bug Fixes
+
+* Improved performance and rendering of image-heavy grids. Fixed navigation stutter and layout pop-in when opening grid screens. Prevented unnecessary image reloads and flashing during re-renders. This fix provides a smoother and more responsive grid browsing experience.
+* Resolved an issue where video previews could appear as a black screen after recording or selecting a video from the device.
+* Fixed notifications when tapping a push notification now correctly marks it as read.
+* Fixed an issue where downstream actions could run before selected or captured files were fully saved. The media picker now waits for file persistence to complete before closing, improving reliability for scenarios such as signature capture and PDF generation.
+* Files with spaces or special characters in their names now copy and upload correctly.
+* Signing out now correctly clears downloaded files.
+
+### Components and jig types
+
+#### New features & improvements
+
+* **jig-header** – Added support for displaying a custom logo in the navigation bar and controlling title visibility. This enables more flexible header configurations with different combinations of branding, titles, and actions to match your application’s design and branding requirements.
+
+### Builder
+
+#### New features & improvements
+
+* Enhanced `onTableChanged` event handling for the Dynamic Data provider when Row-Level Security (RLS) is enabled. What’s Changed :
+  * `onTableChanged` events are now triggered only for data changes that the current user is permitted to see under RLS rules.
+  * Prevented unnecessary `onTableChanged` events from firing when no actual data change has occurred.
+
+### Updates to Quick-Start sample solutions
+
+<table><thead><tr><th width="146.08984375">Solution</th><th>Additions</th></tr></thead><tbody><tr><td>jigx-samples</td><td>jig-header component with logo </td></tr></tbody></table>
+
 ## Release 2026.3
 
 <figure><img src=".gitbook/assets/Release 2026.3.png" alt=""><figcaption></figcaption></figure>
