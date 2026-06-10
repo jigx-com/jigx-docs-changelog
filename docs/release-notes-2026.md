@@ -39,8 +39,8 @@ Create and submit powerful, customizable forms, directly from your phone.
 
 #### New features & improvements
 
-* Added the ability to manage **notifications** in the app using the _Mark All as Read_ icon, and the _Trash_ icon to delete read or all notifications.
-* A redesigned media picker flow for the mobile app. Updated user experience for selecting and managing media across image, video, and document fields.
+* Added the ability to manage [notifications](https://docs.jigx.com/building-apps-with-jigx/additional-functionality/notifications) in the app using the _Mark All as Read_ icon, and the _Trash_ icon to delete read or all notifications.
+* A redesigned [media picker](https://docs.jigx.com/examples/readme/components/media-field) flow for the mobile app. Updated user experience for selecting and managing media across image, video, and document fields.
 
 #### Bug Fixes
 
@@ -55,13 +55,13 @@ Create and submit powerful, customizable forms, directly from your phone.
 
 #### New features & improvements
 
-* **jig-header** – Added support for displaying a custom logo in the navigation bar and controlling title visibility. This enables more flexible header configurations with different combinations of branding, titles, and actions to match your application’s design and branding requirements.
+* [jig-header](https://docs.jigx.com/examples/readme/components/jig-header#jig-header-with-logo) – Added support for displaying a custom logo in the navigation bar and controlling title visibility. This enables more flexible header configurations with different combinations of branding, titles, and actions to match your application’s design and branding requirements.
 
 ### Builder
 
 #### New features & improvements
 
-* Enhanced `onTableChanged` event handling for the Dynamic Data provider when Row-Level Security (RLS) is enabled. What’s Changed :
+* Enhanced `onTableChanged` event handling for the Dynamic Data provider when Row-Level Security (RLS) is enabled. What’s changed :
   * `onTableChanged` events are now triggered only for data changes that the current user is permitted to see under RLS rules.
   * Prevented unnecessary `onTableChanged` events from firing when no actual data change has occurred.
 
