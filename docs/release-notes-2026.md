@@ -21,6 +21,40 @@ layout:
 
 # Release Notes - 2026
 
+## Release 2026.5
+
+<figure><img src=".gitbook/assets/Release 2026.5.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="169.2421875">Release 2026.6</th><th>24 June 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>2.124.2</td></tr><tr><td>Android version</td><td>2.124.2</td></tr><tr><td>Jigx Builder</td><td>1.46.0</td></tr></tbody></table>
+
+### <i class="fa-rocket-launch">:rocket-launch:</i> Announcement : Introducing JigxForms
+
+**What  is JigxForms?** \
+AI-powered forms. Built for the field. Ready anytime, anywhere.\
+Create and submit powerful, customizable forms, directly from your phone.
+
+<a href="https://jigx.com/products/jigx-for-acumatica/jigxforms/?utm_source=docs.jigx.com" class="button primary" data-icon="rocket-launch">Register now for JigxForms!  </a>
+
+### Mobile Apps
+
+#### bug fixes
+
+* Stuck-offline banner. Fixed an issue where users were seeing the offline banner permanently even after reconnecting.
+* expo-task-manager crash - Patched a recurring iOS-only native crash (EXC\_BAD\_ACCESS) in Expo's expo-task-manager module caused by a use-after-free race condition.&#x20;
+* Region filtering **-** After login, users were briefly seeing solutions from the wrong region (e.g. AP solutions appearing in a US East account). All organization observers now consistently apply region filtering.
+* Fixed black camera preview on Samsung devices (forces stable CameraX 1.5.3) and adds shutter animation + haptic feedback on capture to stop accidental duplicate photos.
+
+### Actions & events&#x20;
+
+#### New features & improvements
+
+* [action.open-url](https://docs.jigx.com/examples/readme/actions/open-url) now supports custom HTTP request headers when opening URLs. You can now securely open authenticated web content, documents, and other protected resources without requiring users to manually authenticate outside the app.
+  * ​Added custom request headers, such as authorization tokens or API keys, to URL requests.
+  * ​Enabled access to authenticated endpoints and protected resources directly from the app.
+  * ​Supports scenarios where additional request context is required before a URL can be opened.
+* [canGoBack](https://docs.jigx.com/examples/readme/events/cangoback) event - New jig-level property that lets you control whether users can navigate away from the current screen. It applies to all back-navigation triggers, including the Android hardware back button, iOS swipe-back, the header back button, `action.go-back`, and `action.go-to` initiated from the jig. Use `canGoBack` to confirm before leaving read-only screens, protect unsaved changes across multiple components, or block navigation entirely in kiosk-style flows.
+* [Action lists](https://docs.jigx.com/examples/readme/actions/action-list) now support expressions for actions and `isSequential`, not just static arrays. Also hardens the expression engine so context aliases (@ctx.) aren't replaced inside quoted strings, with better validation and error logging.
+
 ## Release 2026.4
 
 <figure><img src=".gitbook/assets/Release 2026.4.png" alt=""><figcaption></figcaption></figure>
