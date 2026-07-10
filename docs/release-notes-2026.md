@@ -21,11 +21,36 @@ layout:
 
 # Release Notes - 2026
 
+## Release 2026.6
+
+<figure><img src=".gitbook/assets/Release 2026.6 (1).png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="169.2421875">Release 2026.6</th><th>10 July 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>2.130.2</td></tr><tr><td>Android version</td><td>2.130.2</td></tr><tr><td>Jigx Builder</td><td>1.47.0</td></tr></tbody></table>
+
+### Mobile Apps
+
+#### **New Features & Improvements**
+
+* **Type-to-confirm account deletion** - Account deletion now requires users to deliberately type a confirmation phrase before the action completes. This prevents accidental deletions on shared devices where users may tap Delete instead of Logout. The profile area has also been redesigned into consistent cards for a cleaner, more organized layout.
+* **Sync interrupted state** - Syncs that are killed or sent to the background mid-flight now resolve to an explicit _interrupted_ state rather than hanging indefinitely on the syncing screen. The interruption reason is recorded and datasource subscribers are notified, giving the app a clear signal to retry or recover gracefully. This is particularly helpful in field environments where connectivity or device usage is unpredictable.
+
+#### **Bug Fixes**
+
+* Fixed an intermittent issue where the primary action button failed to appear under poor connectivity. A fallback timer now ensures the action panel always renders, even when the device interaction queue stalls.
+* Resolved a regression that caused login to hang on the sync screen with null datasource counts and no banners appearing. Stabilizing an internal logout callback allows initial sync to complete as expected.
+* Fixed userId-related errors that caused offline writes to be silently dropped during auth-limbo or logout states. Background sync can now perform authenticated work without requiring an active UI session. An offline-launch initialization crash has also been resolved.
+* On logout, push notification endpoints are now torn down per organization rather than leaving orphaned or mis-scoped endpoints active across sessions.
+* Fixed an issue where portrait-orientation photos taken with the camera appeared stretched when exported to PDF on iOS. The fix corrects an EXIF orientation mismatch introduced with a previous iOS image optimization update.
+
+### Jigx Management
+
+* Bug fixes, performance improvements, and usability improvements.
+
 ## Release 2026.5
 
 <figure><img src=".gitbook/assets/Release 2026.5.png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="169.2421875">Release 2026.6</th><th>24 June 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>2.124.2</td></tr><tr><td>Android version</td><td>2.124.2</td></tr><tr><td>Jigx Builder</td><td>1.46.0</td></tr></tbody></table>
+<table><thead><tr><th width="169.2421875">Release 2026.5</th><th>24 June 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>2.124.2</td></tr><tr><td>Android version</td><td>2.124.2</td></tr><tr><td>Jigx Builder</td><td>1.46.0</td></tr></tbody></table>
 
 ### <i class="fa-rocket-launch">:rocket-launch:</i> Announcement : Introducing JigxForms
 
@@ -37,7 +62,7 @@ Create and submit powerful, customizable forms, directly from your phone.
 
 ### Mobile Apps
 
-#### bug fixes
+#### Bug fixes
 
 * Stuck-offline banner. Fixed an issue where users were seeing the offline banner permanently even after reconnecting.
 * expo-task-manager crash - Patched a recurring iOS-only native crash (EXC\_BAD\_ACCESS) in Expo's expo-task-manager module caused by a use-after-free race condition.&#x20;
