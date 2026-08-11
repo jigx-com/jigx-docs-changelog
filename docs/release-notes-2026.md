@@ -21,6 +21,70 @@ layout:
 
 # Release Notes - 2026
 
+## Release 2026.7
+
+<figure><img src=".gitbook/assets/Release 2026.7.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="169.2421875">Release 2026.6</th><th>11 August 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.0.0</td></tr><tr><td>Android version</td><td>3.0.0</td></tr><tr><td>Jigx Builder</td><td>1.48.0</td></tr></tbody></table>
+
+### <i class="fa-rocket-launch">:rocket-launch:</i> Announcement : JigxForms is live!
+
+**What  is JigxForms?** \
+Create AI-powered forms to capture data in the field and sync it to other systems.
+
+<a href="https://forms.jigx.com/forms?auth=signup&#x26;utm_source=documentation" class="button primary" data-icon="rocket-launch">Try it for free today - Signup now for JigxForms!  </a>
+
+### Mobile Apps
+
+#### **New Features & Improvements**
+
+* Fix generated PDFs rendering with the wrong solution's layout when multiple solutions are loaded on one device.
+* New package deep links  `…/solution/{id}/package/{pkg}/jig/{jigId}`  ensures that tapping back returns users to the wrapper's list.
+* &#x20;Add support for opening package jigs from push notifications.
+* Added a delay of the offline banner until the device is offline for 4 seconds, preventing false-negative flashes on brief connectivity drops.
+
+#### **Bug Fixes**
+
+* Fix queued file uploads (photos, generated PDFs) failing with ENOENT after an iOS app upgrade by healing stale app-container paths at upload time.
+* Fix jigs failing to render when a published configuration is missing its `children` list.
+* Auth-protected files now open correctly via open-url on Android devices.&#x20;
+* Fixed an issue where primary action buttons (such as Complete, Stop time log, Add to appointment, and Preview PDF) could intermittently fail to appear on Android, even though the action panel was active. Restarting the app was previously the only way to recover; this now resolves reliably without needing to relaunch.
+* Prevented unexpected logout during session refresh. Fixed an issue where a brief network interruption during session refresh could incorrectly log users out. The app now stays logged in when this kind of temporary connection issue occurs.
+* Fix secondary credential connect form showing a free-text field instead of the tenant dropdown when connection details fail to load. The form now retries loading instead of storing a credential with an unverified tenant.
+* Open deeplink and notification targets immediately while their solution syncs, with a skeleton placeholder instead of a false _Solution is not available_ error.
+* Reduce generated PDF file size on iOS by up to 5× for image-heavy documents.
+
+### Components and jig types
+
+#### New features & improvements
+
+* The [amount-control](https://docs.jigx.com/examples/readme/components/amount-control) component now supports a  `isManualEditingEnabled` property, which re-enables direct keyboard input for typing a value rather than relying solely on the plus/minus buttons. While focused, the field holds your input as a draft string, and the value is only committed to the configured `min`/`max` range once you blur or submit.&#x20;
+
+#### **Bug Fixes**
+
+* Fixed an Android issue for the `amount-control` where submitting and then blurring the field could cause the value to be committed twice.
+* Fixed an issue where `dropdown` items with a title, subtitle, and description could have their description text appear outside the bottom sheet. The description now measures and wraps correctly, and multi-select footer buttons display side by side instead of stacking.
+* Fixed an issue where a stray tab bar could appear in the footer of the `dropdown` bottom sheet.
+* `Media-picker` keyboard overlap - Fixed an issue where opening the media picker while a text field was focused could leave the on-screen keyboard visible over the picker sheet on Android, and cause the keyboard to unexpectedly reappear after closing the sheet.
+
+### Builder
+
+#### New features & improvements
+
+* Added a new `@ctx.solution.version` expression exposing the published version number of the current solution.
+
+#### **Bug Fixes**
+
+* Fix expression failures when splitting a string by a backslash literal more than once in one expression.
+
+### Jigx Management
+
+#### New features & improvements
+
+* Added support for cookie-based authentication alongside existing OAuth/SSO flows.
+* Caching optimization and performance enhancements.
+* Added a Cloudflare sync setting to Solutio&#x6E;_→_&#x53;ettings so a solution can be enabled to sync to the Cloudflare platform. Added a new Cloudflare tab in _Solution → Settings_ with a _Sync to Cloudflare_ toggle. Saves on toggle, and visibility/editability is gated by member, org-owner, and support roles.
+
 ## Release 2026.6
 
 <figure><img src=".gitbook/assets/Release 2026.6 (1).png" alt=""><figcaption></figcaption></figure>
