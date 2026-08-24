@@ -21,11 +21,48 @@ layout:
 
 # Release Notes - 2026
 
+## Release 2026.8
+
+<figure><img src=".gitbook/assets/Release 2026.8.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="169.2421875">Release 2026.8</th><th>24 August 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.2.0</td></tr><tr><td>Android version</td><td>3.2.0</td></tr><tr><td>Jigx Builder</td><td>1.50.0</td></tr></tbody></table>
+
+### <i class="fa-rocket-launch">:rocket-launch:</i> Announcement : JigxForms is live!
+
+**What  is JigxForms?** \
+Create AI-powered forms to capture data in the field and sync it to other systems.
+
+<a href="https://forms.jigx.com/forms?auth=signup&#x26;utm_source=documentation" class="button primary" data-icon="rocket-launch">Try it for free today - Signup now for JigxForms!  </a>
+
+### Mobile Apps
+
+#### **New Features & Improvements**
+
+* **Local time by default for date/time text** -Text rendered through `TextWithFormat` (`format.dateFormat`) now displays in the device's local timezone by default, instead of UTC. Previously, a stored value of `12:00Z` would show as `12:00` on a device set to UTC+2, instead of the correct local time of `14:00`. This resolves a long-standing display bug and removes the need for builders to work around it with JSONata expressions such as `$fromMillis(..., @ctx.system.timezone.offset)` , a workaround that applies _today's_ UTC offset to any date, so it was off by an hour whenever the displayed date fell in the opposite DST season from today.
+* [**New `timezone` property**](https://docs.jigx.com/examples/readme/components/common-component-properties#text-or-label) - `format.dateFormat` now accepts an optional `timezone` property for when you want to display a date/time in a specific zone rather than the device's local one. The property accepts an IANA timezone name (e.g. `Europe/Prague`) or the literal value `local`. Because it's resolved from the named zone rather than a fixed offset, the correct DST offset is applied per date, a July timestamp shown with `timezone: Europe/Prague` renders in summer time even when viewed from a device that's currently in winter time. If `timezone` is omitted or set to an invalid value, the field falls back to device-local time silently, without throwing an error.
+
+#### Bug fixes
+
+* Improved apps loading time on iPhone.
+*   Fixed an issue where the app was stuck "Syncing" forever, If an app waited on a batch of data that came back empty, the sync never finished and the app sat there loading. Usually this occurred on the first sign-in, before anything had downloaded.
+
+    _The fix:_ An empty batch now reports itself as done, so the sync completes and the app carries on.
+
+### Builder
+
+#### Improvements
+
+* **`disableNetworkRetries` property for REST functions** - REST function definitions can now set `disableNetworkRetries: true` to opt out of the platform's automatic network-level retry. When set, a fetch that fails at the connection level surfaces to the function immediately instead of being silently retried underneath it. Previously, a connection failure (logged as `Failed to reach endpoint (retry exceeded)` from `data-provider-controller`) was automatically retried up to 3 times by the platform's `fetchWithRetry` behavior, with no visibility or control at the function level. For idempotent calls this is harmless, but for non-idempotent calls — a POST or PUT that creates a record — it's unsafe: if an earlier attempt actually reached the remote service and was processed, but the response was lost on the way back, the function only sees "network failed" and the platform quietly retries, with no key or reference tying the retry to the original attempt. Each retry can then create a duplicate record server-side. Note: This property is opt-in and off by default, so existing REST functions keep the current automatic-retry behavior unless you explicitly set `disableNetworkRetries: true`. Set it on any REST function that performs a non-idempotent write (record creation, payment processing, and similar) where a duplicated retry would create duplicate data. This property helps prevent duplicate records being created on a bad connections.
+
+#### Bug fixes
+
+* Fix REST functions sending unconverted values (e.g. raw file paths instead of base64) when combining `conversions` with an `inputTransform`.
+
 ## Release 2026.7
 
 <figure><img src=".gitbook/assets/Release 2026.7.png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="169.2421875">Release 2026.6</th><th>11 August 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.0.0</td></tr><tr><td>Android version</td><td>3.0.0</td></tr><tr><td>Jigx Builder</td><td>1.48.0</td></tr></tbody></table>
+<table><thead><tr><th width="169.2421875">Release 2026.7</th><th>11 August 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.0.0</td></tr><tr><td>Android version</td><td>3.0.0</td></tr><tr><td>Jigx Builder</td><td>1.48.0</td></tr></tbody></table>
 
 ### <i class="fa-rocket-launch">:rocket-launch:</i> Announcement : JigxForms is live!
 
