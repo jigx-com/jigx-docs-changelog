@@ -21,6 +21,25 @@ layout:
 
 # Release Notes - 2026
 
+## Release 2026.9
+
+<table><thead><tr><th width="169.2421875">Release 2026.9</th><th>3 September 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.3.1</td></tr><tr><td>Android version</td><td>3.3.1</td></tr><tr><td>Jigx Builder</td><td>1.51.0</td></tr></tbody></table>
+
+### Mobile Apps
+
+#### Bug fixes
+
+* Fixed the bottom navigation bar covering the primary action button on Android devices.
+* Amount control values now snap to the configured step -  `component.amount-control` now keeps its value on the grid defined by `minimum` and `step`, on both input paths, a typed value snaps to the nearest valid step, and the +/- buttons move between valid steps instead of preserving an off-step offset. This applies everywhere `amount-control` is embedded (`list-item`, `product-item`), needs no configuration change, and doesn't affect existing solutions using the default `step: 1`.
+* Fixed the offline banner getting permanently stuck after backgrounding the app, sped up offline detection on resume, and made manual retry work in one tap.&#x20;
+* Number fields now accept locale decimal separators - EU users on comma-decimal locales (e.g. Czech, German) couldn't enter decimals, the `decimal-pad` keyboard offers `,`, but the field's string-to-number conversion only recognized `.`. Number fields now accept the device/app locale's separator (`12,5` in EU, `12.5` in US).
+
+### Builder
+
+#### Bug fixes
+
+* Error handlers now fire when a REST function is skipped or blocked - REST function definitions can now rely on their `error` handlers to react when the function doesn't run at all, either because its `when` condition evaluated to falsy, or because a guard function resolved falsy. Previously, both cases exited before any error handling ran, so there was no way to surface a notification or alert when a call was silently skipped or blocked, the function just did nothing, with no feedback to the user. A matching `error` handler now fires exactly as it would for a failed REST call, so you can tell the user why an action didn't go through instead of leaving it unexplained. _Behavior change_ - if a function has a catch-all `error` handler (one without its own `when` condition), it will now also fire when the function is skipped by `when` or blocked by a guard, not only on an actual REST failure. Review any catch-all error handlers on your REST functions to make sure that's the behavior you want.
+
 ## Release 2026.8
 
 <figure><img src=".gitbook/assets/Release 2026.8.png" alt=""><figcaption></figcaption></figure>
