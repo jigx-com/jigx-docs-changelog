@@ -17,9 +17,61 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Release Notes - 2026
+
+## Release 2026.10
+
+<figure><img src=".gitbook/assets/Release 2026.10.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="169.2421875">Release 2026.10</th><th>16 September 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.5.0</td></tr><tr><td>Android version</td><td>3.5.0</td></tr><tr><td>Jigx Builder</td><td>1.51.0</td></tr></tbody></table>
+
+### Mobile Apps
+
+#### Bug fixes
+
+* Improved file upload and download reliability in poor network conditions.
+  * _Resumable file downloads_: File downloads in dynamic components (such as attachments and documents) now download in segments. If a connection drops, the download automatically resumes from where it left off without starting over.
+  * _Resumable file uploads:_ Uploads to Cloudflare-backed services now use the TUS protocol in 512 KB chunks. Intermittent network failures will no longer require re-uploading the entire file from the beginning.
+  * _Offline and restart survival_: Unfinished file transfers persist across app restarts and background sync retries.
+* _Offline file and attachment syncing_: Fixed an issue where saving or downloading files, images, or signatures offline, or during network timeouts, resulted in a "File upload failed" error message. These requests now silently re-queue and automatically complete once you're back online.
+* Resolves an issue where the app got stuck on the "Preparing your data…" screen during a cold start under slow or flaky connectivity.
+  * Visible Changes include:
+    * A cold start on a completely offline device now waits up to 3 seconds at the "Waiting for connection…" screen before opening the app.
+    * The "Waiting for connection…" screen now renders using the default light theme, matching the appearance of the "Preparing your data…" screen.
+* _Performance & Stability_: Fixed an issue where the app became progressively slower throughout the day on Android devices during extended use.
+* Resolved an issue where app startup or foreground resume could hang or fail if background local command queue processing was slow or encountered an error.
+* _Data Sync_: Fixed an issue where entity sync scopes could remain stuck in a "syncing" state after all background sync operations were successfully completed.
+* _Android Push Notification Performance & Reliability Improvements:_
+  * _Faster Push Notifications:_ Android push notifications received while the app is closed now appear instantly, without waiting for background JavaScript initialization.
+
+### Builder
+
+#### New Features & Enhancements
+
+* _Command Queue Batching_ (`batchId`)
+  * Added the optional `batchId` property to [`execute-entity`](https://docs.jigx.com/examples/readme/actions/execute-entity) and [execute-entities](https://docs.jigx.com/examples/readme/actions/execute-entities) actions.
+  * Allows developers to group related [offline write commands](https://docs.jigx.com/building-apps-with-jigx/data/offline-remote-data-handling) so that failures in one command pause execution for the rest of the batch, avoiding partial write states.
+* _Execution Control_ (`processingType`)
+  * Added the optional `processingType` property with options:
+    * `sync` _(default)_: Blocks the queue and runs sequentially (existing behavior).
+    * `parallel`: Concurrently executes commands alongside adjacent parallel commands up to the next synchronous barrier.
+    * `async`: Fire-and-forget execution; does not block subsequent commands in its batch.
+* _Enhanced Queue Management_ (`retry-queue-command` & `delete-queue-command`)
+  * Batch targeting: Actions now accept a `batchId` parameter (in addition to `id`), allowing full batches of commands to be retried or deleted in a single action.
+  * Force option: Added a `force` flag (defaults to `false`). When set to `true`, it allows retrying or deleting commands that are currently in-flight (`starting` or `processing`), aiding recovery from stalled provider calls.
+
+#### Behavioral & Breaking Changes
+
+* Strict `queueOperation` Validation: Invalid `queueOperation` values in `execute-entity` or `execute-entities` now throw an explicit error instead of silently falling back to `add`.
+* Unregistered Data Provider Handling: Commands queued for an unregistered or unknown data provider are now marked as `failed` (terminal state) rather than continuing to retry indefinitely in a tight loop.
+
+#### Bug fixes
+
+* _REST Data Provider_: Fixed an issue where mobile REST functions using Basic Auth credentials failed with `Configuration not found for token name` error. Mobile REST calls with `basicAuth` parameters now correctly resolve static and dynamic credentials for both local (`useLocalCall: true`) and remote execution.
 
 ## Release 2026.9
 
