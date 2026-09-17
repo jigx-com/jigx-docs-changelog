@@ -27,7 +27,7 @@ layout:
 
 <figure><img src=".gitbook/assets/Release 2026.10.png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="169.2421875">Release 2026.10</th><th>16 September 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.5.0</td></tr><tr><td>Android version</td><td>3.5.0</td></tr><tr><td>Jigx Builder</td><td>1.51.0</td></tr></tbody></table>
+<table><thead><tr><th width="169.2421875">Release 2026.10</th><th>17 September 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.5.0</td></tr><tr><td>Android version</td><td>3.5.0</td></tr><tr><td>Jigx Builder</td><td>1.53.0</td></tr></tbody></table>
 
 ### Mobile Apps
 
