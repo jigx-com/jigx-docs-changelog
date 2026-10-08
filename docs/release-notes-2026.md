@@ -23,6 +23,51 @@ layout:
 
 # Release Notes - 2026
 
+## Release 2026.11
+
+<figure><img src=".gitbook/assets/Release 2026.11.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="169.2421875">Release 2026.11</th><th>8 October 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.7.0</td></tr><tr><td>Android version</td><td>3.7.0</td></tr><tr><td>Jigx Builder</td><td>1.55.0</td></tr></tbody></table>
+
+### Mobile Apps
+
+#### New Features & Enhancements
+
+* _Dynamic Data Uploads Are Now Asynchronous_ - File uploads in Dynamic Data (`create`, `save`, `update`) now process asynchronously in the background by default instead of blocking the app's command queue.
+  * App actions execute immediately while large files or photos upload in the background.
+  * Manual Override: Set `processingType: sync` or `parallel` in `execute-entity/entities` if your workflow requires strict step-by-step ordering.
+  * File Deletions: Setting `localPath: null` remains synchronous for instant cleanup.
+
+#### Bug fixes
+
+* Fixed an issue when tapping a `GoTo` navigation action inside a screen's secondary options menu (`...` menu) caused the app to crash with an error message (`openJig of type function is required`)
+* Resolved an issue where action buttons remained disabled when editing a `web-view` using an iPad floating keyboard.
+* `Web-view` content now syncs in real time while typing rather than waiting for keyboard dismissal.
+* Faster app startup times for users with multiple apps or solutions on their account.
+* Reduced initial loading times by processing app updates on demand instead of all at once during launch.
+* Fixed debug and trace category pickers not opening on the troubleshooting screen.
+* Fixed coordinate capture failing on iOS when the device has no network connection.
+* Fixed form submissions failing with "Property is not configurable" when submission outputs contain empty nested values.
+* Fixed Android `share` actions dropping file attachments, shared PDFs, images and documents now attach correctly instead of sending message text only.
+* Fixed secondary actions sheet not closing on outside tap, letting the screen behind stay interactive, and hiding a jig opened in a `bottomSheet`.
+* Fixed an issue where `list` search bars and filters would disappear when no items matched your criteria. You can now easily refine or clear your search directly from the empty screen.
+* Fixed `bottomSheet` content not scrolling on Android.
+* Fix `date-picker` and calendar `event` buttons hidden behind the bottom tab bar, and calendar event buttons that did nothing when pressed.
+
+### Components and jig types
+
+#### New features & improvements
+
+*   _In-App image annotation for_ [media-fields](https://docs.jigx.com/examples/readme/components/media-field) - You can now annotate images directly within Jigx before saving them to your app. When picking or taking a photo using you can draw freehand markup right on top of the image.
+
+    **Key Highlights**
+
+    * _Freehand Drawing Tool_: Draw directly on captured or selected photos with smooth gesture support.
+    * _6-color palette_: Switch between six distinct drawing colors on the fly to highlight key areas or make notes.
+    * _Undo support_: Easily step back and undo recent strokes if you make a mistake.
+    * _Smart flattening & cropping_: Saving an annotated photo automatically flattens your artwork into the image, perfectly cropped to the image’s original aspect ratio without extra borders or whitespace.
+    * _Simple YAML configuration_: Enable image annotation on your media fields by setting `isAnnotationEnabled: true` or `annotation.isEnabled: true` in your picker options.
+
 ## Release 2026.10
 
 <figure><img src=".gitbook/assets/Release 2026.10.png" alt=""><figcaption></figcaption></figure>
