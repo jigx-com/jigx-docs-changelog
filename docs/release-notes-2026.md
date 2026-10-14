@@ -25,7 +25,7 @@ layout:
 
 ## Release 2026.12
 
-<table><thead><tr><th width="169.2421875">Release 2026.11</th><th>14 October 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.8.1</td></tr><tr><td>Android version</td><td>3.8.1</td></tr><tr><td>Jigx Builder</td><td>1.55.0</td></tr></tbody></table>
+<table><thead><tr><th width="169.2421875">Release 2026.12</th><th>14 October 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.8.1</td></tr><tr><td>Android version</td><td>3.8.1</td></tr><tr><td>Jigx Builder</td><td>1.55.0</td></tr></tbody></table>
 
 ### Mobile Apps
 
