@@ -23,11 +23,23 @@ layout:
 
 # Release Notes - 2026
 
+## Release 2026.12
+
+<table><thead><tr><th width="169.2421875">Release 2026.11</th><th>14 October 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.8.1</td></tr><tr><td>Android version</td><td>3.8.1</td></tr><tr><td>Jigx Builder</td><td>1.55.0</td></tr></tbody></table>
+
+### Mobile Apps
+
+#### Bug fixes
+
+* Fixed iOS signatures and other local files being saved as a device path instead of their content, which made jigs reading them back fail to load.
+* Fixed iOS local files failing to save from line-wrapped base64, including files already left empty on the device.
+* Fixed Android datasources failing to load when several rows save the same file at the same time.
+
 ## Release 2026.11
 
 <figure><img src=".gitbook/assets/Release 2026.11.png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="169.2421875">Release 2026.11</th><th>8 October 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.7.0</td></tr><tr><td>Android version</td><td>3.7.0</td></tr><tr><td>Jigx Builder</td><td>1.55.0</td></tr></tbody></table>
+<table><thead><tr><th width="169.2421875">Release 2026.11</th><th>8 October 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.8.0</td></tr><tr><td>Android version</td><td>3.8.0</td></tr><tr><td>Jigx Builder</td><td>1.55.0</td></tr></tbody></table>
 
 ### Mobile Apps
 
