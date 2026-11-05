@@ -23,6 +23,30 @@ layout:
 
 # Release Notes - 2026
 
+## Release 2026.13
+
+<figure><img src=".gitbook/assets/Release2026.13.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="169.2421875">Release 2026.12</th><th>30 October 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.9.0</td></tr><tr><td>Android version</td><td>3.9.0</td></tr><tr><td>Jigx Builder</td><td>1.55.0</td></tr></tbody></table>
+
+### Mobile Apps
+
+#### Bug fixes
+
+* Improved list rendering performance by rendering fewer views per list item.
+* Fixed OAuth connections asking users to sign in again when a token refresh fails on a poor network connection.
+* Fixed queued file uploads failing with "no such file" after an iOS app update.
+* Fixed concurrent file uploads intermittently failing or uploading the wrong bytes.
+
+### Components
+
+#### Bug fixes
+
+* `Dropdown` and stepper icons configured with `type: duotone` rendered as basic icons unless the deprecated `isDuotone` flag was also present. Both renderers now accept the type representation, matching list-item and menu-item behavior.
+* `Gallery` - a gallery that gets image paths through jig inputs no longer opens a blank modal when an image is tapped.
+* Interactive image as a form field - `component.interactive-image` can now be used as a form field. Previously it was display-only. Its selection could only be read through `@ctx.component.<id>.state`, so it couldn’t be required, validated, or submitted with the form. As a form field, it shows the selected point titles like any other field. Tapping it opens a full-size picker (similar to the signature field) where users select points and confirm. It supports `label`, `value`, `onChange`, `onBlur`, `isRequired` and `errorText`, uses `instanceId` as its form property, and its value is included in the submit payload. Use case: an inspector marks damaged panels on a vehicle diagram, and the selection is submitted with the rest of the damage report. \
+  **Note:** Inline presentation remains the default, so existing interactive images, including groups and per-item `onPress`, are unchanged. Set `<presentation property>` to use the field presentation.
+
 ## Release 2026.12
 
 <table><thead><tr><th width="169.2421875">Release 2026.12</th><th>14 October 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.8.1</td></tr><tr><td>Android version</td><td>3.8.1</td></tr><tr><td>Jigx Builder</td><td>1.55.0</td></tr></tbody></table>
