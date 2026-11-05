@@ -23,11 +23,63 @@ layout:
 
 # Release Notes - 2026
 
+## Release 2026.14
+
+<figure><img src=".gitbook/assets/Release2026.14.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="169.2421875">Release 2026.14</th><th>5 November 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.10.0</td></tr><tr><td>Android version</td><td>3.10.0</td></tr><tr><td>Jigx Builder</td><td>1.58.0</td></tr></tbody></table>
+
+### Mobile Apps
+
+#### New Features & Enhancements
+
+* _Icons now render from a bundled Tabler icon font:_ Icons in the app are now drawn from the Tabler icon font that ships with the app. Before, they were Streamline SVGs downloaded to the app. Tabler icons appear right away, with no network request and no loading spinner, and they work offline from the first launch. Each icon is now a single text glyph instead of an SVG view, so screens with many icons open faster.&#x20;
+  * _Built-in app icons updated:_ The app’s own icons, such as navigation, toasts, notifications and empty states, now use their Tabler equivalents, so they look slightly different.
+  * _Existing solutions keep working:_ Icon names that aren’t Tabler names still display as before.
+  * _Missing icons are easy to spot:_ An icon name that isn’t found in Tabler shows a red `help-square-rounded` icon.
+  * _Behavior change_. Switch your solutions to Tabler icon names (for example `chevron-right` or `circle-check`) to get the faster, offline-ready icons. Downloading non-Tabler icons as SVGs is a temporary fallback. We’re tracking which solutions still use non-Tabler names, and we’ll contact their owners to help migrate before the fallback is removed. Flags, map start and end markers, and the Jigx logo are unchanged.
+  * _Known issues:_
+    * _Non-Tabler icons offline on first open:_ Solutions that still use Streamline icon names now download icons that used to be bundled in the app. If one of these solutions is opened for the first time while offline, those icons show the red placeholder until they finish downloading. Switch to Tabler names to avoid this.
+    * _Icon names from data:_ Icon names that come from data at runtime, such as an expression over row values, aren’t covered by the migration to Tabler names. Check solutions that build icon names from data and update the source values to Tabler names.
+
+#### Bug fixes
+
+* Fixed slow and failing file downloads on Android.
+  * Dynamic file downloads now fetch 8 MB per request instead of 8 KB.
+  * The Android download progress bar moves again. It was stuck at 0.
+  * Opening an auth-protected file over 8 KB with open-url no longer fails.
+* List header now renders above search and filter: On a `jig.list`, the built-in search (`isSearchable`) and filter (`filter`) appeared above `listHeader.children`. That put header content such as banners, titles or forms between the filter tabs and the rows, so the filter was cut off from the list it filters. Header children now render first, and the search and filter sit directly above the list items.
+
+### Components
+
+#### New Features & Enhancements
+
+*   [Scanner-field](https://docs.jigx.com/examples/readme/components/scanner-field): The new `component.scanner-field` lets users scan a QR code or barcode straight into a form field. Until now, scanning was only available through the standalone `action.open-scanner`, so you had to add a separate scan button and connect the result to a field yourself. The scanner field looks like a text field with a scan icon. Tapping anywhere on it opens the existing scanner, which supports QR, EAN-13, EAN-8, Code 128, Code 93 and Code 39. The scanned value fills the field and fires `onChange`, the same as typing, so state, validation and form submission work as they do for any other field. The field doesn’t show a cursor or keyboard unless the user asks for one.
+
+    * _Enter manually_: The scanner sheet has an _Enter manually_ button. It closes the scanner and opens the keyboard so the user can type the value. When the user leaves the field, tapping it opens the scanner again. The button only appears for the scanner field, so `action.open-scanner` works as before.
+    * _Predictable behavior:_ If the user cancels a scan, the current value stays. A disabled field doesn’t open the scanner.
+    * _Configuration_: The field supports the usual field options (`label`, `isRequired`, `isDisabled`, `isHidden`, helper and error text, `initialValue`, `onChange`, `onBlur`). It also has `scanner: { title, description }` for customizing the scanner sheet. If you don’t set a title, the scanner uses the field label.
+
+    Use case: a technician registering equipment taps the _Serial number_ field and scans the barcode on the device label. The serial number is captured with the rest of the form. If the label is damaged, they tap _Enter manually_ and type it in.
+
+### Actions & events&#x20;
+
+#### New features & improvements
+
+*   [_Header and footer on every page of a generated PDF_](https://docs.jigx.com/examples/readme/actions/generate-pdf)**:** `action.generate-pdf` now supports `header` and `footer` options. A PDF can now repeat a band of text at the top or bottom of every page, such as a company name, a document title or page numbers. Before this, PDFs had no header or footer, and a footer could only appear on the last page, so there was no way to show Page 3 of 7. Each band supports `height`, a text `style`, `left` / `center` / `right` slots and `skipFirstPage`. Use `{pageNumber}` and `{pageCount}` in slot text and they’re filled in on every page.
+
+    * _Consistent across platforms:_ The band prints the same way on iOS, Android and web, and page content never runs under it.
+    * _Expressions:_ Slot text and band options can be expressions, evaluated once per PDF, for example `="Created by " & @ctx.user.displayName & ", page {pageNumber}"`.
+    * _Matches the form:_ The band uses the form’s body font by default.
+    * _Safe to add:_ If a band is invalid, it’s logged and dropped, and the PDF still prints.
+
+    Use case: a site inspection report shows the company name and Page 1 of 3 in the header, and the report title and inspection date in the footer, on every page. Set `skipFirstPage` to leave the header off a cover page. PDFs without `header` or `footer` print exactly as before on mobile.
+
 ## Release 2026.13
 
 <figure><img src=".gitbook/assets/Release2026.13.png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="169.2421875">Release 2026.12</th><th>30 October 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.9.0</td></tr><tr><td>Android version</td><td>3.9.0</td></tr><tr><td>Jigx Builder</td><td>1.55.0</td></tr></tbody></table>
+<table><thead><tr><th width="169.2421875">Release 2026.13</th><th>30 October 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.9.0</td></tr><tr><td>Android version</td><td>3.9.0</td></tr><tr><td>Jigx Builder</td><td>1.55.0</td></tr></tbody></table>
 
 ### Mobile Apps
 
@@ -40,12 +92,15 @@ layout:
 
 ### Components
 
+#### New Features & Enhancements
+
+* [Interactive image as a form field](https://docs.jigx.com/examples/readme/components/interactive-image/interactive-image-field) - `component.interactive-image` can now be used as a form field. Previously it was display-only. Its selection could only be read through `@ctx.component.<id>.state`, so it couldn’t be required, validated, or submitted with the form. As a form field, it shows the selected point titles like any other field. Tapping it opens a full-size picker (similar to the signature field) where users select points and confirm. It supports `label`, `value`, `onChange`, `onBlur`, `isRequired` and `errorText`, uses `instanceId` as its form property, and its value is included in the submit payload. Use case: an inspector marks damaged panels on a vehicle diagram, and the selection is submitted with the rest of the damage report. \
+  **Note:** Inline presentation remains the default, so existing interactive images, including groups and per-item `onPress`, are unchanged. Set `<presentation property>` to use the field presentation.
+
 #### Bug fixes
 
 * `Dropdown` and stepper icons configured with `type: duotone` rendered as basic icons unless the deprecated `isDuotone` flag was also present. Both renderers now accept the type representation, matching list-item and menu-item behavior.
 * `Gallery` - a gallery that gets image paths through jig inputs no longer opens a blank modal when an image is tapped.
-* Interactive image as a form field - `component.interactive-image` can now be used as a form field. Previously it was display-only. Its selection could only be read through `@ctx.component.<id>.state`, so it couldn’t be required, validated, or submitted with the form. As a form field, it shows the selected point titles like any other field. Tapping it opens a full-size picker (similar to the signature field) where users select points and confirm. It supports `label`, `value`, `onChange`, `onBlur`, `isRequired` and `errorText`, uses `instanceId` as its form property, and its value is included in the submit payload. Use case: an inspector marks damaged panels on a vehicle diagram, and the selection is submitted with the rest of the damage report. \
-  **Note:** Inline presentation remains the default, so existing interactive images, including groups and per-item `onPress`, are unchanged. Set `<presentation property>` to use the field presentation.
 
 ## Release 2026.12
 
