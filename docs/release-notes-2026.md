@@ -23,6 +23,27 @@ layout:
 
 # Release Notes - 2026
 
+## Release 2026.15
+
+<figure><img src=".gitbook/assets/Release 2026.15.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="169.2421875">Release 2026.15</th><th>25 November 2026</th></tr></thead><tbody><tr><td>iOS version</td><td>3.12.0</td></tr><tr><td>Android version</td><td>3.12.0</td></tr><tr><td>Jigx Builder</td><td>1.60.0</td></tr></tbody></table>
+
+### Mobile Apps
+
+#### New Features & Enhancements
+
+* **Set content width on tablets with `contentWidth`**: On iPad, forms and lists used to stretch across the whole screen, which made fields hard to scan. A new jig-level `contentWidth` property limits a jig's content to a set width and centres it on wide screens. The options are `full` (the default, which keeps the current layout), `regular` (up to 800 px) or `small` (up to 600 px). It has no effect on phones, in split-view panes or in narrow columns, so the same jig works on every device. The header and the tablet action panel still span the full width. It works on `jig.default` and `jig.list`, including when they're embedded through `component.jig` or used as `jig.composite` children. Other jig types accept the property but ignore it for now.
+* Improved uploads of large files, faster on fast networks while keeping small chunks on poor connections and now shows "File too large" when a file exceeds the upload limit.
+* **Warning before losing local changes**: If your device has changes that haven't reached the server yet, the app now warns you before anything that would remove them. That covers signing out, changing your home region, signing in as a different user. You can cancel to keep your changes or go ahead anyway. The sign-out confirmation also no longer closes on its own after a few seconds.
+* **Expired logins keep your data**: When your login expires, you stay signed in and your local data stays on the device until you sign in again. If you sign in as the same user, you pick up where you left off. If you sign in as a different user, you see a warning before the device is cleared.
+
+#### Bug fixes
+
+* Double-tapping an action button no longer runs the actions twice: A quick double-tap used to run a button's action list a second time. With a common Save pattern, the second run could go back one screen too many and save a form that was already closed, overwriting the record with empty or incorrect data. Now one press runs the actions once, and that button ignores further presses until the run has finished. The fix covers header and bottom-panel actions, widget actions, jig buttons, cards and list items.
+* Users will experience fewer permanent yellow "Your login has expired" banner lockouts and fewer unnecessary full sign-outs.
+* Previous user's data no longer appears after signing out: Sometimes, especially on a slow or offline connection, signing out didn't fully clear the device, so the next user could see the previous user's data. Signing out now removes all local data, files and cached images. Only your last login email or phone number is kept, to make signing in again quicker.
+
 ## Release 2026.14
 
 <figure><img src=".gitbook/assets/Release2026.14.png" alt=""><figcaption></figcaption></figure>
